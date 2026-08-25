@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .scroll{
+            /* scroll-behavior: smooth; */
+            margin: 20px;
+            padding: 20px;
+        }
+        .scroll nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .scroll nav a{
+            text-decoration: none;
+            margin: 0 15px;
+            color: blueviolet;
+        }
+        .landing{
+            margin: 20px;
+            padding: 20px;
+            width: 70%;
+            height: 80vh;
+            background-image: url(../Images/VTS\ Logo1.png);
+            background-position-y: 30px;
+            background-size: cover;
+            text-align: center;
+        }
+        .head{
+            color: white;
+            text-shadow: 3px 3px 4px black ;
+            padding-bottom: 15px;
+        }
+        .landing button{
+            box-shadow: 2px 2px 4px gray;
+            background-color: coral;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: white;
+            border: none;
+        }
+
+
+
+
+        .bloghead{
+            margin: 20px;
+            padding: 10px;
+            color: rgb(216, 79, 125);
+            background: radial-gradient(circle, lightpink, white);
+        }
+
+        .blog footer{
+            background-color: rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 6px gray;
+        }
+        article{
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid pink;
+            box-shadow: 2px 2px 6px pink;
+        }
+
+
+
+        .output{
+            margin: 20px;
+            padding: 20px;
+            width: 60%;
+            height: 60vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .output header{
+            background: linear-gradient(to right, rgb(253, 156, 121), rgb(250, 149, 149) );
+            color: white;
+            padding: 10px;
+            line-height: 1.5;
+        }
+        .output p{
+            font-size: 12px;
+        }
+        .output .post{
+            background-color: rgb(243, 241, 241);
+            padding: 10px;
+        }
+        .post .post1, .post2{
+            margin: 10px;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 2px 2px 4px gray;
+            border: none;
+            border-radius: 4px;
+            line-height: 1.5;
+        }
+        .output footer{
+            background-color: rgb(63, 63, 63);
+            color: white;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+
+
+        .contact{
+            margin: 20px;
+            padding: 20px;
+            width: 50%;
+            height: 50vh;
+            background: radial-gradient(circle, rgb(218, 218, 98) 50%, rgb(209, 85, 85));
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: none;
+            box-shadow: 3px 3px 6px black;
+            
+        }
+        label, input, textarea, button {
+            padding: 5px;
+            margin: 5px;
+        }
+        input:focus{
+            color: rgb(209, 85, 85);
+        }
+
+
+        .pricing{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+        }
+        .box{
+            width: 300px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            /* transition: all 0.3s ease; */
+            text-align: center;
+            padding: 20px;
+            line-height: 2;
+        }
+        .box:hover{
+            /* transform: translate(-8px); */
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+        }
+        .box header{
+            font-weight: bold;
+            color: blueviolet;
+        }
+        .pricing button{
+            padding: 5px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(53, 53, 226);
+            color: white;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .pricing button:hover{
+            background-color: white;
+            color: rgb(53, 53, 226);
+            font-weight: bold;
+            /* transform: scale(1.05); */
+        }
+        .pricing h3{
+            text-shadow: 3px 3px 8px gray;
+        }
+        
+        
+        .newsletter{
+            margin: 20px;
+            padding: 20px;
+            width: 100%;
+            height: 30vh;
+            background-image: url(../Images/scenery.jpeg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .overlay{
+            background: rgba(0, 0, 0, 0.3);
+            
+        }
+        .overlayhead h2{
+            color: white;
+            text-shadow: 3px 3px 6px blue ;
+        }
+        .footer{
+            padding: 2vw;
+        }
+        .footer input, button{
+            padding: 5px;
+        } 
+        section{
+            padding: 10px 20px;
+        }
+        .footer input:hover{
+            background-color: lightblue;
+            color: white;
+        }
+        .footer button:hover{
+            background-color: crimson;
+            color: white;
+        }
+
+
+        .grid{
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+
+        }
+        .grids{
+            margin: 10px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 300px 100px;
+            gap: 20px;
+        }
+        .grid1{
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            line-height: 1.5;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 3px 3px 6px gray;
+            background-color: rgb(222, 245, 238);
+            background: linear-gradient(to left, rgb(222, 245, 238), wheat);
+            transition: transform 0.3s ease;
+        }
+        .grid1:hover{
+            transform: scale(1.05);
+        }
+        .grid1 img{
+            width: 30px;
+            height: 30px;
+        }
+        .grid1 button{
+            background-color: rgb(226, 250, 249);
+            border: none;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>1. Smooth Scroll Navigation</h1>
+    <div class="scroll">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#links">Links</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section id="home">
+            <h3>Home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iste mollitia explicabo eligendi commodi sapiente sequi non recusandae aperiam veniam eius repellendus nemo et consectetur, obcaecati, iusto amet tenetur modi.</p>
+        </section>
+        <section id="about">
+            <h3>About</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat id voluptatem eum eligendi facilis rem illo omnis mollitia accusantium dicta eius repellat exercitationem, totam cupiditate animi saepe debitis aspernatur vel!</p>
+        </section>
+        <section id="services">
+            <h3>Services</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptatibus numquam cum necessitatibus doloribus? Nisi voluptatum, enim expedita unde tempore, quis eius, sint repellat natus rem maxime molestias ab neque!</p>
+        </section>
+        <section id="links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="https://www.google.com/">Google</a></li>
+                <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+                <li><a href="https://www.google.com/intl/en/chrome/">Chrome</a></li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>Email: sonysophia@gmail.com</p>
+            <p>phone: +91 93840239758</p>
+        </section>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>2. Landing Page</h1>
+    <div class="landing">
+        <div class="head">
+            <h2>Welcome to Our Website</h2>
+        </div>
+        <button>Get Started</button>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>3. Blog Layout</h1>
+    <div class="blog">
+        <header class="bloghead">
+            <h2>My Blog</h2>
+        </header>
+        <article>
+            <h3 style="font-size: 1.5rem; font-weight: bold; padding-top: 15px;">AI Python Full Stack</h3>
+            <p style="color: gray; padding-bottom: 10px;">Course, 2026 july 27 </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque veritatis velit vitae, fuga explicabo, nobis iure non harum et temporibus ipsa consequatur voluptatibus aspernatur veniam hic recusandae illum? Esse, sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis sit consequuntur animi temporibus commodi ullam, iusto, ducimus esse ipsam aperiam, cumque eaque alias tempora nesciunt eum neque doloribus ea. Ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime atque nulla, quisquam iusto voluptates quia id. Iusto sequi sit est et, culpa repudiandae laudantium minus blanditiis, mollitia harum dolores commodi.</p>
+        </article>
+        <footer>
+            <p>&copy; 2025 My Tech Blog All Rights Reserved</p>
+        </footer>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>4. Output</h1>
+    <div class="output">
+        <header>
+            <h2>My Blog</h2>
+            <p>Sharing Thoughts and Ideas</p>
+        </header>
+        <div class="post">
+            <div class="post1">
+                <h3>Blog Post 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="post2">
+                <h3>Blog Post 2</h3>
+                <p>Numquam, fugit ea porro ducimus harum debitis non ipsa magnam modi suscipit quos architecto </p>
+            </div>
+        </div>
+        <footer>
+            &copy; 2025 My Blog. All Rights Reserved.
+        </footer>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>5. Services Grid Layout</h1>
+    <div class="grid">
+        <h2>Our Services</h2>
+        <div class="grids ">
+            <section class="grid1">
+                <img src="../Images/internet.avif" alt="">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab blanditiis ipsam perspiciatis, voluptatem est hic et. </p>
+                <button>Learn More</button>
+            </section>
+            <section class="grid1">
+                <img src="../Images/person-icon-flat-design-template-isolated-avatar-sign-vector-illustration_109161-1680.avif" alt="">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab blanditiis ipsam perspiciatis, voluptatem est hic et.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="grid1">
+                <img src="../Images/gallery.webp" alt="">
+                <h3>Graphics</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab blanditiis ipsam perspiciatis, voluptatem est hic et.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="grid1">
+                <img src="../Images/Data.png" alt="">
+                <h3>Data Analysis</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab blanditiis ipsam perspiciatis, voluptatem est hic et.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="grid1">
+                <img src="../Images/a-letter-a-icon-vector.webp" alt="">
+                <h3>App Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab blanditiis ipsam perspiciatis, voluptatem est hic et.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="grid1">
+                <img src="../Images/Accounting-Book-Outline-Icon-Graphics-30586486-1.jpg" alt="">
+                <h3>Accounting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab blanditiis ipsam perspiciatis, voluptatem est hic et.</p>
+                <button>Learn More</button>
+            </section>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>6. Pricing Table Section</h1>
+    <div class="pricing">
+        <div class="box">
+            <header>BASIC</header>
+            <h3>$5 / mo</h3>
+            <p>2 team members</p>
+            <p>2GB Storage</p>
+            <p>1000 request per day</p>
+            <p>20000 users</p>
+            <button>Buy now</button>
+        </div>
+        <div class="box">
+            <header>PRO</header>
+            <h3>$10 / mo</h3>
+            <p>5 team members</p>
+            <p>5GB Storage</p>
+            <p>2000 request per day</p>
+            <p>40000 users</p>
+            <button>Buy now</button>
+        </div>
+        <div class="box">
+            <header>PREMIUM</header>
+            <h3>$20 / mo</h3>
+            <p>unlimited team members</p>
+            <p>10GB Storage</p>
+            <p>5000 request per day</p>
+            <p>Unlimited users</p>
+            <button>Buy now</button>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>7. Contact Form Section</h1>
+    <div class="contact">
+        <header>
+            <h2>Contact Us</h2>
+        </header>
+        <form action="">
+            <label for="">Name</label>
+            <input type="text" name="" id="" placeholder="Name">
+            <label for="">Email</label>
+            <input type="email" name="" id="" placeholder="Email">
+            <textarea name="text" id="">Message</textarea>
+            <button>Send Message</button>
+        </form>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>8. Newsletter Signup Banner</h1>
+    <div class="newsletter">
+        <header class="overlayhead">
+            <h2>Signup to our Newsletter</h2>
+        </header>
+        <section>
+            <p style="color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos neque rem asperiores. Unde quasi ullam dicta tempore labore quibusdam voluptas aliquam saepe, corrupti laudantium placeat incidunt quia error asperiores in.</p>
+        </section>
+        <div class="footer">
+            <input type="email" name="" id="" placeholder="Enter a valid email address">
+            <button>submit</button>
+        </div>
+    </div>
+</body>
+</html>

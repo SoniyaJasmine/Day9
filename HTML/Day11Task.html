@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1 class="text-3xl p-4">1. Responsive Student Profile Page</h1>
+    <nav class="bg-blue-600 text-white">
+        <div class="max-w-6xl mx-auto p-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center font-bold">S</div>
+                <h1 class="text-xl font-bold">Soniya G</h1>
+            </div>
+        </div>
+    </nav>
+    <section class="py-10 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                    <div class="shrink-0">
+                        <img src="../Images/user.jpeg" alt="Soniya" class="w-40 h-40 lg:w-48 lg:h-48 rounded-full object-cover shadow-md">
+                    </div>
+                    <div class="text-center md:text-left flex-1">
+                        <h2 class="text-3xl font-bold text-gray-800">Soniya G</h2>
+                        <p class="mt-2 text-blue-600 text-lg font-semibold">Full Stack Development Student</p>
+                        <p class="mt-4 text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium provident eum aperiam iure fuga voluptate impedit minima natus asperiores quam non, animi iste officia, cum eius! Voluptatem sapiente maiores sint.</p>
+                    </div>
+                    <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                        <button class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">Edit Profile</button>
+                        <button class="bg-green-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-green-700 transition">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <hr>
+
+
+    <h1 class="text-3xl m-4">2. Product Shopping Page</h1>
+    <nav class="bg-pink-400 font-bold">
+        <div class="max-w-5xl mx-auto px-4 py-4">
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-blue-200">Home</a>
+                <a href="#products" class="hover:text-blue-200">Products</a>
+                <a href="#" class="hover:text-blue-200">About</a>
+                <a href="#" class="hover:text-blue-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id="products" class="p-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/smartwatch.jpg" alt="smartwatch" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Smart Watch</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹2,499</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/headphone.jpg" alt="headphone" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Wireless Headphones</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹1,999</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/shoe.jpg" alt="Running Shoes" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Running Shoes</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹2,799</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/bag.jpg" alt="Travel Bag" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Travel Bag</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹1,499</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/tshirt.avif" alt="Cotton T-Shirt" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Cotton T-Shirt</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹699</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/pexels-sparkphotopro-10775339.jpg" alt="Cannon Camera" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Cannon Camera</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹20,499</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <hr>
+
+
+    <h1 class="p-5 font-bold text-lg">3. Food Menu Website</h1>
+    <nav class="bg-orange-800 text-white px-6 py-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold">Foodiess!</h2>
+        </div>
+    </nav>
+    <main class="max-w-6xl mx-auto px-6 py-10">
+        <h2 class="text-4xl font-bold text-center text-orange-800 mb-10">Our Food Menu</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/pizza.jpeg" alt="Pizza" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">Chicken Pizza</h3>
+                    <p class="text-gray-600 mt-2">Delicious cheesy pizza topped with fresh vegetables.</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹299</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/noodles.jpg" alt="Chicken noodles" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">Chicken noodles</h3>
+                    <p class="text-gray-600 mt-2">Flavourful Chicken Noodles prepared with fresh vegetables and spices</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹259</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/pasta1.webp" alt="Pasta" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">Pasta</h3>
+                    <p class="text-gray-600 mt-2">Creamy pasta cooked with herbs, cheese and fresh vegetables.</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹220</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/burger.jpeg" alt="burger" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">Burger</h3>
+                    <p class="text-gray-600 mt-2">Crispy vegetable patty with fresh lettuce and creamy sauce.</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹199</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/Chocolate-Cupcakes-13.jpg" alt="cupcake" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">Chocolate Cupcake</h3>
+                    <p class="text-gray-600 mt-2">Rich and delicious chocolate dessert for a perfect ending.</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹120</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/icecream.jpg" alt="icecream" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">IceCream</h3>
+                    <p class="text-gray-600 mt-2">Refreshing ice cream made with seasonal fruits.</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹200</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <hr>
+
+
+    <h1 class="text-2xl font-bold m-4">4. Personal Portfolio</h1>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <h2 class="text-2xl font-bold text-purple-700">My Portfolio</h2>
+            <div class="hidden md:flex gap-6">
+                <a href="#home" class="hover:text-purple-600">Home</a>
+                <a href="#about" class="hover:text-purple-600">About</a>
+                <a href="#skills" class="hover:text-purple-600">Skills</a>
+                <a href="#projects" class="hover:text-purple-600">Projects</a>
+                <a href="#contact" class="hover:text-purple-600">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl">☰</button>
+        </div>
+    </nav>
+    <section id="Home" class="bg-purple-100">
+        <div class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="text-center md:text-left">
+                <p class="text-purple-600 text-lg font-semibold">Hello, I'm</p>
+                <h2 class="text-4xl md:text-6xl font-bold text-gray-900 mt-2">Soniya</h2>
+                <h3 class="text-2xl md:text-3xl font-semibold text-purple-700 mt-3">Python Developer</h3>
+                <p class="text-gray-600 max-w-xl mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aut ad aperiam debitis facilis minus, voluptates illo. Magnam ducimus dolores voluptate quasi, nisi autem, placeat, sapiente natus suscipit dicta ea.</p>
+                <a href="#" class="inline-block mt-7 bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-900 transition duration-300 shadow-lg">Download CV</a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700">About Me</h2>
+            <div class="mt-8 bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                <p class="text-gray-600 leading-8 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cumque doloremque ex vero eaque, possimus culpa minus consequuntur at, officiis deleniti ratione itaque amet a unde laboriosam sit dolores. Beatae.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="bg-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700 ">My Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+                <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+                    <h3 class="text-xl font-bold text-orange-600">HTML</h3>
+                    <p class="text-gray-600 mt-3">Creating structured and semantic web pages.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+                <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+                    <h3 class="text-xl font-bold text-orange-600">CSS</h3>
+                    <p class="text-gray-600 mt-3">Designing responsive and attractive layouts.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+                <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+                    <h3 class="text-xl font-bold text-orange-600">JavaScript</h3>
+                    <p class="text-gray-600 mt-3">Adding interaction and dynamic functionality.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+                <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+                    <h3 class="text-xl font-bold text-orange-600">Tailwind CSS</h3>
+                    <p class="text-gray-600 mt-3">Building modern responsive interfaces quickly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <div class="bg-white rounded-xl overflow-hidden shadow-md border hover:shadow-2xl transition duration-300">
+                <img src="" alt="Restaurant Website">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Restaurant Website</h3>
+                    <p class="text-gray-600 mt-3">A responsive restaurant website with food menu, pricing and contact sections.</p>
+                    <button class="mt-5 bg-purple-700 text-white px-5 py-2 rounded-lg hover:bg-purple-900 transition">View Project</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl overflow-hidden shadow-md border hover:shadow-2xl transition duration-300">
+                <img src="" alt="Blog Website">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Blog website</h3>
+                    <p class="text-gray-600 mt-3">A clean and responsive blog layout with articles, categories and navigation.</p>
+                    <button class="mt-5 bg-purple-700 text-white px-5 py-2 rounded-lg hover:bg-purple-900 transition">View Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-purple-100 py-16">
+        <div class="max-w-3xl mx-auto px-6 flex flex-col justify-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700">Contact Me</h2>
+            <p class="text-center text-gray-600 mt-3">Have a project in mind? Feel free to contact me.</p>
+            <button class="mt-5 
+                 bg-purple-700 text-white
+                 py-3 rounded-lg
+                 font-semibold
+                 hover:bg-purple-900
+                 transition duration-300
+                 shadow-md">Hier Me</button>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>© 2026 Soniya. All Rights Reserved.</p>
+    </footer>
+    <br><br>
+    <hr>
+
+
+    <h1 class="font-bold text-2xl p-4">5.Online Course Landing Page</h1>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h2 class="text-2xl font-bold text-blue-600">Future It</h2>
+            <div class="hidden md:flex gap-8">
+                <a href="" class="hover:text-blue-600 transition">Home</a>
+                <a href="" class="hover:text-blue-600 transition">Courses</a>
+                <a href="" class="hover:text-blue-600 transition">Trainers</a>
+                <a href="" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl">☰</button>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="max-w-7xl mx-auto px-6 py-20">
+            <p class="text-blue-600 font-semibold text-lg">Upgrade Your Skills</p>
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mt-3">Learn Full Stack Development</h2>
+            <p class="max-w-2xl mx-auto mt-6 text-gray-600 text-lg">
+                 Learn frontend and backend development
+                from beginner to advanced level with
+                practical projects and expert guidance.
+            </p>
+            <button class="mt-8 bg-blue-600 text-white
+                       px-7 py-3 rounded-lg
+                       font-semibold
+                       hover:bg-blue-800
+                       hover:scale-105
+                       transition duration-300
+                       shadow-lg"> Enroll Now</button>
+        </div>
+    </section>
+    <section id="course" class="py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-600">Our Courses</h2>
+            <p class="text-center text-gray-600 mt-3">Choose the course that matches your career goal.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">Full Stack Development</h3>
+                    <p class="text-gray-600 mt-3"> Learn HTML, CSS, JavaScript, React, Node.js and databases.</p>
+                    <p class="mt-4 font-semibold text-blue-600">Duration: 6 Months</p>
+                    <p class="text-2xl font-bold text-green-600 mt-2">₹35,000</p>
+                    <button class="mt-5 w-full
+                               bg-blue-600 text-white
+                               py-2 rounded-lg
+                               hover:bg-blue-800
+                               transition">Enroll</button>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">Python Programming</h3>
+                    <p class="text-gray-600 mt-3"> Learn Python programming, functions, OOP and projects.</p>
+                    <p class="mt-4 font-semibold text-blue-600">Duration: 4 Months</p>
+                    <p class="text-2xl font-bold text-green-600 mt-2">₹20,000</p>
+                    <button class="mt-5 w-full
+                               bg-blue-600 text-white
+                               py-2 rounded-lg
+                               hover:bg-blue-800
+                               transition">Enroll</button>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">AI & Machine Learning</h3>
+                    <p class="text-gray-600 mt-3"> Learn machine learning, AI concepts and real-world projects.</p>
+                    <p class="mt-4 font-semibold text-blue-600">Duration: 6 Months</p>
+                    <p class="text-2xl font-bold text-green-600 mt-2">₹40,000</p>
+                    <button class="mt-5 w-full
+                               bg-blue-600 text-white
+                               py-2 rounded-lg
+                               hover:bg-blue-800
+                               transition">Enroll</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="trainers" class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-700">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+                <div class="bg-white p-6 rounded-xl text-center shadow-md hover:shadow-xl transition">
+                    <h3 class="font-bold text-xl mt-4">Expert Trainers</h3>
+                    <p class="text-gray-600 mt-2">Learn from experienced industry professionals.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center shadow-md hover:shadow-xl transition">
+                    <h3 class="font-bold text-xl mt-4">Practical Learning</h3>
+                    <p class="text-gray-600 mt-2">Build real-world projects while learning.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center shadow-md hover:shadow-xl transition">
+                    <h3 class="font-bold text-xl mt-4">Certificates</h3>
+                    <p class="text-gray-600 mt-2">Get certificates after completing your course.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-16">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-blue-700">Ready to start Learning?</h2>
+            <p class="text-gray-600 mt-4"></p>>Contact us today and start your learning journey.</p>
+            <button
+                class="mt-6 bg-blue-600 text-white
+                       px-7 py-3 rounded-lg
+                       hover:bg-blue-800
+                       hover:scale-105
+                       transition duration-300">
+
+                Contact Us
+
+            </button>
+        </div>
+    </section>
+</body>
+</html>

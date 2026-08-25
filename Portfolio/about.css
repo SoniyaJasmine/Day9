@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about{
+    min-height: 100vh;
+    padding: 100px 10%;
+    background-color: rgb(49, 49, 48);
+}
+.about-heading{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+
+    p{
+        color: #c08a5a;
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin-top: 30px;
+    }
+}
+.about::before{
+    content: "About Me";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 120px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.04);
+    z-index: 0;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+}
+.about-heading p{
+    position: relative;
+    z-index: 1;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.about-image{
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid gray;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+}
+.about-image:hover img{
+    transform: scale(1.05);
+}
+.about-content{
+    max-width: 600px;
+    border: 1px solid #8b4513;
+    border-radius: 10px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    h3{
+        font-size: 30px;
+        color: #f5f0e8;
+        margin-bottom: 30px;
+        font-family: 'Playfair Display', serif;
+    }
+    p{
+        color: #bdb9b2;
+        font-size: 17px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+}
+.about-details{
+    display: flex;
+    gap: 50px;
+    margin: 30px 0;
+
+    strong{
+        color:#c08a5a ;
+    }
+    span{
+        color: #d0ccc5;
+    }
+}
+.about-btn{
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: 5px;
+    transition: 0.3s ease;
+    color: #fff;
+    background-color: #a66a3f;
+
+}
+.about-btn:hover{
+    transform: translateY(-3px);
+    color: white;
+}
+@media(max-width:768px){
+    .about{
+        padding: 80px 30px;
+    }
+    .about-heading{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .about-container{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    .about-image{
+        width: 280px;
+        height: 330px;
+    }
+    .about-content{
+        max-width: 100%;
+    }
+    .about-content h3{
+        font-size: 26px;
+    }
+    .about-content p{
+        font-size: 16px;
+    }
+    .about-details{
+        justify-content: center;
+        gap: 30px;
+    }
+}

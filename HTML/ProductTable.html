@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rgb(29, 29, 39);
+            color: white;
+            font-family: sans-serif;
+        }
+        header{
+            text-align: center;
+        }
+        table{
+            border: none;
+            border-collapse: collapse;
+            width: 500px;
+            text-align: left;
+            padding: 20px;
+        }
+        tr{
+            border: none;
+            
+        }
+        td{
+            text-align: center;
+            color: gray;
+        }
+        th{
+            border: none;
+            padding: 10px;
+            font-weight: lighter;
+        }
+        tr:nth-child(odd){
+            background-color: rgb(47, 47, 75);
+        }
+        .highlight{
+            background-color: rgba(53, 51, 51, 0.8);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>5</h1>
+    <div class="table">
+    <header>
+        <h3>Product Feature Comparison Table</h3>
+    </header>
+    
+    <table>
+        <tr>
+            <th></th>
+            <th class="highlight">Mobile</th>
+            <th>Super</th>
+            <th> Premium</th>
+        </tr>
+        <tr>
+            <th>All content <br> Movies, Live sports, TV, Specials</th>
+            <td class="highlight">✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <th>Watch on TV or Laptop</th>
+            <td class="highlight">✘</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <th>Ads free movies and shows (except sports)</th>
+            <td class="highlight">✘</td>
+            <td></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <th>Number of devices that can be logged in</th>
+            <td class="highlight">1</td>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>Max video quality</th>
+            <td class="highlight">HD 720p</td>
+            <td>Full HD 1080p</td>
+            <td>4k 2160p</td>
+        </tr>
+        <tr>
+            <th>Max audio quality <br> Atmos available on select title only</th>
+            <td class="highlight">Stereo</td>
+            <td>Dolby Atmos</td>
+            <td>Dolby Atmos</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>

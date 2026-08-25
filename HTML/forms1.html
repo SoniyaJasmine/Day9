@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" ><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password"><br><br>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" name="dob" id="dob"><br><br>
+        <label for="upload">Upload a file:</label><br>
+        <input type="file" name="upload" id="upload"><br><br>
+        <label for="color">Choose a color</label>
+        <input type="color" name="color" id="color"><br><br>
+        <input type="submit" name="" id=""><br><br>
+    </form>
+    <hr>
+
+    <h1>Job Application Form</h1>
+    <form action="">
+        <label for="lname">Name:</label><br>
+        <input type="text" id="lname" name="lname" ><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="phone">Phone:</label><br>
+        <input type="number" name="phone" id="phone"><br><br>
+        <label for="select">Position you are applying for:</label><br>
+        <select name="select" id="select">
+            <option value="">select</option>
+            <option value="data_science">Data Science</option>
+            <option value="data_analyst">Data Analyst</option>
+            <option value="buisness_analyst">Buisness Analyst</option>
+            <option value="software_developer">Software Developer</option>
+            <option value="web_designer">Web Designer</option>
+        </select><br><br>
+        <label for="file">Upload Resume:</label><br>
+        <input type="file" name="file" id="file"><br><br>
+        <button>Send Application</button><br><br>
+    </form>
+    <hr>
+
+    <h1>Profile Editor Form</h1>
+    <form action="">
+        <label for="">Full Name:</label><br>
+        <input type="text" name="" id=""><br><br>
+        <label for="">Email:</label><br>
+        <input type="email" name="" id="" value="xyz@example.com" disabled><br><br>
+        <label for="">Experience Level:</label><br>
+        <input type="range" name="" id="" value="5"><br><br>
+        <input type="submit" name="" id="" value="Update">
+        <input type="reset" name="" id="" value="Reset"><br><br>
+    </form>
+    <hr>
+
+    <h1>Color Selector</h1>
+    <form action="">
+        <label for="">Choose your Favourite color:</label><br>
+        <input type="color" name="" id="" oninput="colorValue.innerHTML=this.value">
+        <!-- <span id="colorValue">#000000</span> -->
+         <label for="" id="colorValue">#000000</label><br><br>
+    </form>
+    <hr>
+
+    <h1>Poll System</h1>
+    <form action="" onsubmit="showMessage(); return false;">
+        <label for="">Which is your favourite subject?</label><br>
+        <input type="radio" name="subject" id="tamil">
+        <label for="tamil">Tamil</label><br>
+        <input type="radio" name="subject" id="english">
+        <label for="english">English</label><br>
+        <input type="radio" name="subject" id="maths">
+        <label for="maths">Maths</label><br>
+        <input type="radio" name="subject" id="science">
+        <label for="science">Science</label><br>
+        <input type="radio" name="subject" id="social">
+        <label for="social">Social</label><br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <p id="message"></p>
+    <script>
+        function showMessage(){
+            document.getElementById("message").innerHTML=
+            "Thank you for your response!";
+        }
+    </script>
+    
+</body>
+</html>

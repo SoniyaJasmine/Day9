@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bar{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            background-color: darkcyan;
+        }
+        .bar a{
+            text-decoration: none;
+            color: wheat;
+        }
+
+
+
+        .loginform{
+            width: 400px;
+            height: 300px;
+            background: linear-gradient(to bottom, rgb(138, 209, 250), lightblue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login1{
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .login1 h2{
+            text-align: center;
+        }
+        .login2{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 15px;
+            padding-left: 50px;
+        }
+        .login2 input{
+            padding: 5px;
+            border: 1px solid #999;
+            border-radius: 5px;
+        }
+        .login2 button{
+            border-radius: 5px;
+            background-color: rgb(138, 170, 230);
+            border: none;
+            padding: 5px;
+
+        }
+
+
+
+        .centeredcard{
+            background: linear-gradient(to right, rgb(252, 120, 120), rgb(247, 169, 169));
+            width: 400px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .centeredcard1{
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .centeredcard1 p{
+            margin-top: 0;
+        }
+        .centeredcard1 button{
+            background-color: orangered;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+
+        .flexbar{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #bafcba;
+        }
+        .flexbar img{
+            width: 30px;
+        }
+        .bar1{
+            display: flex;
+        }
+        .bar1 a{
+            text-decoration: none;
+            padding-left: 30px;
+        }
+        .bar1 a:hover{
+            color: #366936;
+        }
+
+
+
+        .pricing{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .box{
+                width: 200px;
+                border: 1px solid rgb(221, 220, 220);
+                border-radius: 10px;
+                text-align: center;
+                padding: 20px;
+
+            }
+            .box header{
+                color: coral;
+            }
+            .box1{
+                background: linear-gradient(to top, blue, lightblue);
+            }
+        }
+
+
+
+        .signup{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .signup1{
+                border: 1px solid rgb(185, 184, 184);
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
+                background-color: rgb(169, 207, 245);
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+            }
+            .signup1 button:hover{
+                padding: 5px;
+                background-color: blue;
+                border: none;
+                border-radius: 5px;
+                color: white;
+            }
+        }
+
+
+        .contact{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            max-width: 600px;
+            border: 1px solid rgb(204, 203, 203);
+            background-color: #f5f4f4;
+            border-radius: 10px;
+            .contact1 img{
+                width: 300px;
+            }
+            .contact2{
+                padding: 15px;
+                background-color: blanchedalmond;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+
+        .gallery{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+
+            img{
+                width: 200px;
+                height: 150px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>1. Building a Navigation Bar</h1>
+    <nav class="bar">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </nav>
+    <br><br>
+    <hr>
+
+
+
+    <h1>2. Flexbox login Form</h1>
+    <div class="loginform">
+        <div class="login1">
+            <h2>Login</h2>
+            <div class="login2">
+                <input type="text" name="" id="" placeholder="Username">
+                <input type="password" name="" id="" placeholder="Password">
+                <button>Login</button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>3. Flexbox Gallery</h1>
+    <div class="gallery">
+        <img src="../Images/bird1.jpeg" alt="">
+        <img src="../Images/smartwatch.jpg" alt="">
+        <img src="../Images/camera.webp" alt="">
+        <img src="../Images/funny cat.jpg" alt="">
+        <img src="../Images/scenery.jpeg" alt="">
+        <img src="../Images/Chocolate-Cupcakes-13.jpg" alt="">
+        <img src="../Images/earbud.jpeg" alt="">
+        <img src="../Images/Horse1.jpeg" alt="">
+        <img src="../Images/cat1.jpg" alt="">
+        <img src="../Images/VTS Logo1.png" alt="">
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>4. Centered Card</h1>
+    <div class="centeredcard">
+        <div class="centeredcard1">
+            <h2>Welcome to Vetri Tech</h2>
+            <p>Your success starts here. Join us and build your future!</p>
+            <button>Get Started</button>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>5. Flexbox Pricing Table</h1>
+    <div class="pricing">
+        <div class="box">
+            <header>BASIC</header>
+            <h3>$5 / mo</h3>
+            <p>2 team members</p>
+            <p>2GB Storage</p>
+            <p>1000 request per day</p>
+            <p>20000 users</p>
+            <button>Buy now</button>
+        </div>
+        <div class="box box1">
+            <header>PRO</header>
+            <h3>$10 / mo</h3>
+            <p>5 team members</p>
+            <p>5GB Storage</p>
+            <p>2000 request per day</p>
+            <p>40000 users</p>
+            <button>Buy now</button>
+        </div>
+        <div class="box">
+            <header>PREMIUM</header>
+            <h3>$20 / mo</h3>
+            <p>unlimited team members</p>
+            <p>10GB Storage</p>
+            <p>5000 request per day</p>
+            <p>Unlimited users</p>
+            <button>Buy now</button>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>6.Flexbox Navigation Bar</h1>
+    <div class="flexbar">
+        <img src="../Images/logo.jpeg" alt="">
+        <nav class="bar1">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+        </nav>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>7. Login + Sign Up Form Side-by-Side</h1>
+    <div class="signup">
+        <form action="" class="signup1">
+            <header>Login Form</header><br>
+            <input type="email" name="" id="" placeholder="Email Address"><br><br>
+            <input type="password" name="" id="" placeholder="Password">
+            <p><a href="">Forgot Password?</a></p>
+            <button>Login</button>
+            <p>Not a memeber? <a href="">Signup now</a></p>
+        </form>
+        <form action="" class="signup1">
+            <header>Signup Form</header><br>
+            <input type="email" name="" id="" placeholder="Email Address"><br><br>
+            <input type="password" name="" id="" placeholder="Password"><br><br>
+            <input type="password" name="" id="" placeholder="Confirm password"><br><br>
+            <button>Signup</button>
+        </form>
+    </div>
+
+
+
+    <h1>8. Flexbox Contact Section</h1>
+    <div class="contact">
+        <div class="contact1">
+            <img src="../Images/map.jpg" alt="">
+        </div>
+        <form action="" class="contact2">
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="email" name="" id="" placeholder="Email">
+            <textarea name="" id="" placeholder="Message"></textarea>
+            <button>Send Message</button>
+        </form>
+    </div>
+    <br><br>
+    <hr>
+</body>
+</html>

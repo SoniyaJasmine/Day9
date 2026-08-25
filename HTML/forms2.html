@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dropdown</h1>
+    <form action="" >
+        <label for="">Your Destination:</label><br><br>
+        <select name="" id="country" onchange="showCountry()">
+            <option value="">Select a Country</option>
+            <option value="maldives">Maldives</option>
+            <option value="thailand">Thailand</option>
+            <option value="singapore">Singapore</option>
+            <option value="malasiya">Malasiya</option>
+            <option value="bali">Bali</option>
+            <option value="london">London</option>
+        </select>
+    </form>
+    <p id="message"></p>
+    <script>
+        function showCountry() {
+            var country = document.getElementById("country").value;
+
+            if(country != ""){
+            document.getElementById("message").innerHTML = 
+            "You selected " + country + "!";
+            }
+            else{
+                document.getElementById("message").innerHTML = "";
+            }
+        }
+    </script>
+    <hr>
+
+    <h1>Textarea</h1>
+    <form action="">
+        <label for="">Enter your Comment:</label><br>
+        <textarea name="" id="" rows="5" cols="20" maxlength="100"></textarea>
+        <p>Maximum characters 100.</p>
+    </form>
+    <hr>
+
+    <h1>Datalist</h1>
+    <form action="">
+        <label for="">Select the Browsers:</label><br>
+        <input type="text" name="" id="" list="browser">
+        <datalist id="browser">
+            <option value="Google">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Opera">
+        </datalist><br><br>
+    </form>
+    <hr>
+
+    <h1>Profile Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="">Name</label><br>
+            <input type="text" name="" id=""><br><br>
+            <label for="">Email</label><br>
+            <input type="email" name="" id=""><br><br>
+            <label for="">DOB</label><br>
+            <input type="date" name="" id=""><br><br>
+            <label for="">Address</label><br>
+            <textarea name="" id=""></textarea><br><br>
+            
+        </fieldset>
+    </form>
+    <hr>
+
+    <h1>Delivery Form</h1>
+    <form action="">
+        <label for="">Name</label><br>
+        <input type="text" name="" id=""><br><br>
+        <label for="">Email</label><br>
+        <input type="email" name="" id=""><br><br>
+        <label for="">Delivery Date/Time</label><br>
+        <input type="date" name="" id=""><br><br>
+        <label for="">Payment Method</label><br>
+        <select name="" id="">
+            <option value="">--Select--</option>
+            <option value="">Debit Card</option>
+            <option value="">Credit Card</option>
+            <option value="">Cash on Delivery</option>
+            <option value="">UPI</option>
+            <option value="">Net Banking</option>
+        </select><br><br>
+        <label for="">Phone Number</label><br>
+        <input type="number" name="" id=""><br><br>
+        <label for="">Delivery Address</label><br>
+        <textarea name="" id=""></textarea><br><br>
+        <label for="">Special Instructions</label><br>
+        <textarea name="" id=""></textarea><br><br>
+        <button>Place Order</button>
+    </form>
+    <hr>
+</body>
+</html>

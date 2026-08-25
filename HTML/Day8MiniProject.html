@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+
+
+        .card{
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            height: 350px;
+            border: 1px solid rgb(216, 215, 215);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .card img{
+            width:100px ;
+            height: 100px;
+        }
+        .card h5{
+            padding-bottom: 10px;
+            color: gray;
+        }
+        .card p{
+            font-size: 14px;
+        }
+
+
+
+        .feature{
+            margin: 20px;
+            padding: 20px;
+            width: 100%;
+            border: 1px solid rgb(241, 241, 241);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .feature1{
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .feature1 section{
+            border: 1px solid rgb(216, 215, 215);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+            padding: 10px;
+        }
+        .feature1 img{
+            width: 50px;
+            height: 50px;
+        }
+
+
+
+        .responsivecard{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .responsivecard1{
+            flex-basis: 250px;
+            border: 1px solid rgb(211, 210, 210);
+            border-radius: 10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 20px;
+        }
+        .responsivecard img{
+            width: 100px;
+            border-radius: 5px;
+        }
+        .responsivecard1 h2{
+            margin-bottom: 15px;
+        }
+        .responsivecard1 p{
+            margin: 10px 0;
+        }
+        .responsivecard1 button{
+            padding: 10px 20px;
+            border: none;
+            background-color: royalblue;
+            color: white;
+            border-radius: 5px;
+        }
+        .special{
+            align-self: center;
+        }
+
+
+
+        .header{
+            margin: 20px;
+            padding: 20px;
+        }
+        .header h1{
+            width: 1100px;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        .responsiveproduct{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .responsiveproduct1{
+            width: 350px;
+            height: 350px;
+            padding: 5px;
+            border: 1px solid none;
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .responsiveproduct1 img{
+            width: 200px;
+        }
+        .responsiveproduct1 p{
+            color: gray;
+        }
+        .responsiveproduct1 h3{
+            color: red;
+        }
+
+
+
+        .flexbar{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background: linear-gradient(to right, rgb(252, 120, 120), rgb(247, 169, 169));
+        }
+        .flexbar img{
+            width: 30px;
+            height: 30px;
+        }
+        .bar{
+            display: flex;
+        }
+        .bar a{
+            padding: 15px;
+            text-decoration: none;
+        }
+        .flexbar button{
+            background: transparent;
+            border: none;
+            color: blue;
+            padding: 5px;
+            
+        }
+
+
+
+        .pricing{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            width: 60%;
+
+            .box{
+                width: 200px;
+                padding: 20px;
+                border: 1px solid rgb(214, 214, 214);
+                border-radius: 10px;
+                text-align: center;
+                transition: transform 0.3s;
+            }
+            .box:hover{
+                transform: scale(1.1);
+            }
+            .box1{
+                flex-grow: 1;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+                background: radial-gradient(circle, rgb(252, 147, 109), rgb(247, 206, 191));
+            }
+        }
+
+
+        .contact{
+            margin: 20px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid gray;
+            border-radius: 10px;
+
+            .contact1{
+                background-color: white;
+                border-top-left-radius: 10px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .contact2{
+                padding: 20px;
+                background-color: dodgerblue;
+                border-top-right-radius: 10px;
+            }
+            .contact2 span{
+                font-weight: bold;
+            }
+
+        }
+
+
+        .newsletter{
+            margin: 20px;
+            padding: 20px;
+            max-width: 600px;
+            display: flex;
+            text-align: center;
+            background: radial-gradient(circle, rgb(250, 73, 109), rgb(247, 179, 192));
+        }
+
+    </style>
+</head>
+<body>
+    <h1>1. Card Layout</h1>
+    <div class="card">
+        <img src="../Images/user.jpeg" alt="">
+        <h3>Soniya G</h3>
+        <h5>Python Developer</h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora saepe quod provident eius iure veniam accusantium, animi neque aliquam est perferendis excepturi perspiciatis quo voluptatum dolor! Vero veritatis totam hic.</p>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>2. Feature Section</h1>
+    <div class="feature"> 
+        <h2>Our Features</h2>
+        <div class="feature1">
+            <section>
+                <img src="../Images/fast perfomance.webp" alt="">
+                <h4>Fast Performance</h4>
+                <p>Experience lightning-fast load times.</p>
+            </section>
+            <section>
+                <img src="../Images/secure.png" alt="">
+                <h4>Secure Platform</h4>
+                <p>Enhanced security to protect your data.</p>
+            </section>
+            <section>
+                <img src="../Images/integration-icon-outline_1076610-59790.avif" alt="">
+                <h4>Easy Integration</h4>
+                <p>Seamless integration with your tools.</p>
+            </section>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>3. Responsive Card Layout</h1>
+    <div class="responsivecard">
+        <section class="responsivecard1">
+            <img src="../Images/user.jpeg" alt="">
+            <h2>Responsive Card</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius voluptate magni porro inventore vero ratione eveniet eos odit ipsa laborum cupiditate quo, at tenetur deserunt sapiente adipisci voluptates natus fugiat!</p>
+            <button>Read More</button>
+        </section>
+        <section class="responsivecard1 special">
+            <img src="../Images/user.jpeg" alt="">
+            <h2>Responsive Card</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius voluptate magni porro inventore vero ratione eveniet eos odit ipsa laborum cupiditate quo, at tenetur deserunt sapiente adipisci voluptates natus fugiat!</p>
+            <button>Read More</button>
+        </section>
+        <section class="responsivecard1">
+            <img src="../Images/user.jpeg" alt="">
+            <h2>Responsive Card</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius voluptate magni porro inventore vero ratione eveniet eos odit ipsa laborum cupiditate quo, at tenetur deserunt sapiente adipisci voluptates natus fugiat!</p>
+            <button>Read More</button>
+        </section>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>4. Responsive Product</h1>
+    <div class="header">
+        <h1>Our Products</h1>
+        <div class="responsiveproduct">
+            <section class="responsiveproduct1" style="flex-grow: 0.2;">
+                <img src="../Images/headphone.jpg" alt="Featured Product">
+                <h2>Featured Headphones</h2>
+                <p>High-quality sound with noise cancellation.</p>
+                <h3>$199</h3>
+            </section>
+            <section class="responsiveproduct1">
+                <img src="../Images/earbud.jpeg" alt="Product 1">
+                <h2>Wireless Earbuds</h2>
+                <p>Compact and powerful sound.</p>
+                <h3>$799</h3>
+            </section>
+            <section class="responsiveproduct1">
+                <img src="../Images/smartwatch.jpg" alt="Product 2">
+                <h2>Smart Watch</h2>
+                <p>Track fitness and notifications.</p>
+                <h3>$1999</h3>
+            </section>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>5. Pricing Table Layout</h1>
+    <div class="pricing">
+        <div class="box">
+            <header>BASIC</header>
+            <h3>$5 / mo</h3>
+            <p>2 team members</p>
+            <p>2GB Storage</p>
+            <p>1000 request per day</p>
+            <p>20000 users</p>
+            <button>Buy now</button>
+        </div>
+        <div class="box box1">
+            <header>PRO</header>
+            <h3>$10 / mo</h3>
+            <p>5 team members</p>
+            <p>5GB Storage</p>
+            <p>2000 request per day</p>
+            <p>40000 users</p>
+            <button>Buy now</button>
+        </div>
+        <div class="box">
+            <header>PREMIUM</header>
+            <h3>$20 / mo</h3>
+            <p>unlimited team members</p>
+            <p>10GB Storage</p>
+            <p>5000 request per day</p>
+            <p>Unlimited users</p>
+            <button>Buy now</button>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>6.Flexbox Navigation Bar</h1>
+    <div class="flexbar">
+        <img src="../Images/logo.jpeg" alt="">
+        <nav class="bar">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+        </nav>
+        <button>Sign in</button>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>7. Flexbox Contact Section</h1>
+    <div class="contact">
+        <form action="" class="contact1">
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="email" name="" id="" placeholder="Email">
+            <textarea name="" id=""></textarea>
+            <button>Send Message</button>
+        </form>
+        <div class="contact2">
+            <p><span>Address:</span> 5/180 A, Bharathi Street, East Sivanthipuram, Tirunelveli</p>
+            <p><span>Phone:</span> +91 7018570879</p>
+            <p><span>Email:</span> dkkj@gmail.com</p>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>8. Newsletter Signup Banner</h1>
+    <div class="newsletter">
+        <div class="overlay">
+            <header class="overlayhead">
+                <h2>Signup to our Newsletter</h2>
+            </header>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos neque rem asperiores. Unde quasi ullam dicta tempore labore quibusdam voluptas aliquam saepe, corrupti laudantium placeat incidunt quia error asperiores in.</p>
+            </section>
+            <div class="footer">
+                <input type="email" name="" id="" placeholder="Enter a valid email address">
+                <button>submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+<form id="regForm">
+
+<!-- Step 1 -->
+<div class="step active">
+<h2>Step 1</h2>
+
+<label>Email</label>
+<input type="email" id="email" placeholder="Enter Email">
+
+<p class="error" id="emailError"></p>
+
+<button type="button" onclick="nextStep1()">Next</button>
+</div>
+
+<!-- Step 2 -->
+<div class="step">
+<h2>Step 2</h2>
+
+<label>Password</label>
+<input type="password" id="password" placeholder="Enter Password">
+
+<p class="error" id="passwordError"></p>
+
+<button type="button" onclick="prevStep(0)">Previous</button>
+<button type="button" onclick="nextStep2()">Next</button>
+
+</div>
+
+<!-- Step 3 -->
+<div class="step">
+<h2>Step 3</h2>
+
+<label>Full Name</label>
+<input type="text" id="name" placeholder="Enter Name"><br><br>
+
+<label>Age</label>
+<input type="number" id="age" placeholder="Enter Age">
+
+<p class="error" id="profileError"></p>
+
+<button type="button" onclick="prevStep(1)">Previous</button>
+<button type="submit">Register</button>
+
+</div>
+
+</form>
+
+</div>
+
+<script>
+
+let steps=document.querySelectorAll(".step");
+
+function showStep(index){
+steps.forEach(function(step){
+step.classList.remove("active");
+});
+steps[index].classList.add("active");
+}
+
+// Step 1 Validation
+function nextStep1(){
+
+let email=document.getElementById("email").value;
+
+if(email==""){
+document.getElementById("emailError").innerHTML="Please enter your email.";
+}
+else{
+document.getElementById("emailError").innerHTML="";
+showStep(1);
+}
+
+}
+
+// Step 2 Validation
+function nextStep2(){
+
+let password=document.getElementById("password").value;
+
+if(password.length<6){
+document.getElementById("passwordError").innerHTML="Password must be at least 6 characters.";
+}
+else{
+document.getElementById("passwordError").innerHTML="";
+showStep(2);
+}
+
+}
+
+// Previous Button
+function prevStep(index){
+showStep(index);
+}
+
+// Final Validation
+document.getElementById("regForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let name=document.getElementById("name").value;
+let age=document.getElementById("age").value;
+
+if(name=="" || age==""){
+document.getElementById("profileError").innerHTML="Please fill all profile details.";
+}
+else{
+document.getElementById("profileError").innerHTML="";
+alert("Registration Successful!");
+this.reset();
+showStep(0);
+}
+
+});
+
+</script>
+<hr>
+
+<div class="container">
+
+    <h2>Login Form</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <p id="errorMsg" class="error"></p>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+</div>
+
+<script>
+function validateForm() {
+
+    var password = document.getElementById("password").value;
+    var error = document.getElementById("errorMsg");
+
+    if (password.length < 6) {
+        error.innerHTML = "Password must be at least 6 characters long.";
+        return false;
+    }
+
+    error.innerHTML = "";
+    alert("Login Successful!");
+    return true;
+}
+</script>
+<hr>
+
+<div class="container">
+
+    <h2>Subscription Form</h2>
+
+    <form>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required> <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </div><br>
+
+        <!-- Favorite Color -->
+        <label for="color">Favorite Color:</label>
+        <select id="color" name="color" required>
+            <option value="">-- Select a Color --</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Black">Black</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Subscribe</button>
+
+    </form>
+
+</div>
+<hr>
+
+<div class="container">
+    <h2>Volume Control</h2>
+
+    <label for="slider">Volume:</label>
+    <input type="range" id="slider" min="0" max="100" value="50">
+
+    <span id="value">50</span>
+</div>
+
+<script>
+    var slider = document.getElementById("slider");
+    var output = document.getElementById("value");
+
+    // Display initial value
+    output.innerHTML = slider.value;
+
+    // Update value when slider moves
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    };
+</script>
+<hr>
+
+<div class="container">
+
+    <h2>Color Picker</h2>
+
+    <label for="colorPicker">Choose a Color:</label>
+    <br><br>
+
+    <input type="color" id="colorPicker" value="#000000">
+
+    <div id="preview"></div>
+
+    <p>Selected Color: <span id="colorCode">#000000</span></p>
+
+</div>
+
+<script>
+    var colorPicker = document.getElementById("colorPicker");
+    var preview = document.getElementById("preview");
+    var colorCode = document.getElementById("colorCode");
+
+    // Update preview when a color is selected
+    colorPicker.addEventListener("input", function () {
+        preview.style.backgroundColor = this.value;
+        colorCode.textContent = this.value;
+    });
+</script>
+<hr>
+
+<div class="container">
+
+    <h2>Select a Future Date</h2>
+
+    <form>
+        <label for="date">Choose Date:</label>
+        <br><br>
+
+        <input type="date" id="date" required>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
+
+<script>
+    // Get today's date
+    var today = new Date().toISOString().split("T")[0];
+
+    // Set the minimum selectable date to today
+    document.getElementById("date").setAttribute("min", today);
+</script>
+<hr>
+
+<div class="container">
+
+    <h2>Course Search</h2>
+
+    <label for="course">Search Course:</label>
+    <br><br>
+
+    <input
+        type="text"
+        id="course"
+        list="courses"
+        placeholder="Type HTML, CSS, JS..."
+        autocomplete="on">
+
+    <!-- Predefined Options -->
+    <datalist id="courses">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+        <option value="Bootstrap">
+        <option value="React">
+        <option value="Node.js">
+        <option value="Python">
+        <option value="Java">
+    </datalist>
+
+</div>
+<hr>
+
+<div class="container">
+
+    <h2>Order Form</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Shipping Address</legend>
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="address">Street Address:</label><br>
+            <textarea id="address" name="address" rows="3" required></textarea><br><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="state">State:</label><br>
+            <input type="text" id="state" name="state" required><br><br>
+
+            <label for="zip">ZIP Code:</label><br>
+            <input type="text"
+                   id="zip"
+                   name="zip"
+                   pattern="[0-9]{6}"
+                   placeholder="Enter 6-digit ZIP Code"
+                   required>
+
+        </fieldset><br>
+
+        <button type="submit">Submit</button>
+    
+
+    </form>
+
+</div>
+<hr>
+
+<div class="container">
+
+    <h2>Feedback Form</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" rows="4" required></textarea><br><br>
+
+        <div class="checkbox">
+            <input type="checkbox" id="agree">
+            <label for="agree" style="display:inline;">
+                I agree
+            </label>
+        </div>
+
+        <p id="error"></p>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+<script>
+function validateForm() {
+
+    var agree = document.getElementById("agree");
+    var error = document.getElementById("error");
+
+    if (!agree.checked) {
+        error.innerHTML = "Please agree before submitting the form.";
+        return false;
+    }
+
+    error.innerHTML = "";
+    alert("Feedback submitted successfully!");
+    return true;
+}
+</script>
+<hr>
+
+<div class="container">
+
+    <h2>Donation Form</h2>
+
+    <form>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="amount">Donation Amount:</label>
+        <select id="amount" onchange="showOptions()" required>
+            <option value="">-- Select Amount --</option>
+            <option value="100">₹100</option>
+            <option value="500">₹500</option>
+            <option value="1000">₹1000</option>
+            <option value="2000">₹2000</option>
+        </select><br><br>
+
+        <!-- Hidden Section -->
+        <div id="extraOptions">
+
+            <label>
+                <input type="checkbox" id="certificate" style="width:auto;">
+                Receive Donation Certificate
+            </label><br>
+
+            <label>
+                <input type="checkbox" id="newsletter" style="width:auto;">
+                Subscribe to Newsletter
+            </label><br><br>
+
+        </div>
+
+        <button type="submit">Donate</button>
+
+    </form>
+
+</div>
+
+<script>
+function showOptions() {
+
+    var amount = document.getElementById("amount").value;
+    var extraOptions = document.getElementById("extraOptions");
+
+    if (amount >= 1000) {
+        extraOptions.style.display = "block";
+    } else {
+        extraOptions.style.display = "none";
+    }
+}
+</script>
+
+
+</body>
+</html>

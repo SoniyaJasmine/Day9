@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pattern Attributes</h1>
+    <form action="">
+        <label for="">Username:</label><br>
+        <input type="text" name="" id="" pattern="[A-Za-z]{20}"
+            title="Username must contain only 3 letters"><br><br>
+        <label for="">Password:</label><br>
+        <input type="password" name="" id="" pattern="(?=.[A-Z])(?=.[a-z])(?=.[0-9]).{8,}"
+            title="Password must contain 8 characters includes one uppercase, one lowercase, and one number"><br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <hr>
+
+    <h1>Login Form</h1>
+    <form action="">
+        <label for="">Email:</label><br>
+        <input type="email" name="" id="" required><br><br>
+        <label for="">Password:</label><br>
+        <input type="password" name="" id="" required minlength="8"><br><br>
+        <button>Log in</button>
+    </form>
+    <hr>
+
+    <h1>Survery Form</h1>
+    <form action="">
+        <label for="">User ID:</label>
+        <input type="text" name="" id="" readonly value="132"><br><br>
+        <label for="">User Name:</label>
+        <input type="text" name="" id=""><br><br>
+        <label for="">Email:</label>
+        <input type="email" name="" id=""><br><br>
+        <label for="">Would you recomment our company to your Friends?</label><br>
+        <input type="radio" name="" id="">
+        <label for="">Yes</label>
+        <input type="radio" name="" id="" disabled>
+        <label for="">No</label><br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <hr>
+
+    <h1>Quiz Form</h1>
+    <form action="">
+        <label for="">1. Which is the Markup Language?</label><br>
+        <input type="text" name="" id="" autofocus placeholder="HTML"><br><br>
+        <label for="">2. Which tag is used for Bold?</label><br>
+        <input type="text" name="" id="" placeholder="strong"><br><br>
+        <label for="">3. How will you embed the you tube video in HTML code?</label><br>
+        <input type="text" name="" id="" placeholder="iframe"><br><br>
+        <input type="submit" name="" id=""><br><br>
+    </form>
+    <hr>
+
+    <h1>User Settings Form</h1>
+    <form action="">
+        <label for="">Email:</label><br>
+        <input type="email" name="" id=""><br><br>
+        <label for="">Experience:</label><br>
+        <input type="number" name="" id="" min="1" max="10"><br><br>
+        <label for="">Pincode:</label><br>
+        <input type="text" name="" id="" pattern="[0-9]{6}"><br><br>
+    </form>
+    <hr>
+
+</body>
+</html>

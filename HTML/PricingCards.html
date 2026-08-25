@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        .container4{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .box{
+            width: 200px;
+            height: 300px;
+            text-align: center;
+            border-radius: 10%;
+            box-shadow: 10px 5px 5px 2px rgb(223, 221, 221);
+            background-color: rgb(226, 217, 206);
+        }
+        .basic{
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            background: linear-gradient(to right, rgb(80, 80, 163), rgb(76, 206, 76)) ;
+        }
+        .standard{
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            background: linear-gradient(to right, purple, rgb(219, 38, 219));
+        }
+        .premium{
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            background: linear-gradient(to right, yellow, orange);
+        }
+        #basic{
+            width: 80px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 15px;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            background: linear-gradient(to right, rgb(80, 80, 163), rgb(76, 206, 76)) ;
+        }
+        #standard{
+            width: 80px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 15px;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            background: linear-gradient(to right, purple, rgb(219, 38, 219));
+        }
+        #premium{
+            width: 80px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 15px;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            background: linear-gradient(to right, yellow, orange);
+        }
+        /* @media(max-width: 768px){
+            .container{
+                flex-direction: column;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <h1>7</h1>
+    <h3>Pricing Cards</h3>
+    <div class="container">
+        <div class="box">
+            <header class="basic">BASIC</header>
+            <h3>$5 / mo</h3>
+            <p>2 team members</p>
+            <p>2GB Storage</p>
+            <p>1000 request per day</p>
+            <p>20000 users</p>
+            <button id="basic">Order now</button>
+        </div>
+        <div class="box">
+            <header class="standard">STANDARD</header>
+            <h3>$10 / mo</h3>
+            <p>5 team members</p>
+            <p>5GB Storage</p>
+            <p>2000 request per day</p>
+            <p>40000 users</p>
+            <button id="standard">Order now</button>
+        </div>
+        <div class="box">
+            <header class="premium">PREMIUM</header>
+            <h3>$20 / mo</h3>
+            <p>unlimited team members</p>
+            <p>10GB Storage</p>
+            <p>5000 request per day</p>
+            <p>Unlimited users</p>
+            <button id="premium">Order now</button>
+        </div>
+    </div>
+</body>
+</html>

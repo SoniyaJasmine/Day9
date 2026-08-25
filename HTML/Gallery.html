@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        body{
+            background: #f4f4f4;
+            padding: 30px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .image{
+            border-radius: 10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+        }
+        .image img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            /* transition: 0.4s; */
+        }
+        .image:hover img{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>8 Gallery</h1>
+    <div class="gallery">
+        <div class="image">
+            <img src="../Images/Horse1.jpeg" alt="Horses">
+        </div>
+        <div class="image">
+            <img src="../Images/bird1.jpeg" alt="birds">
+        </div>
+        <div class="image">
+            <img src="../Images/cat1.jpg" alt="Cat">
+        </div>
+        <div class="image">
+            <img src="../Images/funny cat.jpg" alt="Cat1">
+        </div>
+        <div class="image">
+            <img src="../Images/funny-cat.webp" alt="Cat2">
+        </div>
+        <div class="image">
+            <img src="../Images/Chocolate-Cupcakes-13.jpg" alt="Cupcake">
+        </div>
+    </div>
+</body>
+</html>

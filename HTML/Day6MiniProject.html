@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .simplecard{
+            width: 300px;
+            height: 300px;
+            border: 2px solid #ccc;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: beige;
+        }
+        .simplecard img{
+            width: 100px;
+            height: 100px;
+        }
+        .simplecard p{
+            padding-bottom: 20px;
+        }
+
+
+
+
+        .landing{
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .landing header{
+            background-color: orangered;
+            padding: 20px;
+        }
+        .landing header h2{
+            color: white;
+        }
+        .landing header p{
+            color: gray;
+            font-size: 12px;
+        }
+        .landing section{
+            box-shadow: 2px 2px 4px gray;
+            border-radius: 5px;
+            padding: 30px;
+            margin: 10px;
+            line-height: 1.5;
+        }
+        .landing img{
+            width: 60px;
+            height: 60px;
+        }
+        .landing section p{
+            color: gray;
+            font-size: 14px;
+        }
+        .landing footer{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+
+
+        .servicespage{
+            margin: 20px;
+            padding: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .servicespage header{
+            background: linear-gradient(to right, rgb(70, 173, 70), rgb(147, 250, 147));
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .page{
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .services{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            gap: 20px;
+
+        }
+        .services1{
+            background-color: rgb(236, 235, 235);
+            border-radius: 5px;
+            border: 1px solid rgb(218, 217, 217);
+            box-shadow: 3px 3px 6px gray;
+            padding: 10px;
+            line-height: 2;
+        }
+        .services1 p{
+            font-size: 12px;
+            color: gray;
+        }
+        .services img{
+            width: 30px;
+            height: 30px;
+        }
+        .servicespage footer{
+            background-color: black;
+            color: rgb(173, 173, 173);
+            text-shadow: 3px 3px 6px gray;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .blog{
+            margin: 20px;
+            padding: 20px;
+            width: 500px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            header{
+                text-align: center;
+                padding: 10px;
+            }
+            h4+p{
+                color: gray;
+            }
+            section{
+                padding: 20px;
+                border: 1px solid rgb(214, 213, 213);
+                border-radius: 10px;
+            }
+            section img{
+                /* display: block; */
+                margin: 20px auto;
+                width: 300px;
+                text-align: center;
+            }
+        }
+
+
+        .testimonial{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            width: 800px;
+            text-align: center;
+
+            img{
+                width: 100px;
+                padding: 10px;
+            }
+            .testimonial1{
+                border: 1px solid gainsboro;
+                border-radius: 10px;
+                margin: 10px;
+                padding: 10px;
+                background-color: beige;
+            }
+        }
+
+
+        .team{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 30px;
+            text-align: center;
+
+            .team1{
+                padding: 20px;
+                width: 300px;
+                background-color: azure;
+                border: 1px solid gainsboro;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            .team1 img{
+                width: 100px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .team1 h2+p{
+                color: gray;
+                padding-bottom: 10px;
+            }
+        }
+
+
+
+        .about{
+            margin: 20px;
+            /* padding: 20px; */
+            width: 600px;
+            border: 1px solid gainsboro;
+
+            header{
+                padding: 20px;
+                background:linear-gradient(to bottom, lightblue, rgb(188, 138, 235));
+                text-align: center;
+            }
+
+            section{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 20px;
+            }
+
+            section img{
+                padding: 10px;
+                width: 100px;
+                display:block;
+                margin: 0 auto;
+            }
+            section h6{
+                color: gray;
+                font-size: 14px;
+            }
+            footer{
+                padding: 20px;
+                text-align: center;
+                background-color: aliceblue;
+            }
+            footer button{
+                padding: 5px 10px;
+                border-radius: 5px;
+                background-color: rgb(178, 131, 223);
+            }
+        }
+        
+
+        .feature{
+            margin: 20px;
+            padding: 20px;
+
+            table{
+                width: 800px;
+                border-collapse: collapse;
+                background-color: #fff8f8;
+            }
+
+            th, td{
+                border: 1px solid gainsboro;
+                padding: 10px;
+                text-align: center;
+            }
+
+            thead img{
+                width: 100px;
+                margin-bottom: 10px;
+            }
+            tbody th, .th{
+                background-color: #4b6cb7;
+                color: wheat;
+            }
+            tr:hover{
+                background-color: #f2f2f2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>1.Simple Card Layout</h1>
+    <div class="simplecard">
+        <img src="../Images/user.jpeg" alt="">
+        <h3>Soniya G</h3>
+        <p>Python Developer</p>
+        <address>
+            5/180 A, Bharathi street,<br>
+            East Sivanthipuram,<br>
+            Tirunelveli.
+        </address>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>2.Landing Page Section</h1>
+    <div class="landing">
+        <header>
+            <h2>Welcome to Our Landing Page</h2>
+            <p>Discover amazing features and services</p>
+        </header>
+        <section>
+            <img src="../Images/vetri_new_logo.jpg" alt="">
+            <h2>Why Choose Us?</h2>
+            <p>We provide high-quality services to help you grow your business.</p>
+        </section>
+        <footer>
+            <p>&copy; 2025 Vetri Technology Solutions. All rights reserved.</p>
+        </footer>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>3.Blog Post Layout</h1>
+    <div class="blog">
+        <header>
+            <h2>Yeah! It's Me.</h2>
+        </header>
+        <section>
+            <h4>AI Python Full Stack</h4>
+            <p>August 3, 2025</p>
+            <img src="../Images/AI-powered.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa deleniti libero nisi et ratione iusto! Necessitatibus repudiandae quos eligendi, ut ipsam tenetur aperiam laboriosam labore, eveniet rerum deserunt blanditiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime totam distinctio accusamus ipsum, consequuntur voluptatibus voluptate numquam minima vero soluta, cumque corporis quae fugiat commodi, culpa et mollitia. Nam, facilis?</p>
+        </section>
+        <footer>
+            <p>&copy; All Rights is Reserved.</p>
+        </footer>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>4.Services Page</h1>
+    <div class="servicespage">
+        <header>
+            <h2>Our Services</h2>
+        </header>
+        <div class="page">
+            <h3>What We Offer</h3>
+            <div class="services">
+                <div class="services1">
+                    <img src="../Images/Web-Development-icon-Graphics-40763454-1.jpg" alt="">
+                    <h4>Web Development</h4>
+                    <p>We build modern and responsive websites tailored to your needs.</p>
+                </div>
+                <div class="services1">
+                    <img src="../Images/graphic-designer-and-web-design-studio-tool-logo-free-vector.webp" alt="">
+                    <h4>Graphic design</h4>
+                    <p>Our design team creates stunning graphics to bring your vision to life.</p>
+                </div>
+                <div class="services1">
+                    <img src="../Images/seo-icon-style_822882-2141.avif" alt="">
+                    <h4>SEO Optimization</h4>
+                    <p>Boost your online presence with our expert SEO optimizationservices.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2025 Vetri Technology Solutions. All rights reserved.</p>
+        </footer>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>5. Testimonial Section</h1>
+    <div class="testimonial">
+        <section class="testimonial1">
+            <img src="../Images/earbud.jpeg" alt="Earbud">
+            <h3>Earbud</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam nemo iste pariatur in omnis error reiciendis exercitationem eum provident distinctio voluptate vel a odio non, nihil at suscipit repellendus?</p>
+        </section>
+        <section class="testimonial1">
+            <img src="../Images/headphone.jpg" alt="HeadPhone">
+            <h3>HeadPhone</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam nemo iste pariatur in omnis error reiciendis exercitationem eum provident distinctio voluptate vel a odio non, nihil at suscipit repellendus?</p>
+        </section>
+        <section class="testimonial1">
+            <img src="../Images/smartwatch.jpg" alt="SmartWatch">
+            <h3>SmartWatch</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam nemo iste pariatur in omnis error reiciendis exercitationem eum provident distinctio voluptate vel a odio non, nihil at suscipit repellendus?</p>
+        </section>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>6.Team Members Grid</h1>
+    <div class="team">
+        <section class="team1">
+            <img src="../Images/user.jpeg" alt="">
+            <h2>Sue Shei</h2>
+            <p>UX Design</p>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam voluptatum ipsum laboriosam, fuga numquam voluptatem corporis error, ullam distinctio consequuntur.</p>
+            </article>
+        </section>
+        <section class="team1">
+            <img src="../Images/user.jpeg" alt="">
+            <h2>Gordon</h2>
+            <p>Accountant</p>
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat aliquid, nobis repellat sed asperiores, tenetur aperiam laboriosam vitae porro, nam sint earum. Cupiditate error odit, nostrum non quisquam magni nulla?</p>
+            </article>
+        </section>
+        <section class="team1">
+            <img src="../Images/user.jpeg" alt="">
+            <h2>Elenor</h2>
+            <p>Public Relations</p>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus, repudiandae iure voluptate repellat ipsa explicabo, aliquid illum, distinctio facilis facere vero.</p>
+            </article>
+        </section>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>7. About Us Section</h1>
+    <div class="about">
+        <header>
+            <h2>Vetri Technology Solution</h2>
+        </header>
+        <section>
+            <img src="../Images/vetri_new_logo.jpg" alt="">
+            <h4>Our Mission</h4>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In natus sunt repellat maiores laboriosam velit, quasi voluptates sapiente perferendis numquam facere eaque accusantium dolorum tempora enim eius. Totam, ipsa enim!</p>
+        </section>
+        <footer>
+            <button>Learn More!</button>
+        </footer>
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>8. Feature Comparison Table</h1>
+    <div class="feature">
+        <table class="feature1">
+            <thead>
+                <tr>
+                    <th class="th"></th>
+                    <th>
+                        <img src="../Images/iphoe.avif" alt=""><br>
+                        iPhone 7 Plus
+                    </th>
+                    <th>
+                        <img src="../Images/samsung.jpg" alt=""><br>
+                        Samsung Galaxy J7
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Resolution</th>
+                    <td>1080p</td>
+                    <td>1080p</td>
+                </tr>
+                <tr>
+                    <th>Screen size</th>
+                    <td>5.5 inches</td>
+                    <td>5.5 inches</td>
+                </tr>
+                <tr>
+                    <th>SIM</th>
+                    <td>Nano-SIM</td>
+                    <td>Dual SIM</td>
+                </tr>
+                <tr>
+                    <th>3.5mm jack</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Intenal Memory</th>
+                    <td>32/128/256GB</td>
+                    <td>16/32GB</td>
+                </tr>
+                <tr>
+                    <th>RAM</th>
+                    <td>3GB</td>
+                    <td>3GB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

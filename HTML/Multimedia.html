@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Responsive YouTube Video Tutorial</h2>
+
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/HcOc7P5BMi4"
+            title="YouTube Video Tutorial"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <hr>
+
+    <h1>My HTML Tutorial Blog</h1>
+
+    <p>
+        Welcome to my blog! In this post, you will learn the basics of HTML.
+        Watch the tutorial video below to understand how to create your first web page.
+    </p>
+
+    <figure>
+        <video width="640" height="360" controls>
+            <source src="html-tutorial.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <figcaption>
+            <b>Figure 1:</b> HTML Basics Tutorial – Learn how to create a simple web page using HTML.
+        </figcaption>
+    </figure>
+
+    <h2>What You Will Learn</h2>
+    <ul>
+        <li>HTML document structure</li>
+        <li>Headings and paragraphs</li>
+        <li>Lists and links</li>
+        <li>Images and videos</li>
+    </ul>
+
+    <p>
+        Practice the examples shown in the video to improve your HTML skills.
+    </p>
+    <hr>
+
+    <div class="container">
+
+    <!-- Animated SVG Logo -->
+    <svg width="220" height="220">
+
+        <!-- Circle -->
+        <circle class="circle"
+                cx="110"
+                cy="110"
+                r="80"
+                fill="skyblue"/>
+
+        <!-- Rectangle -->
+        <rect class="rect"
+              x="75"
+              y="75"
+              width="70"
+              height="70"
+              fill="orange"/>
+
+        <!-- Text -->
+        <text class="text"
+              x="110"
+              y="118"
+              text-anchor="middle"
+              font-size="22"
+              fill="white"
+              font-weight="bold">
+            LOGO
+        </text>
+
+    </svg>
+
+    <h1>Welcome to Our Website</h1>
+
+    <p>
+        Discover amazing products and services with a modern experience.
+    </p>
+
+    <button>Get Started</button>
+
+</div>
+<hr>
+
+<h2>Weather Icon Using SVG</h2>
+
+    <svg width="300" height="250">
+
+        <!-- Sun -->
+        <circle cx="70" cy="70" r="30" fill="gold"/>
+
+        <!-- Sun Rays -->
+        <line x1="70" y1="20" x2="70" y2="5" stroke="orange" stroke-width="3"/>
+        <line x1="70" y1="120" x2="70" y2="135" stroke="orange" stroke-width="3"/>
+        <line x1="20" y1="70" x2="5" y2="70" stroke="orange" stroke-width="3"/>
+        <line x1="120" y1="70" x2="135" y2="70" stroke="orange" stroke-width="3"/>
+        <line x1="35" y1="35" x2="20" y2="20" stroke="orange" stroke-width="3"/>
+        <line x1="105" y1="35" x2="120" y2="20" stroke="orange" stroke-width="3"/>
+        <line x1="35" y1="105" x2="20" y2="120" stroke="orange" stroke-width="3"/>
+        <line x1="105" y1="105" x2="120" y2="120" stroke="orange" stroke-width="3"/>
+
+        <!-- Cloud -->
+        <circle cx="150" cy="100" r="25" fill="lightgray"/>
+        <circle cx="180" cy="85" r="30" fill="lightgray"/>
+        <circle cx="215" cy="100" r="25" fill="lightgray"/>
+        <rect x="150" y="100" width="65" height="30" fill="lightgray"/>
+
+        <!-- Raindrops -->
+        <ellipse cx="165" cy="155" rx="5" ry="10" fill="deepskyblue"/>
+        <ellipse cx="185" cy="170" rx="5" ry="10" fill="deepskyblue"/>
+        <ellipse cx="205" cy="155" rx="5" ry="10" fill="deepskyblue"/>
+
+    </svg>
+    <hr>
+
+    <h2>Monthly Website Visitors</h2>
+
+    <canvas id="chart" width="600" height="400" style="border:1px solid black;">
+        Your browser does not support the canvas element.
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById("chart");
+        var ctx = canvas.getContext("2d");
+
+        // Months and visitor data
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
+        var visitors = [120, 180, 150, 250, 200, 300];
+
+        var barWidth = 50;
+        var gap = 30;
+        var x = 50;
+
+        // Draw X and Y axes
+        ctx.beginPath();
+        ctx.moveTo(40, 20);
+        ctx.lineTo(40, 350);
+        ctx.lineTo(550, 350);
+        ctx.stroke();
+
+        // Draw bars
+        for (var i = 0; i < visitors.length; i++) {
+            var barHeight = visitors[i];
+
+            ctx.fillStyle = "steelblue";
+            ctx.fillRect(x, 350 - barHeight, barWidth, barHeight);
+
+            // Month labels
+            ctx.fillStyle = "black";
+            ctx.fillText(months[i], x + 10, 370);
+
+            // Visitor values
+            ctx.fillText(visitors[i], x + 5, 340 - barHeight);
+
+            x += barWidth + gap;
+        }
+    </script>
+    <hr>
+
+    <h2>🎵 Soundboard</h2>
+
+    <!-- Audio Files -->
+    <audio id="audio1">
+        <source src="sound1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="audio2">
+        <source src="sound2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="audio3">
+        <source src="sound3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Buttons -->
+    <button onclick="playSound('audio1')">Play Sound 1</button>
+    <button onclick="playSound('audio2')">Play Sound 2</button>
+    <button onclick="playSound('audio3')">Play Sound 3</button>
+
+    <script>
+        function playSound(audioId) {
+            // Stop all sounds before playing a new one
+            var sounds = document.getElementsByTagName("audio");
+
+            for (var i = 0; i < sounds.length; i++) {
+                sounds[i].pause();
+                sounds[i].currentTime = 0;
+            }
+
+            // Play selected sound
+            document.getElementById(audioId).play();
+        }
+    </script>
+    <hr>
+
+    <div class="card">
+
+    <img src="album-cover.jpg" alt="Album Cover">
+
+    <h2>Dream Beats</h2>
+
+    <p>Artist: Music Band</p>
+
+    <h3>Song List</h3>
+
+    <ol>
+        <li>
+            Sunrise Melody
+            <br>
+            <audio controls>
+                <source src="song1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </li>
+
+        <li>
+            Ocean Waves
+            <br>
+            <audio controls>
+                <source src="song2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </li>
+
+        <li>
+            Night Sky
+            <br>
+            <audio controls>
+                <source src="song3.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </li>
+    </ol>
+
+</div>
+<hr>
+
+<div class="banner">
+
+<svg width="700" height="220">
+
+    <!-- Sun -->
+    <circle class="sun"
+            cx="100"
+            cy="70"
+            r="35"
+            fill="gold"/>
+
+    <!-- Cloud -->
+    <g class="cloud">
+        <circle cx="320" cy="70" r="22" fill="white"/>
+        <circle cx="345" cy="55" r="28" fill="white"/>
+        <circle cx="375" cy="70" r="22" fill="white"/>
+        <rect x="320" y="70"
+              width="55"
+              height="22"
+              fill="white"/>
+    </g>
+
+    <!-- Banner Text -->
+    <text class="banner-text"
+          x="180"
+          y="170"
+          font-size="34"
+          font-family="Arial"
+          fill="darkblue"
+          font-weight="bold">
+          Welcome to Our Website
+    </text>
+
+</svg>
+
+</div>
+<hr>
+
+<h2>Online Signature Pad</h2>
+
+    <canvas id="signaturePad" width="600" height="300"></canvas>
+
+    <br>
+
+    <button onclick="clearCanvas()">Clear Signature</button>
+
+    <script>
+        const canvas = document.getElementById("signaturePad");
+        const ctx = canvas.getContext("2d");
+
+        let drawing = false;
+
+        // Start drawing
+        canvas.addEventListener("mousedown", function(e) {
+            drawing = true;
+            ctx.beginPath();
+            ctx.moveTo(e.offsetX, e.offsetY);
+        });
+
+        // Draw
+        canvas.addEventListener("mousemove", function(e) {
+            if (!drawing) return;
+
+            ctx.lineTo(e.offsetX, e.offsetY);
+            ctx.strokeStyle = "black";
+            ctx.lineWidth = 2;
+            ctx.lineCap = "round";
+            ctx.stroke();
+        });
+
+        // Stop drawing
+        canvas.addEventListener("mouseup", function() {
+            drawing = false;
+        });
+
+        canvas.addEventListener("mouseleave", function() {
+            drawing = false;
+        });
+
+        // Clear canvas
+        function clearCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    </script>
+    <hr>
+
+    
+</body>
+</html>

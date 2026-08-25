@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .box{
+            margin: 5px;
+            padding: 5px;
+            width: 30px;
+            /* height: 30px; */
+            background-color: aqua;
+            gap: 10px;
+            font-size: 12px;
+        }
+        .container{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+        }
+        .container1{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+        }
+        .container1 .box{
+            width: 200px;
+        }
+        .container2{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+        }
+         .container3{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+        }
+         .container4{
+            border: 1px solid gray;
+            width: 300px;
+            height: 100px;
+            display: flex;
+        }
+        .container5{
+            border: 1px solid gray;
+            width: 300px;
+            height: 200px;
+            display: flex;
+
+            .box{
+                width: 100px;
+                height: 150px;
+            }
+        }
+        .container6{
+            display: flex;
+            flex-direction: column;
+        }
+        .box1{
+            margin: 5px;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(25, 31, 31);
+            gap: 10px;
+            font-size: 12px;
+            color: white;
+        }
+        .navi{
+            display: flex;
+            width: 400px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid crimson;
+        }
+        .navi a{
+            text-decoration: none;
+            padding: 5px;
+        }
+        .container7{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+        }
+        .container8{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+        }
+        .container9{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        .container10{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .image{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .image img{
+            width: 200px;
+            height: 200px;
+        }
+        .container11{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            width: 50%;
+            min-height: 40vh;
+        }
+        .container11 .sidebar{
+            height: 200px;
+            flex-basis: 250px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+        .container11 .content{
+            height: 200px;
+            flex-grow: 1;
+            background-color: #ccc9c9;
+            padding: 20px;
+        }
+        .container12{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .container13{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .container14{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+            align-items: baseline;
+
+            .box{
+                width: 70px;
+            }
+        }
+        .container15{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .container16{
+            border: 1px solid gray;
+            width: 300px;
+            height: 50px;
+            display: flex;
+            align-items: stretch;
+        }
+        .container17{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        .container18{
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+            gap: 20px;
+        }
+        .container19{
+            border: 1px solid gray;
+            width: 100px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .container20{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+
+            img{
+                width: 30px;
+            }
+        }
+        .container21{
+            margin: 20px;
+            padding: 20px;
+            width: 60%;
+            height: 40vh;
+            display: flex;
+
+            .sidebar1{
+                flex-basis: 250px;
+                background-color: #2c3e50;
+                color: white;
+                padding: 20px;
+            }
+            .sidebar1 li{
+                list-style: none;
+                padding-bottom: 15px;
+            }
+            .main{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .main1{
+                background-color: #3498db;
+                color: white;
+                flex-grow: 1;
+            }
+            .main2{
+                background-color: #ccc9c9;
+            }
+
+        }
+
+
+        .container22{
+            min-height: 100vh;
+            width: 50%
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid gray;
+            margin: 20px;
+            padding: 20px;
+            gap: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="flex-grow: 1;">Box1</div>
+        <div class="box" style="flex-grow: 0;">Box2</div>
+        <div class="box" style="flex-grow: 2;">Box3</div>
+    </div>
+    <br>
+    <div class="container1">
+        <div class="box" style="flex-shrink: 1;">Box1</div>
+        <div class="box" style="flex-shrink: 0;">Box2</div>
+        <div class="box" style="flex-shrink: 2;">Box3</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="box" style="flex-basis: 200px;">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container3">
+        <div class="box" style="order: 1;">Box1</div>
+        <div class="box" style="order: 0;">Box2</div>
+        <div class="box" style="order: 2;">Box3</div>
+    </div>
+    <br>
+    <div class="container4">
+        <div class="box" style="align-self: center;">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container5">
+        <div class="box">Box1
+            <div class="container6">
+                <div class="box1">Box1</div>
+                <div class="box1">Box2</div>
+                <div class="box1">Box3</div>
+            </div>
+        </div>
+        <div class="box">Box2
+            <div class="container6">
+                <div class="box1">Box1</div>
+                <div class="box1">Box2</div>
+                <div class="box1">Box3</div>
+            </div>
+        </div>
+        <div class="box">Box3
+            <div class="container6">
+                <div class="box1">Box1</div>
+                <div class="box1">Box2</div>
+                <div class="box1">Box3</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <nav class="navi">
+        <a href="" style="flex-grow: 1;">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </nav>
+    <br>
+    <div class="container7">
+        <div class="box">Box1</div>
+        <div class="box" style="flex-grow: 2;">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container8">
+        <div class="box">Box1</div>
+        <div class="box" style="flex-basis: 50px;">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container9">
+        <div class="box">Box1</div>
+        <div class="box" style="align-self: flex-end;">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container10">
+        <div class="box">Box1</div>
+        <div class="box" style="flex: 1 1 50px;">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="card">
+        <img src="../Images/user.jpeg" alt="">
+        <section>
+            <h2>Soniya G</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+        <footer>
+            <button>learn more</button>
+        </footer>
+    </div>
+    <br>
+    <div class="image">
+        <img src="../Images/camera.webp" alt="">
+        <img src="../Images/Chocolate-Cupcakes-13.jpg" alt="">
+        <img src="../Images/earbud.jpeg" alt="">
+        <img src="../Images/headphone.jpg" alt="">
+        <img src="../Images/Horse1.jpeg" alt="">
+        <img src="../Images/scenery.jpeg" alt="">
+        <img src="../Images/bird1.jpeg" alt="">
+        <img src="../Images/funny cat.jpg" alt="">
+    </div>
+    <br>
+    <div class="container11">
+        <div class="box sidebar">Sidebar</div>
+        <div class="box content">Content</div>
+    </div>
+    <br>
+    <div class="container12">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container13">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container14">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container15">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container16">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container17">
+        <div class="box" style="align-self: center;">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box" style="align-self: flex-end;">Box3</div>
+    </div>
+    <br>
+    <div class="container18">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container19">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <br>
+    <div class="container20">
+        <img src="../Images/logo.jpeg" alt="">
+        <nav class="navigation">
+            <a href="" style="flex-grow: 1;">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+        </nav>
+    </div>
+    <br>
+    <div class="container21">
+        <div class="sidebar1">
+            <li>Home </li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </div>
+        <div class="main">
+            <div class="main1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facere nam ipsa at sint quidem quo quia nostrum beatae saepe necessitatibus atque esse, commodi quae itaque a dicta aliquid hic.</p>
+            </div>
+            <div class="main2">widgets</div>
+        </div>
+    </div>
+    <br>
+    <div class="container22">
+        <form action="" class="form">
+            <input type="text" name="" id="" placeholder="Username">
+            <input type="password" name="" id="" placeholder="Password">
+            <button>Log In</button>
+        </form>
+    </div>
+</body>
+</html>

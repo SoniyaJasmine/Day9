@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .heading{
+        background-color: #12494b;
+        height: 10vh;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    header{
+        color: white;
+    }
+    .content{
+        line-height: 20px;
+    }
+
+
+
+    .container2{
+        background-color: beige;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 50vh;
+    }
+    .image img{
+        padding: 30px;
+        padding-top: 90px;
+        height: 250px;
+        width: 250px;
+
+    }
+    button{
+        outline: 0;
+        border: 0;
+        border: 1px solid #d9d9d9;
+        padding: 8px;
+        width: 100px;
+    }
+    button:hover{
+        background-color: lightblue;
+        border: 1px solid blue;
+        color: gray;
+    }
+
+
+
+    .container3{
+        text-align: center;
+    }
+    .start{
+        background-color: rgb(49, 49, 143);
+    }
+    .about{
+        background-color: gray;
+    }
+    .skills{
+        background: radial-gradient(circle, rgb(162, 224, 235), white);
+       
+    }
+    li{
+         list-style: none;
+    }
+    .project{
+        background-color: lightgray;
+
+    }
+    .both{
+        width: 500px;
+        height: 113px;
+        margin-top: 0;
+    }
+    footer{
+        background-color: rgb(49, 49, 143);
+    }
+    .website, .ecommerce{
+        background-color: white;
+    }
+
+
+
+    .contact{
+        background-color: antiquewhite;
+        width: 50%;
+        height: 70vh;
+    }
+    .contact header{
+        text-align: center;
+        color: black;
+        padding: 10px;
+    }
+    form{
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        padding-left: 10px;
+        font-size: 1.25rem;
+    }
+    input, button{
+        width: 50% ;
+        padding: 10px;
+        margin: 10px;
+        font-size: 0.8em;
+    }
+
+
+
+        .container4{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+        .box{
+            width: 25%;
+            height: 350px;
+            text-align: center;
+            /* border-radius: 10%; */
+            /* box-shadow: 10px 5px 5px 2px rgb(223, 221, 221); */
+            background-color: rgb(226, 217, 206);
+        }
+        .basic{
+            padding: 20px;
+            color: rgb(228, 25, 25);
+            font-weight: bold;
+            font-size: 1.5rem;
+            /* background: linear-gradient(to right, rgb(80, 80, 163), rgb(76, 206, 76)) ; */
+        }
+        .standard{
+            padding: 20px;
+            color: rgb(228, 25, 25);
+            font-weight: bold;
+            font-size: 1.5rem;
+            /* background: linear-gradient(to right, purple, rgb(219, 38, 219)); */
+        }
+        .premium{
+            padding: 20px;
+            color: rgb(228, 25, 25);
+            font-weight: bold;
+            font-size: 1.5rem;
+            /* background: linear-gradient(to right, yellow, orange); */
+        }
+        .container4 h3{
+            font-size: 5vmin;
+        }
+
+
+
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .image1{
+            width: 50%;
+            height: 35vh;
+            /* gap: 30px; */
+        }
+        .image1 img{
+            width: 100%;
+            height: 25vh;
+        }
+        .flex h5{
+            font-size: 1.25em;
+        }
+        .image1 img:hover{
+            opacity: 0.5;
+        }
+</style>
+<body>
+    <h1>2.Responsive Blog Layout</h1>
+    <div class="container">
+        <div class="heading">
+            <header>
+                My Tech Blog
+            </header>
+        </div>
+        <div class="content">
+            <h3 style="font-size: 1.5rem; font-weight: bold; padding-top: 15px;">How Technology is Changing the World</h3>
+            <p style="color: gray;">By John Doe - Feb 2025</p>
+            <p>Technologyis evolving at an unprecedented pace, shaping the way we live, work, and interact with the world. From AI advancements to the Internet of Things. Innovation is driving the future.</p>
+            <p>&copy; 2025 My Tech Blog All Rights Reserved</p>
+        </div>
+    </div>
+    <hr>
+
+    <h1>3. Product Card</h1>
+    <div class="container2">
+        <div class="image">
+            <img src="../Images/pexels-sparkphotopro-10775339.jpg" alt="">
+        </div>
+        <div class="camera">
+            <h2 style="line-height: 0%;">Cannon Camera</h2>
+            <h4 style="line-height: 0%; color: gray;">For Best Clicks</h4>
+            <h1>$68</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis commodi cumque corrupti? Fuga, laborum facere quidem quibusdam, maxime, cupiditate est neque fugit accusamus ducimus sunt? Quo ipsam in aliquid fugiat.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+    <h1>4.</h1>
+    <div class="container3">
+        <div class="start">
+            <header>
+                <h2>John Doe</h2>
+                <h4>Web Developer | Designer | Freelancer</h4>
+            </header>
+        </div>
+        <div class="about">
+            <h3 style="font-weight: bold; margin-bottom: 10px;">About Me</h3>
+            <p style="margin-top: 0;">I am a passionate web developer specializing in front-end and back-end technologies.</p>
+        </div>
+        <div class="skills">
+            <h3 style="font-weight: bolder; margin-bottom: 10px;">Skills</h3>
+            <ul style="margin-top: 0;">
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node js, Django</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3 style="margin-bottom: 0;">Projects</h3>
+            <div class="both">
+                <div class="website">
+                    <h4 style="margin-bottom: 10px;">Portfolio Website</h4>
+                    <p style="margin-top: 0;">A sleek and modern portfolio to showcase my work.</p>
+                </div>
+                <div class="ecommerce">
+                    <h4 style="margin-bottom: 10px;">E-commerce App</h4>
+                    <p style="margin-top: 0;">An online store with cart functionality and payment integration.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <footer>
+                <h3 style="margin-bottom: 10px;">Contact</h3>
+                <p style="margin-top: 0;">Email: john@example.com</p>
+            </footer>
+        </div>
+    </div><br><br>
+    <hr>
+
+    <h1>5. Responsive Contact Us Section</h1>
+    <div class="contact">
+        <header>
+            <h2>Contact Us</h2>
+        </header>
+        <form action="">
+            <label for="">Name</label>
+            <input type="text" name="" id="" placeholder="Name">
+            <label for="">Email</label>
+            <input type="email" name="" id="" placeholder="Email">
+            <input type="textarea" name="" id="" placeholder="Message">
+            <button>Send Message</button>
+        </form>
+        <section>
+
+        </section>
+    </div>
+    <br><br>
+    <hr>
+
+    <h1>6. Pricing Table</h1>
+    <div class="container4">
+        <div class="box">
+            <header class="basic">BASIC</header>
+            <h3>$5 / mo</h3>
+            <p>2 team members</p>
+            <p>2GB Storage</p>
+            <p>1000 request per day</p>
+            <p>20000 users</p>
+        </div>
+        <div class="box">
+            <header class="standard">PRO</header>
+            <h3>$10 / mo</h3>
+            <p>5 team members</p>
+            <p>5GB Storage</p>
+            <p>2000 request per day</p>
+            <p>40000 users</p>
+        </div>
+        <div class="box">
+            <header class="premium">PREMIUM</header>
+            <h3>$20 / mo</h3>
+            <p>unlimited team members</p>
+            <p>10GB Storage</p>
+            <p>5000 request per day</p>
+            <p>Unlimited users</p>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+    <h1>7. Image Gallery</h1>
+    <div class="flex">
+        <div class="image1">
+            <h5>Image1</h5>
+            <img src="../Images/Horse1.jpeg" alt="Horses">
+        </div>
+        <div class="image1">
+            <h5>Image2</h5>
+            <img src="../Images/bird1.jpeg" alt="birds">
+        </div>
+        <div class="image1">
+            <h5>Image3</h5>
+            <img src="../Images/funny cat.jpg" alt="Cat1">
+        </div>
+        <div class="image1">
+            <h5>Image4</h5>
+            <img src="../Images/funny-cat.webp" alt="Cat2">
+        </div>
+        <div class="image1">
+            <h5>Image5</h5>
+            <img src="../Images/Chocolate-Cupcakes-13.jpg" alt="Cupcake">
+        </div>
+        <div class="image1">
+            <h5>Image6</h5>
+            <img src="../Images/cat1.jpg" alt="Cat">
+        </div>
+    </div>
+
+
+</body>
+</html>

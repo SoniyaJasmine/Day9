@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/miniProject2.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap');
+        .nav{
+            width: 200px;
+            height: 100px;
+            background-color: rgba(68, 231, 190, 0.5);
+        }
+        a{
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            color: black;
+        }
+        a:hover{
+            color: blue;
+        }
+        .product{
+            text-align: center;
+            width: 250px;
+            height: 200px;
+            background: radial-gradient(circle, rgb(87, 171, 204), white);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            line-height: 1;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .style{
+            color: white;
+            background-color: rgb(48, 153, 48);
+            width: 80px;
+            padding: 1px;
+            
+        }
+
+
+
+        
+        .grid1 img{
+            width: 30px;
+            height: 30px;
+            
+        }
+        .grid1{
+            width: 300px;
+            height: 40vh;
+            background: radial-gradient(circle, rgb(248, 207, 214), rgb(247, 247, 171));
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+        .grid1:hover{
+            background: radial-gradient(circle, rgb(183, 183, 247), rgb(247, 247, 168));
+        }
+        .grid1 p:hover{
+            color: blue;
+        }
+        .grids{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+        }
+        .grid1 h3{
+            color: blueviolet;
+        }
+        .grid h2{
+            text-align: center;
+        }
+
+
+
+        .testimonial{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+        }
+        .section{
+            width: 300px;
+            height: 50vh;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        .section:hover{
+            background-color: rgba(0, 0, 0, 0.4);
+            /* box-shadow: 2px 2px 4px black; */
+        }
+        figure img{
+            width: 60px;
+            height: 60px;
+        }
+        figcaption p{ 
+            margin-top: 0;
+        }
+        figcaption h2{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+
+
+        .Hero{
+            background: linear-gradient(to right, pink, coral);
+            text-align: center;
+        }
+        .Hero button{
+            background-color: lightblue;
+            color: black;
+        }
+        .Hero button:hover{
+            background-color: navy;
+            color: white;
+        }
+
+
+        .skill{
+            width: 100%;
+        }
+        .progress{
+            margin: 10px;
+            padding: 10px;
+        }
+        .progress p{
+            font-weight: bold;
+        }
+        .bar{
+            background-color: rgb(180, 180, 180);
+        }
+        .bar1, .bar2, .bar3, .bar4, .bar5{
+            padding: 8px;
+        }
+        .bar1:hover{
+            background-color: forestgreen;
+        }
+        .bar2:hover{
+            background-color: forestgreen;
+        }
+        .bar3:hover{
+            background-color: forestgreen;
+        }
+        .bar4:hover{
+            background-color: forestgreen;
+        }
+        .bar5:hover{
+            background-color: forestgreen;
+        }
+        .bar1{
+            width: 90%;
+            background-color: blueviolet;
+            color: white;
+        }
+        .bar2{
+            width: 80%;
+            background-color: brown;
+            color: white;
+        }
+        .bar3{
+            width: 60%;
+            background-color: blue;
+            color: white;
+        }
+        .bar4{
+            width: 70%;
+            background-color: chocolate;
+            color: white;
+        }
+        .bar5{
+            width: 30%;
+            background-color: crimson;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Navigation Bar with Hover Effects</h1>
+    <nav class="nav">
+        <a href="https://google.com">Google</a>
+        <a href="mailto:soniya@gmail.com">Email</a>
+        <a href="">Services</a>
+        <a href="">Links</a>
+        <a href="">Contacts</a>
+    </nav>
+    <br><br>
+    <hr>
+    
+    <h1>2. </h1>
+    <div class="product">
+        <h3 style="color: rgb(29, 29, 124); margin-bottom: 10px;">Product Name</h3>
+        <p style="color: rgb(87, 85, 85);">This is an amazing product that you will love</p>
+        <button class="style">Buy Now</button>
+    </div>
+    <br><br>
+    <hr>
+
+    
+
+    <h1>4. </h1>
+    <div class="welcome">
+        <div class="header">
+            <header>
+                <h2>Welcome to Our Product</h2>
+                <p>The best solution</p>
+            </header>
+        </div>
+        <div class="content">
+            <h3>Why Choose Us?</h3>
+            <p>We provide top-quality service with customer satisfaction as our priority.</p>
+            <ul>
+                <li>High Performance</li>
+                <li>24/7 Support</li>
+                <li>Affordable Pricing</li>
+            </ul>
+            <button>
+                Get Started
+            </button>
+        </div>
+        <div>
+            <footer>
+                Contact us at: support@example.com
+            </footer>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>5. service Card Highlights</h1>
+    <div class="grid">
+        <h2>Our Services</h2>
+        <div class="grids ">
+            <section class="grid1">
+                <img src="../Images/internet.avif" alt="">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab blanditiis ipsam perspiciatis, voluptatem est hic et. </p>
+                <!-- <button>Learn More</button> -->
+            </section>
+            <section class="grid1">
+                <img src="../Images/person-icon-flat-design-template-isolated-avatar-sign-vector-illustration_109161-1680.avif" alt="">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab blanditiis ipsam perspiciatis, voluptatem est hic et.</p>
+                <!-- <button>Learn More</button> -->
+            </section>
+            <section class="grid1">
+                <img src="../Images/gallery.webp" alt="">
+                <h3>Graphics</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab blanditiis ipsam perspiciatis, voluptatem est hic et.</p>
+                <!-- <button>Learn More</button> -->
+            </section>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+    <h1>6. Testimonials Section</h1>    
+    <div class="testimonial">
+        <section class="section">
+            <figure>
+                <img src="../Images/user.jpeg" alt="">
+                <figcaption>
+                    <h2>Sue Shei</h2>
+                    <p>UX Design</p>
+                </figcaption>
+            </figure>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam voluptatum ipsum laboriosam, fuga numquam voluptatem corporis error, ullam distinctio consequuntur.</p>
+            </article>
+        </section>
+        <section class="section">
+            <figure>
+                <img src="../Images/user.jpeg" alt="">
+                <figcaption>
+                    <h2>Gordon</h2>
+                    <p>Accountant</p>
+                </figcaption>
+            </figure>
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat aliquid, nobis repellat sed asperiores, tenetur aperiam laboriosam vitae porro, nam sint earum. Cupiditate error odit, nostrum non quisquam magni nulla?</p>
+            </article>
+        </section>
+        <section class="section">
+            <figure>
+                <img src="../Images/user.jpeg" alt="">
+                <figcaption>
+                    <h2>Elenor</h2>
+                    <p>Public Relations</p>
+                </figcaption>
+            </figure>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus, repudiandae iure voluptate repellat ipsa explicabo, aliquid illum, distinctio facilis facere vero.</p>
+            </article>
+        </section>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>7. Gradient Hero Banner</h1>
+    <div class="Hero">
+        <h1>Hero Banner</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur culpa libero esse tempora nulla id unde sint, quasi enim voluptate. Cum aspernatur, mollitia eos voluptatibus quidem dolorum provident optio in.</p>
+        <button>Get Started</button>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>8. Simple Skills Progress Display</h1>
+    <div class="skill">
+        <section class="progress">
+            <p>HTML</p>
+            <div class="bar">
+                <div class="bar1">90%</div>
+            </div>
+        </section>
+        <section class="progress">
+            <p>CSS</p>
+            <div class="bar">
+                <div class="bar2">80%</div>
+            </div>
+        </section>
+        <section class="progress">
+            <p>JavaScript</p>
+            <div class="bar">
+                <div class="bar3">60%</div>
+            </div>
+        </section>
+        <section class="progress">
+            <p>React</p>
+            <div class="bar">
+                <div class="bar4">70%</div>
+            </div>
+        </section>
+        <section class="progress">
+            <p>NodeJs</p>
+            <div class="bar">
+                <div class="bar5">30%</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

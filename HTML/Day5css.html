@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sect{
+            border: 3px solid blue;
+            background-color: lightyellow;
+        }
+        footer{
+            width: 500px;
+            padding: 20px;
+            background-image: url(../Images/cat1.jpg);
+            background-attachment: fixed;
+        }
+        .overflow{
+            width: 300px;
+            height: 200px;
+            overflow-y: auto;
+        }
+        .overflow2{
+            width: 300px;
+            height: 200px; 
+            overflow-y: hidden;
+            overflow-x: scroll;
+            white-space: nowrap;
+            background-image: url(../Images/Horse1.jpeg);
+            background-attachment: scroll;
+        }
+        .overflow::-webkit-scrollbar{
+            width: 10px;
+            color: #000;
+        }
+        .overflow::-webkit-scrollbar-thumb {
+            background: #312323;
+            border-radius: 10px;
+        }
+        .card{
+            background-color: aquamarine;
+            width: 300px;
+            height: 300px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px black;
+        }
+        button:hover{
+            box-shadow: 3px 3px 6px black;
+        }
+        article{
+            width: 500px;
+            height: 200px;
+            overflow: hidden;
+            background-color: lightblue;
+        }
+        .back{
+            width: 50%;
+            height: 500px;
+            border-left: 6px solid orange;
+            padding: 10px;
+            background-image: url(../Images/Horse1.jpeg);
+            background-size: contain;
+            
+        }
+        img{
+            border: 4px dotted green;
+        }
+        .shadow h1:hover{
+            color: coral;
+        }
+        .background{
+            height: 100px;
+            width: 100%;
+            background: linear-gradient(to left, white, lightblue);
+        }
+    </style>
+</head>
+<body>
+    <header style="background-image: url(../Images/scenery.jpeg); background-repeat: no-repeat; background-size: cover;">
+        <h1>Day 5</h1>
+    </header>
+    <section class="sect">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint repellat dolorem velit eos, debitis earum sed culpa, magnam illum fugiat, provident laboriosam. Aperiam minima, natus non quasi quam sapiente inventore.</p>
+    </section>
+    <br><br>
+    <div 
+            style="width: 300px; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            background-image: url(../Images/bird1.jpeg);
+            background-repeat: no-repeat;">
+        
+        <h1 style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);">Soniya G</h1>
+        <h4>AI Python Full Stack</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at incidunt earum voluptas aliquid cupiditate, labore error nulla odio molestiae in rem ipsa, deleniti quia est quaerat maiores laudantium placeat?</p>
+    </div>
+    <br><br>
+    <div 
+        style="border: 20px solid transparent;
+                border-image: url(../Images/funny\ cat.jpg) 10 round;">
+        <h2>My Page</h2>
+        <h5>Background Property</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni laudantium culpa mollitia dolores provident non iste sit tenetur modi maiores nemo velit incidunt laborum tempore ratione, obcaecati recusandae suscipit quas?</p>
+    </div>
+    <br><br>
+    <button style="border-radius: 15px;">Submit</button>
+    <br><br>
+    <footer>
+        <p>@ copyright 2026</p>
+    </footer>
+    <br><br>
+    <div class="overflow">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis exercitationem atque repellat dolorem illum, molestias voluptatibus reiciendis, voluptatum fugit perferendis necessitatibus ipsum mollitia iste fugiat cum laboriosam placeat, quasi totam.</p>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        <p>Excepteur sint occaecat cupidatat non proident.</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <br><br>
+    <div class="card">
+        <h2>My Card</h2>
+        <h4>Python Developer</h4>
+        <p style="text-shadow: 2px 2px 4px gray;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, culpa? Praesentium veritatis at fugiat accusamus est quidem, non et inventore impedit commodi totam consectetur veniam expedita eius, doloremque rerum molestiae?</p>
+    </div>
+    <br> <br>
+    <div style="border: 2px dashed red;
+                background-image: url(../Images/bird1.jpeg);
+                background-repeat: repeat-x;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis a, officia necessitatibus eveniet perferendis dolorem suscipit delectus autem repellat iure assumenda, molestiae at, magnam explicabo itaque sit placeat odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aspernatur reprehenderit quod, molestias iure voluptate a pariatur voluptates eaque nisi rem expedita blanditiis quae ratione cupiditate recusandae sint modi accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate eos exercitationem dolorum et. Nostrum totam vitae quasi eius facilis accusantium nulla unde quis? Minus temporibus unde quae a laboriosam.</p>
+    </div>
+    <br><br>
+    <article>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eveniet blanditiis rerum libero, quo, earum, minima deleniti ad ea maiores repudiandae. Magnam obcaecati nesciunt iste porro non est consequatur aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae voluptates voluptas veniam? Nemo repudiandae incidunt, dolorem fuga, repellat voluptates voluptatum maxime, eaque vitae quis a dignissimos ratione id reprehenderit quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa enim incidunt, totam impedit nam nihil blanditiis? Atque praesentium eius veritatis ut a odio at soluta qui ducimus. At, quisquam velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis pariatur, mollitia officia soluta molestias totam, excepturi, rem in corporis nobis aspernatur quidem ad? Hic labore odit aspernatur eligendi suscipit delectus?</p>
+    </article>
+    <br><br>
+    <div class="overflow2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis nostrum blanditiis, exercitationem porro magni dolor earum cum odio id necessitatibus, dolore perferendis ut quibusdam commodi temporibus quisquam similique? Possimus.</p>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        <p>Excepteur sint occaecat cupidatat non proident.</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <br><br>
+    <section class="back">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi amet, corrupti id odit at quos, autem rerum dolor eligendi cum vitae enim, eius quidem deserunt nisi. Vitae dolorum cumque eaque!</p>
+    </section>
+    <br><br>
+    <img src="../Images/bird1.jpeg" alt="">
+    <br><br>
+    <div class="shadow">
+    <h1 style="text-shadow: 3px 3px 6px black;">Background </h1>
+    </div>
+    <br><br>
+    <div class="background">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quia unde nam corporis est obcaecati nesciunt sed deleniti adipisci dolorum harum, rerum porro excepturi, in eum odio ipsam error eius.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            box-sizing: content-box;
+            padding: 1rem;
+            border: 1px solid #333;
+            width: 50%;
+            background-color: aquamarine;
+        }
+        .box1{
+            box-sizing: border-box;
+            padding: 1rem;
+            border: 1px solid #333;
+            width: 50%;
+        }
+        .box2{
+            box-sizing: border-box;
+            padding: 2rem;
+            border: 1px solid #333;
+            width: 50%;
+        }
+        section{
+            text-align: center;
+            margin-top: 10px;
+            border: 1px solid blueviolet;
+        }
+        button{
+            padding: 10px 20px;
+        }
+        article{
+            box-sizing: border-box;
+            margin-bottom: 20px;/
+        }
+        footer{
+            border: 2px solid black;
+        }
+        .card{
+            box-sizing: border-box;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid gray;
+            text-align: center;
+            width: 300px;
+            box-shadow: 2px 2px 6px gray;
+        }
+        header{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid blue;
+        }
+        .box3{
+            padding: 20px;
+            margin: 30px;
+        }
+        nav{
+            border: 2px solid black;
+            padding: 15px;
+        }
+        .image{
+            border: 1px solid pink;
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        .box4{
+            box-sizing: border-box;
+            width: 100%;
+            height: 200px;
+            border: 2px solid green;
+            padding: 10px;
+        }
+        .box4 div{
+            width: 50%;
+            float: left;
+            /* border: 1px solid darkred; */
+        }
+        .card button{
+            padding: 10px 5px;
+        }
+        .box5{
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .box5 div{
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            /* flex: 1 1 250px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Day 6</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente incidunt ipsa necessitatibus eaque voluptatibus at. Libero vero impedit voluptatum! Neque eos reiciendis itaque tempora suscipit inventore facilis accusamus vitae impedit.</p>
+    </div>
+    <br><br>
+    <div class="box1">
+        <h1>Day 6</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente incidunt ipsa necessitatibus eaque voluptatibus at. Libero vero impedit voluptatum! Neque eos reiciendis itaque tempora suscipit inventore facilis accusamus vitae impedit.</p>
+    </div>
+    <br><br>
+    <div class="box2">
+        <h1>Day 6</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente incidunt ipsa necessitatibus eaque voluptatibus at. Libero vero impedit voluptatum! Neque eos reiciendis itaque tempora suscipit inventore facilis accusamus vitae impedit.</p>
+    </div>
+    <br><br>
+    <section>
+        <p style="padding-left: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloremque, minus nemo amet facere commodi nobis, distinctio vitae accusantium nostrum laboriosam beatae a temporibus nesciunt aliquid ducimus nisi dignissimos architecto?</p>
+    </section>
+    <br><br>
+    <button>Click Me!</button>
+    <br><br>
+    <article>
+        <h1>Article</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, minus! Quibusdam sunt numquam tempore, corrupti vel, placeat aliquam nemo ex sequi mollitia a quae perspiciatis nobis nihil tenetur dolores omnis?</p>
+    </article>
+    <footer>
+        <p>&copy; copyrights on 2026</p>
+    </footer>
+    <div class="card">
+        <h2>Responsive Card</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, tempora facere, delectus minus porro expedita fugiat, consequatur vero voluptate dolorum labore vitae? Incidunt officiis, eos fugit veniam nam eum nemo?</p>
+        <button>Read More</button>
+    </div>
+    <header>
+        <h2>Box Model</h2>
+    </header>
+    <div class="box3">
+        <h1>Padding</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente incidunt ipsa necessitatibus eaque voluptatibus at. Libero vero impedit voluptatum! Neque eos reiciendis itaque tempora suscipit inventore facilis accusamus vitae impedit.</p>
+    </div>
+    <nav>
+        <h1>Margin</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, laboriosam? Laboriosam tempore officiis quaerat cum quasi temporibus harum animi, porro totam, consequatur reiciendis dolor minima, aliquam natus error voluptatem facilis.</p>
+    </nav>
+    <br><br>
+    <div class="image">
+        <img src="../Images/bird1.jpeg" alt="">
+    </div>
+    <br><br>
+    <div class="box4">
+        <div>
+            <h1>Box Sizing</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, ex ipsum. Voluptas, rerum? Autem ipsa obcaecati, facere ducimus non recusandae minima dolor fugiat animi aspernatur! Nesciunt repudiandae ut possimus maxime.</p>
+        </div>
+        <div>
+            <h1>Box Sizing</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, ex ipsum. Voluptas, rerum? Autem ipsa obcaecati, facere ducimus non recusandae minima dolor fugiat animi aspernatur! Nesciunt repudiandae ut possimus maxime.</p>
+        </div>
+    </div>
+    <br><br>
+    <blockquote style="border: 1px solid crimson; padding: 20px;">
+        "The only way to do great work is to love what you do."
+        – Steve Jobs
+    </blockquote>
+    <br><br>
+    <div class="box5">
+        <div>box1</div>
+        <div>box2</div>
+    </div>
+</body>
+</html>

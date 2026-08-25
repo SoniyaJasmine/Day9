@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: flex-start;
+            border: 1px solid black;
+        }
+        .box{
+            width: 30px;
+            height: 30px;
+            background-color: blueviolet;
+            padding: 5px;
+            margin: 5px;
+            font-size: 10px;
+            color: white;
+        }
+        .container1{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+        .container2{
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+        }
+        .container3{
+            display: flex;
+            justify-content: flex-end;
+            border: 1px solid black;
+        }
+        .container4{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+        }
+        .container5{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border: 1px solid black;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        .container6{
+            height: 300px;
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+        }
+        .container7{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        .container8{
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            border: 1px solid black;
+        }
+        .container9{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container10{
+            width: 200px;
+            height: 100px;
+            display: flex;
+            border: 1px solid black;
+        }
+        .container11{
+            width: 130px;
+            height: 100px;
+            display: flex;
+            border: 1px solid black;
+        }
+        .container12{
+            width: 200px;
+            height: 100px;
+            display: flex;
+            border: 1px solid black;
+        }
+        .container13{
+            width: 250px;
+            height: 100px;
+            display: flex;
+            border: 1px solid black;
+        }
+        .container14{
+            display: flex;
+            border: 1px solid black;
+        }
+        .container15{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+        .container16{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            border: 1px solid black;
+        }
+        .container17{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+        }
+        .container18{
+            width: 500px;
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid black;
+        }
+        .container18 .box{
+            width: 80px;
+            height: 50px;
+            text-align: center;
+            background-color: chocolate;
+        }
+        .container19{
+            width: 600px;
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid black;
+        }
+        .container19 .box{
+            width: 200px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            text-align: center;
+
+        }
+        .container19 .box .box1{
+            background-color: brown;
+            width: 40px;
+            height: 40px;
+        }
+        .container20{
+            height: 100px;
+            display: flex;
+            align-items: stretch;
+            border: 1px solid black;
+        }
+        .container20 .box1{
+            /* width: 30px; */
+            /* height: 30px; */
+            /* flex: 1; */
+            background-color: blueviolet;
+            padding: 5px;
+            margin: 5px;
+            font-size: 10px;
+            color: white;
+        }
+        .container21{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .form{
+            width: 300px;
+            padding: 30px;
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container1">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container3">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container4">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container5">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </nav>
+    <br>
+    <div class="container6">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container7">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container8">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container9">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <footer>
+        <p>&copy; 2025 Vetri Technology Solution. All Rights Reserved.</p>
+        <button>Click Me!</button>
+    </footer>
+    <br>
+    <div class="container10">
+        <div class="box" style="flex-grow: 1;">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container11">
+        <div class="box" style="flex-shrink: 0;">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br> 
+    <div class="container12">
+        <div class="box" style="flex-basis: 200px;">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container13">
+        <div class="box" style="flex: 1 0 150px;">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container14">
+        <div class="box" style="order: 2;">Box 1</div>
+        <div class="box" style="order: 0;">Box 2</div>
+        <div class="box" style="order: 1;">Box 3</div>
+    </div>
+    <br>
+    <div class="container15">
+        <div class="box">Box 1</div>
+        <div class="box" style="align-self: center;">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container16">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <br>
+    <div class="container17">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <!-- <div class="box">Box 3</div> -->
+    </div>
+    <br>
+    <div class="container18">
+        <div class="box">
+            <h3>$ 99</h3>
+            <p>Box 1</p>
+        </div>
+        <div class="box">
+            <h3>$ 149</h3>
+            <p>Box 2</p>
+        </div>
+        <div class="box">
+            <h3>$ 599</h3>
+            <p>Box 3</p>
+        </div>
+    </div>
+    <br>
+    <div class="container19">
+        <div class="box">
+            Box 1
+            <div class="box1">Box 1</div>
+            <div class="box1">Box 2</div>
+            <div class="box1">Box 3</div>
+        </div>
+        <div class="box">
+            Box 2
+            <div class="box1">Box 1</div>
+            <div class="box1">Box 2</div>
+            <div class="box1">Box 3</div>
+        </div>
+        <div class="box">
+            Box 3
+            <div class="box1">Box 1</div>
+            <div class="box1">Box 2</div>
+            <div class="box1">Box 3</div>
+        </div>
+    </div>
+    <br>
+    <div class="container20">
+        <div class="box1">Box 1</div>
+        <div class="box1">Box 2</div>
+        <div class="box1">Box 3</div>
+    </div>
+    <br>
+    <div class="container21">
+        <form action="" class="form">
+            <input type="text" name="" id="" placeholder="Username" required>
+            <input type="password" name="" id="" placeholder="Password" required>
+            <button>Login</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <h1 class="p-5 font-bold text-lg">1. Responsive Restaurant Menu</h1>
+    <nav class="bg-purple-800 text-white px-6 py-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold">Foodiess!</h2>
+        </div>
+    </nav>
+    <main class="max-w-6xl mx-auto px-6 py-10">
+        <h2 class="text-4xl font-bold text-center text-purple-800 mb-10">Our Food Menu</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/pizza.jpeg" alt="Pizza" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">Chicken Pizza</h3>
+                    <p class="text-gray-600 mt-2">Delicious cheesy pizza topped with fresh vegetables.</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹299</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/noodles.jpg" alt="Chicken noodles" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">Chicken noodles</h3>
+                    <p class="text-gray-600 mt-2">Flavourful Chicken Noodles prepared with fresh vegetables and spices</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹259</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/pasta1.webp" alt="Pasta" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">Pasta</h3>
+                    <p class="text-gray-600 mt-2">Creamy pasta cooked with herbs, cheese and fresh vegetables.</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹220</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/burger.jpeg" alt="burger" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">Burger</h3>
+                    <p class="text-gray-600 mt-2">Crispy vegetable patty with fresh lettuce and creamy sauce.</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹199</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/Chocolate-Cupcakes-13.jpg" alt="cupcake" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">Chocolate Cupcake</h3>
+                    <p class="text-gray-600 mt-2">Rich and delicious chocolate dessert for a perfect ending.</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹120</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="../Images/icecream.jpg" alt="icecream" class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-orange-800">IceCream</h3>
+                    <p class="text-gray-600 mt-2">Refreshing ice cream made with seasonal fruits.</p>
+                    <div class="flex justify-between items-center mt-5">
+                        <span class="text-xl font-bold text-green-600">₹200</span>
+                        <button class="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-900 transition duration-300">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <hr>
+
+
+    <h1 class="text-2xl font-bold m-4">2.Responsive Portfolio Website</h1>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <h2 class="text-2xl font-bold text-purple-700">My Portfolio</h2>
+            <div class="hidden md:flex gap-6">
+                <a href="#home" class="hover:text-purple-600">Home</a>
+                <a href="#about" class="hover:text-purple-600">About</a>
+                <a href="#skills" class="hover:text-purple-600">Skills</a>
+                <a href="#projects" class="hover:text-purple-600">Projects</a>
+                <a href="#contact" class="hover:text-purple-600">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl">☰</button>
+        </div>
+    </nav>
+    <section id="Home" class="bg-purple-100">
+        <div class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="text-center md:text-left">
+                <p class="text-purple-600 text-lg font-semibold">Hello, I'm</p>
+                <h2 class="text-4xl md:text-6xl font-bold text-gray-900 mt-2">Soniya</h2>
+                <h3 class="text-2xl md:text-3xl font-semibold text-purple-700 mt-3">Python Developer</h3>
+                <p class="text-gray-600 max-w-xl mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aut ad aperiam debitis facilis minus, voluptates illo. Magnam ducimus dolores voluptate quasi, nisi autem, placeat, sapiente natus suscipit dicta ea.</p>
+                <a href="#" class="inline-block mt-7 bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-900 transition duration-300 shadow-lg">Download CV</a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700">About Me</h2>
+            <div class="mt-8 bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                <p class="text-gray-600 leading-8 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cumque doloremque ex vero eaque, possimus culpa minus consequuntur at, officiis deleniti ratione itaque amet a unde laboriosam sit dolores. Beatae.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="bg-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700 ">My Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+                <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+                    <h3 class="text-xl font-bold text-orange-600">HTML</h3>
+                    <p class="text-gray-600 mt-3">Creating structured and semantic web pages.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+                <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+                    <h3 class="text-xl font-bold text-orange-600">CSS</h3>
+                    <p class="text-gray-600 mt-3">Designing responsive and attractive layouts.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+                <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+                    <h3 class="text-xl font-bold text-orange-600">JavaScript</h3>
+                    <p class="text-gray-600 mt-3">Adding interaction and dynamic functionality.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+                <div class="bg-white p-6 rounded-xl shadow-md border hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+                    <h3 class="text-xl font-bold text-orange-600">Tailwind CSS</h3>
+                    <p class="text-gray-600 mt-3">Building modern responsive interfaces quickly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <div class="bg-white rounded-xl overflow-hidden shadow-md border hover:shadow-2xl transition duration-300">
+                <img src="" alt="Restaurant Website">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Restaurant Website</h3>
+                    <p class="text-gray-600 mt-3">A responsive restaurant website with food menu, pricing and contact sections.</p>
+                    <button class="mt-5 bg-purple-700 text-white px-5 py-2 rounded-lg hover:bg-purple-900 transition">View Project</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl overflow-hidden shadow-md border hover:shadow-2xl transition duration-300">
+                <img src="" alt="Blog Website">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Blog website</h3>
+                    <p class="text-gray-600 mt-3">A clean and responsive blog layout with articles, categories and navigation.</p>
+                    <button class="mt-5 bg-purple-700 text-white px-5 py-2 rounded-lg hover:bg-purple-900 transition">View Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-purple-100 py-16">
+        <div class="max-w-3xl mx-auto px-6 flex flex-col justify-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700">Contact Me</h2>
+            <p class="text-center text-gray-600 mt-3">Have a project in mind? Feel free to contact me.</p>
+            <button class="mt-5 
+                 bg-purple-700 text-white
+                 py-3 rounded-lg
+                 font-semibold
+                 hover:bg-purple-900
+                 transition duration-300
+                 shadow-md">Hier Me</button>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>© 2026 Soniya. All Rights Reserved.</p>
+    </footer>
+    <br><br>
+    <hr>
+
+
+    <h1 class="text-3xl m-4">3. Responsive Product Shopping Page</h1>
+    <nav class="bg-yellow-400 font-bold">
+        <div class="max-w-5xl mx-auto px-4 py-4">
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-blue-200">Home</a>
+                <a href="#products" class="hover:text-blue-200">Products</a>
+                <a href="#" class="hover:text-blue-200">About</a>
+                <a href="#" class="hover:text-blue-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id="products" class="p-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/smartwatch.jpg" alt="smartwatch" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Smart Watch</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹2,499</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/headphone.jpg" alt="headphone" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Wireless Headphones</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹1,999</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/shoe.jpg" alt="Running Shoes" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Running Shoes</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹2,799</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/bag.jpg" alt="Travel Bag" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Travel Bag</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹1,499</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/tshirt.avif" alt="Cotton T-Shirt" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Cotton T-Shirt</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹699</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="../Images/pexels-sparkphotopro-10775339.jpg" alt="Cannon Camera" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h2 class="text-xl font-bold text-gray-800 ">Cannon Camera</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia laborum omnis sequi aperiam unde quasi veritatis nihil totam dolores eius dolor voluptas, nostrum esse soluta consectetur in voluptatem debitis.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">₹20,499</p>
+                        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <hr>
+
+
+    <h1 class="text-3xl m-4">4. Responsive Pricing Plans</h1>
+    <section>
+        <div class="text-center py-10">
+            <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800">Choose Your Plan</h1>
+            <p class="text-gray-600 mt-3">Learn new skills with the plan that suits you best.</p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+            <div class="w-full md:w-1/3 max-w-sm bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <h2 class="text-2xl font-bold text-gray-800 text-center">Basic</h2>
+                <p class="text-center text-gray-500 mt-2">For Beginners</p>
+                <h3 class="text-4xl font-bold text-center mt-6">
+                    $19
+                    <span class="text-base font-normal text-gray-500">/month</span>
+                </h3>
+                <ul class="mt-6 space-y-3 text-gray-600">
+                    <li>✓ 5 Courses</li>
+                    <li>✓ Basic Support</li>
+                    <li>✓ Course Certificates</li>
+                    <li>✓ Community Access</li>
+                </ul>
+                <button class="w-full mt-8 bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition duration-300">Choose Plan</button>
+            </div>
+            <div class="w-full md:w-1/3 max-w-sm bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <h2 class="text-2xl font-bold text-gray-800 text-center">Standard</h2>
+                <p class="text-center text-gray-500 mt-2">For Serious Learners</p>
+                <h3 class="text-4xl font-bold text-center mt-6">
+                    $39
+                    <span class="text-base font-normal text-gray-500">/month</span>
+                </h3>
+                <ul class="mt-6 space-y-3 text-gray-600">
+                    <li>✓ 20 Courses</li>
+                    <li>✓ Priority Support</li>
+                    <li>✓ Course Certificates</li>
+                    <li>✓ Community Access</li>
+                </ul>
+                <button class="w-full mt-8 bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition duration-300">Choose Plan</button>
+            </div>
+            <div class="w-full md:w-1/3 max-w-sm bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <h2 class="text-2xl font-bold text-gray-800 text-center">Premium</h2>
+                <p class="text-center text-gray-500 mt-2">For advanced Learners</p>
+                <h3 class="text-4xl font-bold text-center mt-6">
+                    $69
+                    <span class="text-base font-normal text-gray-500">/month</span>
+                </h3>
+                <ul class="mt-6 space-y-3 text-gray-600">
+                    <li>✓ Unlimited Courses</li>
+                    <li>✓ 24/7 Premium Support</li>
+                    <li>✓ Course Certificates</li>
+                    <li>✓ Live Classes</li>
+                </ul>
+                <button class="w-full mt-8 bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition duration-300">Choose Plan</button>
+            </div>
+        </div>
+        
+    </section>
+    <br><br>
+    <hr>
+
+
+    <h1 class="text-2xl font-bold">5. Responsive Admin Dashboard</h1>
+    <header class="lg:hidden block bg-white shadow-md px-5 py-4">
+        <div class="flex items-center justify-between">
+            <h1 class="text-xl font-bold text-blue-600">Admin Dashboard</h1>
+            <button class="text-2xl text-gray-700">☰</button>
+        </div>
+    </header>
+    <div class="flex min-h-screen">
+        <aside class="hidden lg:block w-64 bg-gray-900 text-white p-6">
+            <h2 class="text-2xl font-bold mb-8"> Admin Panel</h2>
+            <nav class="space-y-4">
+                <a href="#" class="block bg-blue-600 px-4 py-3 rounded-lg"> Dashboard</a>
+                <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-700">Students</a>
+                <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-700">Courses</a>
+                <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-700">Trainers</a>
+                <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-700">Projects</a>
+                <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-700"> Settings</a>
+            </nav>
+        </aside>
+        <main class="flex-1 p-4 md:p-6 lg:p-8">
+            <div class="mb-6">
+                <h1 class="text-2xl md:text-3xl font-bold text-gray-800">Dashboard</h1>
+                <p class="text-gray-500 mt-1">Welcome back, Admin!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                <div class="bg-white p-5 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Total Students</p>
+                            <h2 class="text-3xl font-bold text-gray-800 mt-2">1,250</h2>
+                        </div>
+                        <div class="bg-blue-100 text-blue-600 p-4 rounded-full text-2xl">👨‍🎓</div>
+                    </div>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Total Courses</p>
+                            <h2 class="text-3xl font-bold text-gray-800 mt-2">45</h2>
+                        </div>
+                        <div class="bg-green-100 text-green-600 p-4 rounded-full text-2xl">📚</div>
+                    </div>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Total Trainers</p>
+                            <h2 class="text-3xl font-bold text-gray-800 mt-2">32</h2>
+                        </div>
+                        <div class="bg-purple-100 text-purple-600 p-4 rounded-full text-2xl">👨‍🏫</div>
+                    </div>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Completed Projects</p>
+                            <h2 class="text-3xl font-bold text-gray-800 mt-2">186</h2>
+                        </div>
+                        <div class="bg-orange-100 text-orange-600 p-4 rounded-full text-2xl">📁</div>
+                    </div>
+                </div>
+            </div>
+            <section class="bg-white rounded-xl shadow-md mt-6 p-5">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-5">
+                    <h2 class="text-xl font-bold text-gray-800">Recent Activity</h2>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">View All</button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[600px]">
+                        <thead>
+                            <tr class="border-b text-left text-gray-500">
+                                <th class="py-3 px-3">Student</th>
+                                <th class="py-3 px-3">Course</th>
+                                <th class="py-3 px-3">Activity</th>
+                                <th class="py-3 px-3">Date</th>
+                                <th class="py-3 px-3">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-4 px-3 font-medium">Anitha</td>
+                                <td class="py-4 px-3">Python</td>
+                                <td class="py-4 px-3">Completed lesson</td>
+                                <td class="py-4 px-3 text-gray-500">Aug 21, 2026</td>
+                                <td class="py-4 px-3"><span class="bg-green-100 text-green-700px-3 py-1 rounded-full text-sm">Completed</span></td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-4 px-3 font-medium">Rahul</td>
+                                <td class="py-4 px-3">JavaScript</td>
+                                <td class="py-4 px-3">Submitted project</td>
+                                <td class="py-4 px-3 text-gray-500">Aug 20, 2026</td>
+                                <td class="py-4 px-3"><span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">Pending</span></td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-4 px-3 font-medium">Priya</td>
+                                <td class="py-4 px-3">HTML & CSS</td>
+                                <td class="py-4 px-3">Joined course</td>
+                                <td class="py-4 px-3 text-gray-500">Aug 19, 2026</td>
+                                <td class="py-4 px-3"><span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">Active</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            width: 30px;
+            height: 30px;
+            background-color: darkcyan;
+            margin: 5px;
+            padding: 5px;
+            color: wheat;
+            font-size: 12px;
+        }
+        .container{
+            border: 1px solid gray;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .container1{
+            border: 1px solid gray;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .box.box2{
+                grid-column: span 2;
+            }
+        }
+        .container2{
+            border: 1px solid gray;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .box.box2{
+                grid-row: span 2;
+            }
+        }
+        .container3{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 20px 1fr 20px;
+            grid-template-areas: 
+                "header header"
+                "sidebar main"
+                "footer footer";
+            height: 40vh;
+            gap: 10px;
+
+            .header{
+                grid-area: header;
+                background-color: lightblue;
+            }
+            .sidebar{
+                grid-area: sidebar;
+                background-color: lightgreen;
+            }
+            .main{
+                grid-area: main;
+                background-color: lightgray;
+            }
+            .footer{
+                grid-area: footer;
+                background-color: lightsalmon;
+            }
+        }
+        .container4{
+            border: 1px solid gray;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 130px;
+
+            .box.box3{
+                width: 200px;
+                height: 100px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .box1{
+                background-color: aquamarine;
+                width: 30px;
+                height: 30px;
+                gap: 10px;
+            }
+        }
+        .container5{
+            border: 1px solid gray;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .box.box4{
+                width: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .container6{
+            margin: 20px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: cover;
+            }
+            .image1{
+                grid-row: span 2;
+            }
+            .image2{
+                grid-column: span 2;
+            }
+        }
+        .container7{
+            border: 1px solid gray;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: repeat(2, 150px); */
+
+            .box.box2{
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+        }
+        .container8{
+            border: 1px solid gray;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(max-width:567px){
+            .container8{
+                grid-template-columns: 1fr;
+            }
+        }
+        .container9{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 20px 1fr 20px;
+            grid-template-areas: 
+                "header header"
+                "nav main"
+                "footer footer";
+            height: 40vh;
+            gap: 10px;
+
+            .header{
+                grid-area: header;
+                background-color: lightblue;
+            }
+            .sidebar{
+                grid-area: nav;
+                background-color: lightgreen;
+            }
+            .main{
+                grid-area: main;
+                background-color: lightgray;
+            }
+            .footer{
+                grid-area: footer;
+                background-color: lightsalmon;
+            }
+        }
+        .container10{
+            border: 1px solid gray;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+
+            .box.box2{
+                place-self: center;
+            }
+        }
+        .container11{
+            border: 1px solid gray;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 200px 1fr ;
+        }
+        .container12{
+            border: 1px solid gray;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr ;
+            align-items: center;
+            justify-items: center;
+        }
+        .container13{
+            border: 1px solid gray;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(4, minmax(100px, 1fr)) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        <div class="box">Box6</div>
+        <div class="box">Box7</div>
+        <div class="box">Box8</div>
+        <div class="box">Box9</div>
+    </div>
+    <br>
+    <div class="container1">
+        <div class="box">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="box">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    <br>
+    <div class="container3">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+    <br>
+    <div class="container4">
+        <div class="box box3">
+            <div class="box1">Box1</div>
+            <div class="box1">Box2</div>
+            <div class="box1">Box3</div>
+        </div>
+
+        <div class="box box3">
+            <div class="box1">Box1</div>
+            <div class="box1">Box2</div>
+            <div class="box1">Box3</div>
+        </div>
+        <div class="box box3">
+            <div class="box1">Box1</div>
+            <div class="box1">Box2</div>
+            <div class="box1">Box3</div>
+        </div>
+    </div>
+    <br>
+    <div class="container5">
+        <div class="box box4">Box1</div>
+        <div class="box box4">Box2</div>
+        <div class="box box4">Box3</div>
+        <div class="box box4">Box4</div>
+        <div class="box box4">Box5</div>
+    </div>
+    <br>
+    <div class="container6">
+        <img src="../Images/bird1.jpeg" alt="" >
+        <img src="../Images/camera.webp" alt="">
+        <img src="../Images/cat1.jpg" alt="" class="image1">
+        <img src="../Images/earbud.jpeg" alt="">
+        <img src="../Images/funny cat.jpg" alt="">
+        <img src="../Images/headphone.jpg" alt="">
+        <img src="../Images/Horse1.jpeg" alt="" class="image2">
+        <img src="../Images/samsung.jpg" alt="">
+        <img src="../Images/travel.jpg" alt="">
+        <img src="../Images/smartwatch.jpg" alt="">
+    </div>
+    <br>
+    <div class="container3">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+    <br>
+    <div class="container7">
+        <div class="box box2">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    <br>
+    <div class="container8">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+    </div>
+    <br>
+    <div class="container9">
+        <div class="header">Header</div>
+        <div class="sidebar">Navigation</div>
+        <div class="main">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+    <br>
+    <div class="container10">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box box2">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    <br>
+    <div class="container11">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+    </div>
+    <br>
+    <div class="container12">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    <br>
+    <div class="container13">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+    </div>
+    <br>
+    <div class="container14">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+    </div>
+</body>
+</html>

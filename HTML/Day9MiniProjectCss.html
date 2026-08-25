@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .photo{
+            margin: 20px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            img{
+                width: 100px;
+            }
+        }
+
+
+        .pricing{
+            margin: 20px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+
+            header{
+                background-color: rgb(70, 70, 70);
+                color: white;
+                padding: 20px;
+            }
+            section{
+                padding: 20px ;
+                background-color: rgb(243, 238, 238);
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 10px;
+            }
+            .section1{
+                background-color: white;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                /* padding: 20px; */
+
+                h3{
+                    margin-top: 10px;
+                    background-color:rgb(70, 70, 70) ;
+                    color: rgb(233, 232, 232);
+                    padding: 10px;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                p{
+                    padding: 5px;
+                    font-size: 12px;
+                }
+                span{
+                    color: rgb(36, 146, 36);
+                    font-weight: bold;
+                }
+                button{
+                    margin: 10px;
+                    padding: 8px 10px;
+                    background-color: rgb(36, 146, 36);
+                    border: none;
+                    border-radius: 5px;
+                    color: rgb(211, 210, 210);
+                    font-size: 12px;
+                }
+            }
+            footer{
+                background-color: rgb(70, 70, 70);
+                padding: 10px;
+                font-size: 12px;
+                color: rgb(189, 189, 189);
+            }
+        }
+
+
+
+        .gallery{
+            margin: 20px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+
+            img{
+                width: 100px;
+            }
+            figure{
+                text-align: center;
+            }
+            figcaption{
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Designing a Photo Gallery</h1>
+    <div class="photo">
+        <img src="../Images/bird1.jpeg" alt="Bird">
+        <img src="../Images/camera.webp" alt="Camera">
+        <img src="../Images/cat1.jpg" alt="Cat">
+        <img src="../Images/earbud.jpeg" alt="Earbud">
+        <img src="../Images/funny cat.jpg" alt="Cat">
+        <img src="../Images/headphone.jpg" alt="HeadPhone">
+        <img src="../Images/Horse1.jpeg" alt="Horse">
+        <img src="../Images/samsung.jpg" alt="SamsungMobile">
+        <img src="../Images/travel.jpg" alt="Travel">
+        <img src="../Images/smartwatch.jpg" alt="SmartWatch">
+    </div>
+    <br><br>
+    <hr>
+
+
+
+    <h1>2. Pricing Table</h1>
+    <div class="pricing">
+        <header>
+            <h2>Pricing Plans</h2>
+        </header>
+        <section>
+            <div class="section1">
+                <h3>Basic</h3>
+                <p><span>$999/month</span></p>
+                <p>&#10003; 10GB Storage</p>
+                <p>&#10003; Email Support</p>
+                <p>&#10008; Custom Domain</p>
+                <button>Choose Plan</button>
+            </div>
+            <div class="section1">
+                <h3>Standard</h3>
+                <p><span>$1999/month</span></p>
+                <p>&#10003; 50GB Storage</p>
+                <p>&#10003; Priority Support</p>
+                <p>&#10003; Custom Domain</p>
+                <button>Choose Plan</button>
+            </div>
+            <div class="section1" >
+                <h3>Premium</h3>
+                <p><span>$2999/month</span></p>
+                <p>&#10003; Unlimited Storage</p>
+                <p>&#10003; 24/7 Support</p>
+                <p>&#10003; Custom Domain & Analytics</p>
+                <button>Choose Plan</button>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 Pricing Table. All rights reserved.</p>
+        </footer>
+    </div>
+
+
+
+    <h1>3. Photo Gallery</h1>
+    <div class="gallery">
+        <figure>
+            <img src="../Images/bird1.jpeg" alt="Bird">
+            <figcaption>Blue Bird</figcaption>
+        </figure>
+        <figure>
+            <img src="../Images/cat1.jpg" alt="Cat">
+            <figcaption>Funny Cat</figcaption>
+        </figure>
+        <figure>
+            <img src="../Images/Horse1.jpeg" alt="Horse">
+            <figcaption>Riding Horse</figcaption>
+        </figure>
+        <figure>
+            <img src="../Images/travel.jpg" alt="Travel">
+            <figcaption>Travel Blog</figcaption>
+        </figure>
+    
+    </div>
+    <br><br>
+    <hr>
+
+
+
+
+</body>
+</html>

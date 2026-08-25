@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.skill{
+    background-color: whitesmoke;
+    min-height: 100vh;
+    padding: 100px 10%;
+}
+.skill-heading{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+
+    h2{
+        color: rgb(83, 83, 83);
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+.skill::before{
+    content: "Skills";
+    position: absolute;
+    top: 0;
+    left: 40%;
+    font-size: 120px;
+    font-weight: 700;
+    color: rgba(155, 155, 155, 0.4);
+    z-index: 0;
+    white-space: nowrap;
+}
+.skill-heading h2{
+    position: relative;
+    z-index: 1;
+}
+.skill-container{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+.skill-card{
+    /* width: 300px; */
+    padding: 35px 25px;
+    text-align: center;
+    border: 1px solid #5f5b56;
+    border-radius: 12px;
+    background-color: rgb(55, 55, 54);
+    transition: transform 0.4s ease,
+                border-color 0.4s ease,
+                box-shadow 0.4s ease;
+}
+.skill-icon{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-icon img{
+    width: 45px;
+    height: 45px;
+    transition: transform 0.4s ease;
+}
+.skill-card h2{
+    color: #f5f0e8;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+.skill-card p{
+    color: #bdb9b2;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.skill-card:hover{
+    transform: translateY(-8px);
+    background-color: beige;
+    border-color: #a66a3f;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+.skill-card:hover img{
+    transform: scale(1.15);
+}
+.skill-card:hover p{
+    color: black;
+}
+.skill-card:hover h2{
+    color:#a66a3f ;
+}
+.skill-back{
+    text-align: center;
+    margin-top: 50px;
+}
+.skill-back a{
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #a66a3f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.skill-back a:hover{
+    background-color: #c08a5a;
+    transform:scale(1.1)
+}
+@media(max-width:740px){
+    .skill{
+        padding: 80px 25px;
+    }
+    .skill-container{
+        grid-template-columns: 1fr;
+    }
+    .skill-card{
+        padding: 30px 20px;
+    }
+}

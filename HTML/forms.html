@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple Form</h1>
+    <form action="">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required ><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required ><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" ><br><br>
+        <input type="submit">
+    </form>
+    <hr>
+
+    <h1>Contact Form</h1>
+    <form action="">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Your name" ><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Your email"><br><br>
+        <label for="phone">Phone</label><br>
+        <input type="number" id="phone" name="phone" placeholder="+91 123 456 7890"><br><br>
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" placeholder="Your message" cols="21" rows="5"></textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
+    <hr>
+
+    <h1>Newsletter signup form</h1>
+    <form action="">
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" autofocus ><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+
+    <h1>Feedback Form</h1>
+    <form action="">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" ><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        <label for="age">Age (optional)</label><br>
+        <input type="number" name="age" id="age" placeholder="Age"><br><br>
+        <label for="">Would you recommend our restaurant to a friend?</label><br>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">Definitely</label><br>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">May be</label><br>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">Not sure</label><br><br>
+        <label for="">Rate Our Service:</label><br>
+        <input type="radio" name="rating" id="r1">
+        <label for="r1">1</label>
+        <input type="radio" name="rating" id="r2">
+        <label for="r2">2</label>
+        <input type="radio" name="rating" id="r3">
+        <label for="r3">3</label>
+        <input type="radio" name="rating" id="r4">
+        <label for="r4">4</label>
+        <input type="radio" name="rating" id="r5">
+        <label for="r5">5</label><br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+    <hr>
+
+    <h1>Two-step Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="female" id="female">
+            <label for="female">Female</label><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" name="phone"><br><br>
+            <label for="dob">D.O.B</label>
+            <input type="date" name="dob" id="dob">
+
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <label for="line1">Flat No.</label><br>
+            <input type="text" name="line1" id="line1"><br><br>
+            <label for="line2">Street</label><br>
+            <input type="text" name="line2" id="line2"><br><br>
+            <label for="city">City</label><br>
+            <input type="text" name="city" id="city"><br><br>
+            <label for="state">State</label><br>
+            <input type="text" name="state" id="state"><br><br>
+            <label for="country">Country</label><br>
+            <input type="text" name="country" id="country"><br><br>
+            <label for="pin">Pincode</label><br>
+            <input type="number" name="pin" id="pin">
+        </fieldset>
+    </form>
+</body>
+</html>
