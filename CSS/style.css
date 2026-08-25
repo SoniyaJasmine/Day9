@@ -1,0 +1,73 @@
+*{
+    /* padding: 0%; */
+    /* margin: 0%; */
+    box-sizing: border-box;
+}
+.lorem{
+    background-color: yellow;
+    color: brown;
+    font-size: 18px;
+}
+h2{
+    font-size: 24px;
+    color: blue;
+}
+#cta{
+    color: white;
+    background-color: green;
+}
+a{
+    color: purple;
+}
+h1,h2,h3{
+    font-weight: bold;
+    color: blueviolet;
+}
+div p{
+    font-family: monospace;
+    color: gray;
+}
+ul>li{
+    color: goldenrod;
+    font-style: italic;
+}
+h1+p{
+    font-style: italic;
+}
+#cta:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+tr:nth-child(odd){
+    background-color: gray;
+}
+tr:nth-child(even){
+    background-color: lightblue;
+}
+h1::before{
+    content:"★";
+    color: red;
+}
+p{
+    line-height: 1.6;
+}
+.done::after{
+    content: " Done";
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background: lightgray;
+}
+#main-title{
+    text-align: center;
+    color: red;
+}
+p::first-letter{
+    font-size: 150%;
+    text-transform: uppercase;
+}
+.select::selection{
+    background: orange;
+    color: white;
+}

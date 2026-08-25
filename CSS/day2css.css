@@ -1,0 +1,53 @@
+/* .css{
+    background-color: aquamarine;
+} */
+ul>li{
+    background-color: hsl(20, 40%, 60%);
+}
+.hexa{
+    background-color: rgba(0, 120, 180, 0.5);
+}
+button{
+    background-color: hsl(150, 50%, 50%);
+}
+#radial{
+    background: radial-gradient(circle, #ffcc70, #ff6b6b);
+}
+aside{
+    background: conic-gradient(red,blue,green,aqua,red);
+}
+.gradient{
+    background: linear-gradient(to left, rgba(20,40,60,0.5), rgba(120,30,100, 0.9));
+}
+#rgb{
+    background: radial-gradient(ellipse, rgb(10,20,100), rgb(200,30,40));
+}
+#conic{
+    padding: 10px;
+    /* border: none; */
+    border-radius: 10px;
+}
+#conic:hover{
+    background: conic-gradient(green,blue,red,gray,lightblue,green);
+}
+h1{
+    color: greenyellow;
+}
+.c{
+   background-color: rgb(123, 129, 182); 
+}
+.hsl>a{
+    color: hsl(31, 80%, 20%);
+}
+.card{
+    background: radial-gradient(circle, #720d0d, #ecd2a2);
+}
+nav li:hover{
+    background: hsl(150, 50%, 50%);
+}
+#footer{
+    background: radial-gradient(circle, #ff6B6B 0%, #720d0d 25%, #5dede0 50%, #08503d 75%);
+}
+.color-wheel:hover{
+    background: conic-gradient(red, greenyellow, black, blue, pink, violet);
+}

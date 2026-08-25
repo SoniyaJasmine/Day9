@@ -1,0 +1,35 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.header{
+    background-color: rgb(10, 10, 139);
+    color: white;
+    text-align: center;
+
+}
+.content{
+    background: radial-gradient(circle, lightblue, white);
+    margin-bottom: 10px;
+}
+.welcome{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button{
+    background-color: coral;
+    color: white;
+}
+footer{
+    background-color: rgb(10, 10, 139);
+}
+li{
+    list-style-position: inside;
+    list-style: none;
+}
+li::before{
+    content: "✓ ";
+    color: black;
+    font-weight: bold;
+}

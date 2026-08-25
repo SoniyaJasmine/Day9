@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+#name:hover{
+    background-color: brown;
+    color: white;
+}
+table{
+    width: 600px;
+    border: 1px solid rgb(143, 163, 172);
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid rgb(198, 225, 238);
+}
+th{
+    background-color: rgb(38, 38, 66);
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: rgb(223, 230, 233);
+}
+.number{
+    color: red;
+    font-weight: bold;
+}
+
+.list{
+    margin: 0;
+    background-color: orangered;
+    color: wheat;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    background-color: bisque;
+}
+input,label:hover{
+    background: aquamarine;
+}
+ol li:hover{
+    background: #ddd;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 110px;
+    background-color: rgb(30, 30, 48);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a::before{
+    content:"🌐";
+}
+a:hover{
+    color: red;
+}

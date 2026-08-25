@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body.dark {
+            background-color: #222;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .products {
+            display: flex;
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 150px;
+        }
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        #cart {
+            margin-top: 30px;
+            border: 1px solid #ccc;
+            padding-top: 10px;
+        }
+        .card-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            width: 400px;
+            border-bottom: 1px solid #ddd;
+        }
+
+
+        input {
+            padding: 10px;
+            width: 250px;
+        }
+        li {
+            margin: 10px 0;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .delete {
+            background-color: red;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Theme Switcher</h1>
+    <button id="themeBtn">🌙 Dark Mode</button>
+    <br><br>
+    <hr>
+
+
+    <h1>2. Shopping Cart Prototype</h1>
+    <div class="products">
+        <div class="product">
+            <h3>Apple</h3>
+            <P>₹100</P>
+            <button onclick="addToCart('Apple', 100)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Banana</h3>
+            <P>₹50</P>
+            <button onclick="addToCart('Banana', 50)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Mango</h3>
+            <P>₹150</P>
+            <button onclick="addToCart('Mango', 150)">Add to Cart</button>
+        </div>
+        <div id="cart">
+            <h2>Cart</h2>
+            <div id="cartItems"></div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>3. Interactive Todo List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addBtn">Add Task</button>
+    <ul id="taskList"></ul>
+    <br><br>
+    <hr>
+
+    <script>
+
+        // 1. Theme Switcher //   
+
+        const themeBtn = document.getElementById("themeBtn");
+
+        const savedTheme = localStorage.getItem("theme");
+
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+            themeBtn.textContent = "☀️ Light Mode";
+        }
+
+        themeBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+
+            if(document.body.classList.contains("dark")) {
+                localStorage.setItem("theme","dark");
+                themeBtn.textContent = "☀️ Light Mode";
+            } else {
+                localStorage.setItem("theme","light");
+                themeBtn.textContent = "🌙 Dark Mode";
+            }
+            });
+
+
+        // 2. Shopping Cart Prototype //
+
+
+        let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+        function addToCart(name, price) {
+
+            const product = {
+                name: name,
+                price: price
+            };
+            cart.push(product);
+            sessionStorage.setItem("cart", JSON.stringify(cart));
+            displayCart();
+        }
+         
+        function displayCart() {
+            const cartItems = document.getElementById("cartItems");
+            cartItems.innerHTML = "";
+            cart.forEach(function(item) {
+                const div = document.createElement("div");
+                div.classList.add("cart-item");
+                const name = document.createElement("span");
+                name.textContent = item.name;
+                const price = document.createElement("span");
+                price.textContent = "₹" + item.price;
+                div.appendChild(name);
+                div.appendChild(price);
+                cartItems.appendChild(div);
+            });
+
+        }
+        displayCart();
+
+        // 3. Interactive Todo List //
+
+        const taskInput = document.getElementById("taskInput");
+        const addBtn = document.getElementById("addBtn");
+        const taskList = document.getElementById("taskList");
+
+        let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+        addBtn.addEventListener("click", function() {
+
+            const taskText = taskInput.value.trim();
+
+            if (taskText === "") {
+                alert("Please enter a task.");
+                return;
+            }
+            tasks.push(taskText);
+            saveTasks();
+            displayTasks();
+            taskInput.value = "";
+        });
+
+        function displayTasks() {
+
+            taskList.innerHTML = "";
+
+            tasks.forEach(function (task, index) {
+
+                const li = document.createElement("li");
+
+                const span = document.createElement("span");
+                span.textContent = task;
+
+                const deleteBtn = document.createElement("button");
+                deleteBtn.textContent = "Delete";
+                deleteBtn.classList.add("delete");
+
+                deleteBtn.addEventListener("click", function() {
+                    tasks.splice(index, 1);
+                    saveTasks();
+                    displayTasks();
+                });
+
+                li.appendChild(span);
+                li.appendChild(deleteBtn);
+
+                taskList.appendChild(li);
+            });
+
+        }
+        function saveTasks() {
+                localStorage.setItem("tasks", JSON.stringify(tasks));
+            }
+
+            displayTasks();
+    </script>
+</body>
+</html>
