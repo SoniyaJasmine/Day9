@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #openBtn{
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background: #6c63ff;
+            color:white;
+            cursor: pointer;
+        }
+        .modal{
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content{
+            width: 300px;
+            max-width: 80%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            text-align: center;
+        }
+        .close-btn{
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        .container1{
+            padding: 20px;
+        }
+        input{
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        li{
+            padding: 8px;
+        }
+
+        .container2{
+            padding: 30px;
+        }
+        .step{
+            display: none;
+        }
+        .step.active{
+            display: block;
+        }
+        input{
+            display: block;
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button{
+            padding: 10px 20px;
+            margin: 5px;
+        }
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Modal Popup</h1>
+    <div class="container">
+        <button id="openBtn">Open Modal</button>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <button id="closeBtn" class="close-btn">&times;</button>
+                <p>Modal Content</p>
+            </div>
+        </div> 
+    </div> 
+    <br><br>
+    <hr>
+
+
+    <h1>2. Live Search</h1>
+    <div class="container1">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <ul id="fruitList">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
+            <li>Mango</li>
+            <li>Grapes</li>
+            <li>Pineapple</li>
+            <li>Watermelon</li>
+        </ul>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h1>3. Multi-Step Form</h1>
+    <div class="container2">
+        <form id="myForm">
+            <div class="step active" id="step1">
+                <h2>Step 1 - Personal Information</h2>
+                <input type="text" id="name" placeholder="Enter your name">
+                <input type="email" id="email" placeholder="Enter Your email">
+                <p class="error" id="error1"></p>
+                <button type="button" id="next1">Next</button>
+            </div>
+            <div class="step" id="step2">
+                <h2>Step 2 - Account Details</h2>
+                <input type="password" name="" id="password" placeholder="Enter password">
+                <input type="password" name="" id="confirmPassword" placeholder="Confirm Password">
+                <p class="error" id="error2"></p>
+                <button type="button" id="back2">Back</button>
+                <button type="button" id="next2">Next</button>
+            </div>
+            <div class="step" id="step3">
+                <h2>Step3 - Confirmation</h2>
+                <p id="summary"></p>
+                <button type="button" id="back3">Back</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+        //Modal Popup
+
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const modal = document.getElementById('modal');
+
+        openBtn.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
+
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = 'none';
+        });
+
+        modal.addEventListener("click", () => {
+            modal.style.display = 'none';
+        });
+
+        document.querySelector(".modal-content")
+            .addEventListener("click", (e) => {
+            e.stopPropagation();
+        });
+        
+
+        //Live Search
+
+        const searchInput = document.getElementById('searchInput');
+        const fruits = document.querySelectorAll('#fruitList li');
+
+        searchInput.addEventListener("input", () => {
+            const searchText = searchInput.value.toLowerCase();
+
+            fruits.forEach((fruit) => {
+                const fruitName = fruit.textContent.toLowerCase();
+
+                if (fruitName.includes(searchText)) {
+                    fruit.style.display = 'list-item';
+                } else {
+                    fruit.style.display = 'none';
+                }
+            })
+        });
+
+
+        // Multi-Step Form
+        const formData = {};
+
+        const step1 = document.getElementById("step1");
+        const step2 = document.getElementById("step2");
+        const step3 = document.getElementById("step3");
+
+        document.getElementById("next1").addEventListener("click", () => {
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const error = document.getElementById("error1");
+
+            if (name === "" || email === ""){
+                error.textContent = "Please fill all fields.";
+                return;
+            }
+            if (!email.includes("@")){
+                error.textContent = "Please enter a valid email.";
+                return;
+            }
+
+            formData.name = name;
+            formData.email = email;
+            error.textContent = "";
+            step1.classList.remove("active");
+            step2.classList.add("active");
+        });
+
+        document.getElementById("next2").addEventListener("click", ()=>{
+
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            const error = document.getElementById("error2");
+
+            if ( password === "" || confirmPassword === ""){
+                error.textContent = "Please fill all fields.";
+                return;
+            }
+            if ( password.length < 6){
+                error.textContent = "Password must contain atleast 6 characters.";
+                return;
+            }
+            if (password !== confirmPassword){
+                error.textContent = "Password do not match.";
+                return;
+            }
+            
+            formData.password = password;
+            error.textContent = "";
+
+            document.getElementById("summary").innerHTML = `
+                <strong>Name:</strong> ${formData.name}<br>
+                <strong>Email:</strong> ${formData.email}<br>
+                <strong>Password:</strong> ${formData.password}
+            `;
+
+            step2.classList.remove("active");
+            step3.classList.add("active");
+        });
+ 
+        document.getElementById("back2").addEventListener("click", () => {
+            step2.classList.remove("active");
+            step1.classList.add("active");
+        }); 
+        
+         document.getElementById("back3").addEventListener("click", () => {
+            step3.classList.remove("active");
+            step2.classList.add("active");
+        });
+        
+        document.getElementById("myForm").addEventListener("submit", (event) => {
+            event.preventDefault();
+            console.log("Final Form Data:", formData)
+            alert("Form Submitted successfully!");
+        });
+    </script>
+</body>
+</html>
