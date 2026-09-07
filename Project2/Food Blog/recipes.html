@@ -6,11 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Math&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Project2.css">
-    <title>Figma</title>
+    <link rel="stylesheet" href="./recipes.css">
+    <title>Document</title>
 </head>
 <body>
-     <header class="hero-section">
+    <header class="recipe-section" id="recipes">
         <nav class="navbar">
             <div class="logo">
                 <img src="../Food Blog/ChatGPT Image Feb 27, 2026, 04_43_13 PM.png" alt="Logo" class="logo">
@@ -21,8 +21,8 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="blog.html" target="_blank">Blogs</a></li>
-                <li><a href="recipes.html" target="_blank">Recipes</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Recipes</a></li>
                 <li><a href="write.html" id="writelink" target="_blank">Write</a></li>
             </ul>
             <div class="nav-right">
@@ -30,31 +30,17 @@
                 <a href="#footer" class="subscribe">Subscribe</a>
             </div>
         </nav>
-        <div class="hero-content">
-            <h1>Discover Delicious Recipes Every Day</h1>
-            <p>Simple Ingredients. Amazing Flavours. Cook with confidence and joy</p>
-            <div class="hero-buttons">
-                <a href="#" class="explore-btn">Explore Blog</a>
-                <a href="#" class="write-btn">Write a Blog</a>
+        <section class="recipe-hero">
+            <div class="recipe-hero-content">
+                <h1>Explore Tasty Recipes</h1>
+                <p>From quick meals to gourment delights, find the perfect recipe for every occasion.</p>
             </div>
-        </div>
-     </header>
-     <div class="slider-dots">
-        <button class="dot active" data-slide="0"></button>
-        <button class="dot" data-slide="1"></button>
-        <button class="dot" data-slide="2"></button>
-     </div>
+        </section>
+    </header>
 
-     
-     <section class="trending">
+    <section class="trending">
 
-        <div class="section-heading">
-            <div>
-                <h2>↗ Trending Now</h2>
-                <p>Most Loved recipes by out community this week.</p>
-            </div>
-            <a href="#" class="view-all">View all →</a>
-        </div>
+        <h2>Most Popular Recipe Collections</h2>
 
         <div class="recipe-container">
 
@@ -126,146 +112,133 @@
                     </div>
                 </div>
             </div>
+
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="./Mediterranean-tomato-and-cucumber-salad-11.jpg" alt="Recipe 4">
+                    <span class="recipe-tag">Receipe</span>
+                    <span class="rating">★ 4.5</span>
+                </div>
+                <div class="recipe-info">
+                    <div class="recipe-details">
+                        <span>◷ 14 min</span>
+                        <span>Easy</span>
+                    </div>
+                    <h3>Fresh Mediterranean Salad</h3>
+                    <p>Crisp vegetables, olives, and feta tossed in a light lemon dressing.</p>
+                    <div class="recipe-author">
+                        <div class="author">
+                            <img src="../Food Blog/cute-profile-pic-for-girls-hd.webp" alt="Author">
+                            <span>Isabella Crista</span>
+                        </div>
+                        <span class="heart">♡</span>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="../Food Blog/photo-1673551490812-eaee2e9bf0ef.jpg" alt="Recipe 3">
+                    <span class="recipe-tag">Receipe</span>
+                    <span class="rating">★ 4.5</span>
+                </div>
+                <div class="recipe-info">
+                    <div class="recipe-details">
+                        <span>◷ 34 min</span>
+                        <span>Medium</span>
+                    </div>
+                    <h3>Chessy Margherita Pizza</h3>
+                    <p>A classic Italian pizza topped with fresh mozzarella, basil leaves, and rich tomato sauce on a crispy crust.</p>
+                    <div class="recipe-author">
+                        <div class="author">
+                            <img src="../Food Blog/cute-profile-pic-for-girls-hd.webp" alt="Author">
+                            <span>Daniel Russo</span>
+                        </div>
+                        <span class="heart">♡</span>   
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section class="browse-guide">
+        <div class="browse-content">
+            <h3>Get Started</h3>
+            <h1>10 Ingredients. <br> Hundreds of Recipes</h1>
+            <p>All you need is 10 staple ingredients to make hundreds of authentic Chinese dishes. Start your Chinese cooking journey!</p>
+            <button>Browse Guide</button>
         </div>
      </section>
 
-     <section class="latest-blogs">
-
-        <h2>Latest Blogs</h2>
-
-        <div class="latest-blog-container">
-
-            <div class="latest-blog-card">
-                <img src="../Food Blog/plate-fettuccine-alfredo-with-fresh-parsley_9975-124881.avif" alt="Latest Blog 1">
-                <div class="blog-content">
-                    <span class="span">Quick Meals</span>
-                    <h3>Creamy Garlic Butter Pasta</h3>
-                    <p>A rich and comforting pasta recipe made with fresh garlic, butter, and parmesan - ready in just 20 minutes.</p>
-                    <a href="#" class="read-more">Read More <span>→</span></a>
-                </div>
-            </div>
-
-            <div class="latest-blog-card">
-                <img src="../Food Blog/360_F_1895024226_j6eLPQ27kooIyRVpEZvHQ087E0mzdoUM.jpg" alt="Latest Blog 2">
-                <div class="blog-content">
-                    <span class="span">Desserts</span>
-                    <h3>Classic Chocolate Lava Cake</h3>
-                    <p>Warm, gooey chocolate cake with a molten center that melts in your mouth. Perfect for special evenings.</p>
-                    <a href="#" class="read-more">Read More <span>→</span></a>
-                </div>
-            </div>
-
-            <div class="latest-blog-card">
-                <img src="../Food Blog/grilled-chicken-skewers-fresh-cucumber-salsa-spicy-sauce-black-bowl-grilled-chicken-skewers-fresh-cucumber-salsa-405289399.webp" alt="Latest Blog 3">
-                <div class="blog-content">
-                    <span class="span">Non-veg</span>
-                    <h3>Spicy Grilled Chicken Skewers</h3>
-                    <p>Juicy chicken marinated in bold spices and grilled to perfection - ideal for weekend dinners.</p>
-                    <a href="#" class="read-more">Read More <span>→</span></a>
-                </div>
-            </div>
-
-            <div class="latest-blog-card">
-                <img src="../Food Blog/quinoa-avocado-bowl-fb.webp" alt="Latest Blog 4">
-                <div class="blog-content">
-                    <span class="span">Healthy</span>
-                    <h3>Avocado Quinoa Power Bowl</h3>
-                    <p>A nutritious bowl packed with quinoa, fresh veggies and creamy avocado for a balanced energizing meal.</p>
-                    <a href="#" class="read-more">Read More <span>→</span></a>
-                </div>
-            </div>
-        </div>
-     </section>
      <section class="categories-section">
         <div class="category-heading">
-            <h2>Popular Categories</h2>
+            <h2>Recipes</h2>
         </div>
         <div class="category-container">
 
              <div class="category-card">
-                <img src="../Food Blog/360_F_283759099_6dKKjPSCGKCR0hHgFkzvEd0JqH9baN0W.jpg" alt="Desserts">
+                <img src="./sheet-pan-peruvian-chicken-3.webp" alt="Recipe 1">
                 <div class="category-overlay">
-                    <h3>Desserts</h3>
+                    <h3>Sheet Pan Peruvian Chicken Thighs</h3>
                 </div>
              </div>
 
              <div class="category-card">
-                <img src="../Food Blog/562120-untitled-design-10.webp" alt="Quick Meals">
+                <img src="./beef-bamboo-mushroom-stir-fry-17.webp" alt="Recipe 2">
                 <div class="category-overlay">
-                    <h3>Quick Meals</h3>
+                    <h3>Beef with Mushroom and Bamboo Shoots</h3>
                 </div>
              </div>
 
              <div class="category-card">
-                <img src="../Food Blog/traditional-indian-thali-meal-displaying-rice-curry-chickpeas-and-naan-bread-photo.jpg" alt="Vegetarian">
+                <img src="./spring-roll-dipping-sauce-2.webp" alt="Recipe 3">
                 <div class="category-overlay">
-                    <h3>Vegitarian</h3>
+                    <h3>Spring Roll Dipping Sauce</h3>
                 </div>
              </div>
 
              <div class="category-card">
-                <img src="../Food Blog/indian-feast-platter-thali-meal-with-rice-naan-photo.jpg" alt="Non-Veg">
+                <img src="./chow-har-kow-17.webp" alt="Recipe 4">
                 <div class="category-overlay">
-                    <h3>Non-Veg</h3>
+                    <h3>Chow Har Kew (Stir-fried Crispy Shrimp with Vegetables)</h3>
                 </div>
              </div>
 
              <div class="category-card">
-                <img src="../Food Blog/pngtree-cocktail-collection-a-of-fresh-juices-and-alcoholic-drinks-image_17155251.jpg" alt="Drinks">
+                <img src="./chinese-cauliflower-stir-fry-beef-18.webp" alt="Recipe 5">
                 <div class="category-overlay">
-                    <h3>Drinks</h3>
+                    <h3>Cauliflower Stir-Fry with Beef</h3>
+                </div>
+             </div>
+
+             <div class="category-card">
+                <img src="./hongshao-rou-soy-puffs-7-1577x2048.webp" alt="Recipe 6">
+                <div class="category-overlay">
+                    <h3>Braised Pork Belly with Tofu Puffs</h3>
+                </div>
+             </div>
+
+             <div class="category-card">
+                <img src="./pidan-pepper-stir-fry-16.webp" alt="Recipe 7">
+                <div class="category-overlay">
+                    <h3>Century Eggs with Green Peppers</h3>
+                </div>
+             </div>
+
+             <div class="category-card">
+                <img src="./homemade-egg-roll-wrappers-12.webp" alt="Recipe 8">
+                <div class="category-overlay">
+                    <h3>Egg Roll Wrappers</h3>
                 </div>
              </div>
         </div>
+        
+    </section>
 
-     </section>
+    <section class="browse">
+        <button>Browse All</button>
+    </section>
 
-     <section class="why-join">
-        <h2>Why Join ?</h2>
-        <div class="why-container">
-
-            <div class="why-image">
-                <img src="../Food Blog/ChatGPT Image Feb 28, 2026, 03_56_46 PM.png" alt="">
-            </div>
-
-            <div class="why-content">
-                <p class="why-intro">
-                    Discover, cook, and share delicious recipes with thousands of food lovers around the world.
-                </p>
-                <div class="why-item">
-                    <span class="number">1</span>
-                    <div>
-                        <h3>Discover New Recipes</h3>
-                        <p>Explore trending, seasonal and chef-inspired dishes added daily.</p>
-                    </div>
-                </div>
-                <div class="why-item">
-                    <span class="number">2</span>
-                    <div>
-                        <h3>Save Your Favorites</h3>
-                        <p>Bookmark recipes and create your own personalized collection.</p>
-                    </div>
-                </div>
-                <div class="why-item">
-                    <span class="number">3</span>
-                    <div>
-                        <h3>Step-by-Step Guidance</h3>
-                        <p>Follow clear instructions with cooking tips to get perfect results every time.</p>
-                    </div>
-                </div>
-                <div class="why-item">
-                    <span class="number">4</span>
-                    <div>
-                        <h3>Join a Food Lovers Community</h3>
-                        <p>Connect, comment, and share your cooking experiences with others.</p>
-                    </div>
-                </div>
-                <a href="#" class="start-btn">Start Cooking Today</a>
-            </div>
-
-        </div>
-     </section>
-     <section class="newsletter">
+    <section class="newsletter">
         <h2>Stay Updated with Fresh Recipes</h2>
         <p> Get delicious recipes, cooking tips, and trending food ideas delivered straight to your inbox. No spam. Just tasty inspitarion!</p>
         <div class="newsletter-form">

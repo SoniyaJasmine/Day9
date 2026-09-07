@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Math&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../Food Blog/ChatGPT Image Feb 27, 2026, 04_43_13 PM.png" alt="Logo" class="logo">
+            </div>
+            <div class="search-bar">
+                <span>⌕</span>
+                <input type="text" placeholder="Search here...">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="blog.html" target="_blank">Blogs</a></li>
+                <li><a href="recipes.html" target="_blank">Recipes</a></li>
+                <li><a href="write.html" id="writelink" target="_blank">Write</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" class="account">Account</a>
+                <a href="#footer" class="subscribe">Subscribe</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="hero-banner"></div>
+
+    <div class="container">
+    
+    <aside class="sidebar">
+        <div class="profile-header">
+            <h2>Profile</h2>
+            <button class="btn-outline">Share Profile</button>
+        </div>
+
+        <div class="user-avatar-section">
+            <div class="avatar">P</div>
+            <div class="user-details">
+                <h3>Priya</h3>
+                <p class="username">Username: @tastybypriya</p>
+            </div>
+        </div>
+
+        <p class="joined-date">Joined January 2026</p>
+
+        <button class="btn">Update Profile Picture</button>
+
+        <div class="info-field">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Chennai, India</span>
+        </div>
+
+        <div class="bio-section">
+            <label>Bio</label>
+            <div class="bio-box"></div>
+        </div>
+
+        <div class="activity-section">
+            <label>Activity</label>
+            <div class="activity-tags">
+                <span>4 Likes</span>
+                <span>2 Comment</span>
+            </div>
+        </div>
+
+        <button class="btn-logout">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </button>
+    </aside>
+
+    <main class="main-content">
+      
+        <div class="top-action-bar">
+            <button class="btn-red">Write a blog</button>
+        </div>
+
+        <div class="stats-cards">
+            <div class="card stat-card">
+                <i class="fa-solid fa-blog icon-red"></i>
+                <div>
+                    <span class="stat-title">Blogs</span>
+                    <span class="stat-count">2</span>
+                </div>
+            </div>
+            <div class="card stat-card">
+            <i class="fa-solid fa-pen-to-square icon-red"></i>
+            <div>
+                <span class="stat-title">Draft</span>
+                <span class="stat-count">0</span>
+            </div>
+            </div>
+      </div>
+
+        <div class="tabs">
+            <span class="tab active">Your Blogs</span>
+            <span class="tab">Drafts</span>
+        </div>
+
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="card-hover-actions">
+                    <button class="btn-card-action btn-edit">Edit</button>
+                    <button class="btn-card-action btn-unpublish">Unpublish</button>
+                </div>
+                <img src="./sheet-pan-peruvian-chicken-3.webp" alt="Sheet Pan Peruvian Chicken Thighs">
+                <div class="blog-overlay">
+                    Sheet Pan Peruvian Chicken Thighs (Blog)
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="card-hover-actions">
+                    <button class="btn-card-action btn-edit">Edit</button>
+                    <button class="btn-card-action btn-unpublish">Unpublish</button>
+                </div>
+            <img src="./beef-bamboo-mushroom-stir-fry-17.webp" alt="Beef with Mushrooms and Bamboo Shoots">
+            <div class="blog-overlay">
+                Beef with Mushrooms and Bamboo Shoots (Blog)
+            </div>
+            </div>
+        </div>
+
+    </main>
+  </div>
+
+
+
+     <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="../Food Blog/ChatGPT Image Feb 27, 2026, 04_43_13 PM.png" alt="">
+                 <p>Email: support@gmail.com</p>
+                 <p>Phone: +91 XXXXX XXXXX</p>
+                 <p>Location: Chennai, India</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">Recipes</a>
+                <a href="#">Write</a>
+            </div>
+            <div class="footer-column">
+                <h3>Categories</h3>
+                <a href="#">Desserts</a>
+                <a href="#">Quick Meals</a>
+                <a href="#">Vegetarian</a>
+                <a href="#">Non-Vegetarian</a>
+                <a href="#">Drinks</a>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p> Get fresh recipes and cooking inspiration every week.</p>
+                <div class="footer-form">
+                    <input type="email" name="" id="" placeholder="Enter Email Address">
+                    <button type="submit">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div> </div>
+            <div class="footer-copy">
+                <p>© 2026 Your Website Name. All rights reserved.</p>
+                <p>Privacy Policy | Terms & Conditions</p>
+            </div>
+            <div class="social-links">
+                <span>Follow us, </span>
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Instagram">◎</a>
+                <a href="#" aria-label="YouTube">▶</a>
+                <a href="#" aria-label="Twitter">𝕏</a>
+            </div>
+        </div>
+     </footer>
+</body>
+</html>
