@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  background-color: #222;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a.active {
+  color: yellow;
+  font-weight: bold;
+  border-bottom: 2px solid yellow;
+}
+
+div {
+  padding: 20px;
+}

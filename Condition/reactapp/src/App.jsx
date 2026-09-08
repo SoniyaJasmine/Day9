@@ -1,16 +1,27 @@
-import Task1 from './task1';
-import Task2 from './task2';
-import Task3 from './task3';
+import { BrowserRouter, Routes, Route, NavLink} from "react-router-dom";
 
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
+
+ 
 function App() {
   return (
-    <div>
-      <Task1 />
-      <hr />
-      <Task2 />
-      <hr />
-      <Task3 />
-    </div>
+    <BrowserRouter>
+
+      <nav>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+    </BrowserRouter>
   );
 }
 
