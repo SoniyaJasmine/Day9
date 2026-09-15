@@ -1,0 +1,303 @@
+.services-hero {
+  height: 290px;
+
+  background-image: url("./assets/ChatGPT\ Image\ Mar\ 3\,\ 2026\,\ 12_43_34\ PM.png");
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.services-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(10, 25, 45, 0.72);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 20px;
+}
+
+.services-overlay h1 {
+  color: #f6a000;
+  font-family: oswald;
+  font-size: 40px;
+  font-weight: 400;
+
+  margin: 0 0 25px;
+
+  letter-spacing: 0.8px;
+}
+
+.services-overlay p {
+  max-width: 900px;
+  word-spacing: 0.8px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: inter;
+  margin: 0;
+}
+
+
+/* ========================================
+   SERVICES SECTION
+======================================== */
+
+.our-project{
+  font-family: oswald;
+  font-size: 30px ;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: orange;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.services-section {
+  width: 100%;
+  padding: 40px 3.5%;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   SERVICE ROW
+======================================== */
+
+.service-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 45px;
+}
+
+
+/* Reverse image/content position */
+
+.service-row.reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* ========================================
+   IMAGE BOX
+======================================== */
+
+.service-image-box {
+  width: 52%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+
+/* Image */
+
+.service-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease;
+}
+
+
+/* ========================================
+   GRAY OVERLAY
+======================================== */
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(80, 80, 80, 0.2);
+
+  /*
+     Starts with almost zero width.
+     This gives the horizontal expansion effect.
+  */
+  transform: scaleX(0);
+
+  transform-origin: center;
+
+  transition:
+    transform 0.6s ease;
+
+  z-index: 2;
+}
+
+
+/* Hover → gray box expands horizontally */
+
+.service-image-box:hover .image-overlay {
+  transform: scaleX(1);
+}
+
+
+/* ========================================
+   WHITE BORDER
+======================================== */
+
+.overlay-border {
+  position: absolute;
+
+  width: 92%;
+  height: 92%;
+
+  top: 4%;
+  left: 4%;
+
+  border: 4px solid rgba(255, 255, 255, 0.95);
+
+  box-sizing: border-box;
+
+  /*
+     Border starts vertically collapsed.
+  */
+  transform: scaleY(0);
+
+  transform-origin: center;
+
+  transition:
+    transform 0.35s ease;
+
+  transition-delay: 0.35s;
+  z-index: 3;
+}
+
+
+/* Hover → border grows vertically */
+
+.service-image-box:hover .overlay-border {
+  transform: scaleY(1);
+  transition-duration: 0s;
+}
+
+
+/* ========================================
+   SERVICE CONTENT
+======================================== */
+
+.service-content {
+  width: 45%;
+  font-family: inter;
+}
+
+
+.service-content h2 {
+  margin: 0 0 25px;
+  letter-spacing: 0.5px;
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #222;
+}
+
+
+.service-content h4 {
+  margin: 0 0 25px;
+
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+}
+
+
+.service-content p {
+  margin: 0 0 20px;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #333333;
+}
+
+
+.service-content h5 {
+  margin: 0 0 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 17px;
+}
+
+
+/* ========================================
+   LIST
+======================================== */
+
+.service-content ul {
+  margin: 0 0 25px;
+  padding-left: 15px;
+}
+
+
+.service-content li {
+  margin-bottom: 4px;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #444;
+}
+
+
+.service-content li::marker {
+  color: #f6a000;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.service-border{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .service-row,
+  .service-row.reverse {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-image-box {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service-content {
+    width: 100%;
+  }
+
+}

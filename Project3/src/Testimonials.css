@@ -1,0 +1,428 @@
+/* =========================================
+   TESTIMONIAL SECTION
+========================================= */
+
+.testimonial-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   DARK TESTIMONIAL AREA
+========================================= */
+
+.testimonial-container {
+  background: #0d162b;
+  height: 600px;
+
+  padding: 22px 8% 30px;
+
+  text-align: center;
+  color: white;
+}
+
+.testimonial-container h2 {
+  margin: 0;
+  font-family: oswald;
+  letter-spacing: 1.5px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.testimonial-subtitle {
+  margin-top: 30px;
+  margin-bottom: 28px;
+  font-family: inter;
+  font-size: 15px;
+  color: #e0e1e2;
+  letter-spacing: 0.7px;
+}
+
+
+/* =========================================
+   TESTIMONIAL CARD
+========================================= */
+
+.testimonial-card {
+  width: 780px;
+  height: 280px;
+
+  margin: 0 auto;
+
+  background: #353d50;
+
+  border-radius: 13px;
+
+  text-align: left;
+
+  padding: 10px 14px;
+
+  box-sizing: border-box;
+}
+
+
+/* Quote */
+
+.quote-mark {
+  color: #ffbd00;
+
+  font-size: 50px;
+
+  line-height: 60px;
+
+  font-family: Georgia, serif;
+}
+
+
+/* Stars */
+
+.stars {
+  color: #ffb900;
+
+  font-size: 40px;
+
+  margin-top: 2px;
+}
+
+
+/* Text */
+
+.testimonial-text {
+  color: #eeeeee;
+  font-family: inter;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  line-height: 20px;
+  font-weight: 300;
+  margin: 7px 0 8px;
+
+  /* max-width: 550px; */
+}
+
+
+/* =========================================
+   CLIENT
+========================================= */
+
+.client-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.client-image {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.client-info h4 {
+  margin: 0 0 2px;
+  font-family: inter;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.client-info p {
+  margin: 0;
+  font-family: inter;
+  font-size: 15px;
+
+  color: #d1d3d8;
+}
+
+
+/* =========================================
+   DOTS
+========================================= */
+
+.slider-controls {
+  margin-top: 20px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.arrow {
+  width: 40px;
+  height: 40px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #3a4355;
+
+  color: white;
+
+  font-size: 30px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+
+.dots {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+}
+
+
+.dots span {
+  width: 8px;
+  height: 8px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  opacity: 0.8;
+
+  transition: all 0.4s ease;
+}
+
+
+/* Active dot */
+
+.dots span.active-dot {
+  width: 32px;
+  height: 6px;
+
+  border-radius: 10px;
+
+  background: #ffb900;
+
+  opacity: 1;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.statistics {
+  /* max-width: 800px; */
+
+  margin: 20px auto 10;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+}
+
+.stat h3 {
+  margin-top: 25px;
+  font-family: inter;
+  color: #ffbd00;
+  font-size: 38px;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.stat p {
+  margin: 4px 0 0;
+  font-family: inter;
+  color: #cacace;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   BANKING SECTION
+========================================= */
+
+.banking-section {
+  background: white;
+
+  height: 390px;
+
+  padding: 40px 0 25px;
+
+  text-align: center;
+
+  color: #161616;
+
+  overflow: hidden;
+}
+
+
+.banking-section h2 {
+  margin: 0;
+  font-family: oswald;
+  font-size: 33px;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+}
+
+
+.banking-subtitle {
+  margin: 5px 0 35px;
+  font-family: inter;
+  font-size: 15px;
+  
+  color: #1d1d1d;
+}
+
+
+/* =========================================
+   CONTINUOUS BANK SLIDER
+========================================= */
+
+.bank-slider {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+
+.bank-track {
+  display: flex;
+  padding-top: 20px;
+  width: max-content;
+
+  gap: 30px;
+
+  animation: bankScroll 10s linear infinite;
+}
+
+
+/*
+   Move exactly half of the duplicated
+   content so it loops seamlessly.
+*/
+
+@keyframes bankScroll {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(
+      calc(-50% - 12px)
+    );
+  }
+
+}
+
+
+/* =========================================
+   BANK CARD
+========================================= */
+
+.bank-card {
+  width: 190px;
+  height: 115px;
+  border: 1px solid rgb(231, 231, 231);
+  background: white;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.3);
+
+  /* flex-shrink: 0; */
+}
+
+
+.bank-card img {
+  max-width: 100%; 
+  object-fit: cover;
+}
+
+
+/* Pause when mouse is over */
+
+.bank-track:hover {
+  animation-play-state: paused;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .testimonial-container {
+    padding: 25px 20px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+
+    height: auto;
+
+    min-height: 190px;
+  }
+
+  .statistics {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+  }
+
+  .bank-track {
+    gap: 15px;
+
+    animation-duration: 15s;
+  }
+
+  .bank-card {
+    width: 130px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .testimonial-container h2 {
+    font-size: 20px;
+  }
+
+  .testimonial-subtitle {
+    font-size: 10px;
+  }
+
+  .testimonial-text {
+    font-size: 10px;
+  }
+
+  .statistics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat h3 {
+    font-size: 20px;
+  }
+
+}

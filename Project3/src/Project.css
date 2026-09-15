@@ -1,0 +1,365 @@
+/* ================================
+   PROJECTS SECTION
+================================ */
+
+.projects-section {
+  width: 100%;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 50px;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.projects-hero {
+  height: 280px;
+
+  background-image: url("./assets/ChatGPT\ Image\ Mar\ 3\,\ 2026\,\ 12_39_14\ PM.png");
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.projects-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(10, 25, 45, 0.72);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 20px;
+}
+
+.projects-overlay h1 {
+  color: #f6a000;
+  font-family: oswald;
+  font-size: 40px;
+  font-weight: 400;
+
+  margin: 0 0 25px;
+
+  letter-spacing: 0.8px;
+}
+
+.projects-overlay p {
+  max-width: 900px;
+  word-spacing: 0.8px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* ================================
+   FILTER BUTTONS
+================================ */
+
+.project-filters {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 52px 60px 30px;
+}
+
+.project-filters button {
+  width: 140px;
+  font-family: inter;
+  padding: 8px 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #f6a000;
+  border-radius: 20px;
+
+  color: #222;
+
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.project-filters button:hover {
+  border-bottom: 6px solid orange;
+}
+
+.project-filters button.active {
+  border-bottom: 6px solid orange;
+}
+ 
+
+/* ================================
+   PROJECT GRID
+================================ */
+
+.projects-grid {
+  width: 100%;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5px 60px 55px;
+  gap: 38px 24px;
+}
+
+
+/* ================================
+   PROJECT CARD
+================================ */
+
+.project-card {
+  background: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); */
+}
+
+
+/* ================================
+   IMAGE
+================================ */
+
+.project-image-container {
+  width: 100%;
+  height: 370px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+
+/* Image hover */
+
+.project-card:hover .project-image {
+  transform: scale(1.06);
+
+  filter: brightness(0.72);
+}
+.project-card:hover h3{
+    color: orange;
+}
+.project-card:hover .view-project-btn{
+    font-size: 16px;
+}
+/* ================================
+   PROJECT INFORMATION
+================================ */
+
+.project-info {
+  padding: 10px 20px 0;
+  font-family: inter;
+}
+
+.project-info h3 {
+  margin: 0 0 12px;
+  
+  color: #111111;
+
+  font-size: 19px;
+
+  font-weight: 600;
+}
+
+.project-info p {
+  margin: 0 0 12px;
+
+  color: #0f0f0f;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   VIEW PROJECT BUTTON
+================================ */
+
+.view-project-btn {
+  padding: 0;
+
+  border: none;
+  font-weight: 600;
+  background: transparent;
+
+  color: #f6a000;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: gap 0.25s ease;
+}
+
+.view-project-btn span {
+  display: inline-block;
+
+  margin-left: 5px;
+
+  transition: transform 0.25s ease;
+}
+
+.view-project-btn:hover span {
+  transform: translateX(5px);
+}
+
+.cta {
+  height: 490px;
+
+  position: relative;
+
+  background-image: url("./assets/ChatGPT\ Image\ Mar\ 3\,\ 2026\,\ 12_39_14\ PM.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  clip-path: ellipse(100% 100% at 50% 0%);
+  /* border-radius: 0 0 50% 50% / 0 0 8% 8%; */
+}
+
+.cta::after {
+  content: "";
+  position: absolute;
+  bottom: -75px;
+  left: -10%;
+
+  width: 120%px;
+  height: 130px;
+
+  background: transparent;
+  border-radius: 50%;
+
+  z-index: 5;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(5, 15, 30, 0.75);
+}
+
+.cta-content {
+  position: relative;
+  z-index: 10;
+}
+.project p{
+    width: 800px;
+    line-height: 1.5;
+}
+.project-align{
+    display: flex;
+    justify-content: center;
+}
+
+.cta-content h2 {
+  color: #f5a000;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.cta-content p {
+  font-size: 10px;
+  margin-bottom: 18px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .projects-hero {
+    height: 230px;
+  }
+
+  .projects-overlay h1 {
+    font-size: 21px;
+  }
+
+  .projects-overlay p {
+    font-size: 10px;
+  }
+
+  .project-filters {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .projects-grid {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .project-image-container {
+    height: 210px;
+  }
+
+}

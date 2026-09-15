@@ -1,0 +1,35 @@
+print()
+print("1. Simple Student Report Card")
+name=input("Enter Student Name:")
+student_class=input("Enter Class:")
+mark1=float(input("Mark in English:"))
+mark2=float(input("Mark in Maths:"))
+mark3=float(input("Mark in Tamil:"))
+total=mark1+mark2+mark3
+percentage=total/3
+print("\n=====REPORT CARD=====")
+print(f"Student Name: {name}")
+print(f"Class: {student_class}")
+print(f"Subject 1: {mark1}")
+print(f"Subject 2: {mark2}")
+print(f"Subject 3: {mark3}")
+print(f"Total Marks: {total}")
+print(f"Percentage: {percentage:.2f}%")
+print()
+
+
+print("2. Employee Salary Calculator")
+name=input("Enter Employee Name:")
+salary=float(input("Enter basic Salary:"))
+allowances=float(input("Enter allowances:"))
+deduction=float(input("Enter deduction / tax:"))
+gross_salary=salary+allowances
+final_salary=gross_salary-deduction
+print("\n=====SALART SLIP=====")
+print(f"Employee Name: {name}")
+print(f"Basic Salary: ${salary:.2f}")
+print(f"Allowances: ${allowances:.2f}")
+print(f"Gross Salary: ${gross_salary:.2f}")
+print(f"deduction: ${deduction:.2f}")
+print(f"final Salary: ${final_salary:.2f}")
+print()

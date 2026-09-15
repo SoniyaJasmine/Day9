@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Math&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Math&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  width: 100%;
+  overflow: hidden;
+} 
+
+/* ================= HERO ================= */
+
+.about {
+  height: 340px;
+  position: relative;
+  background-image: url("./assets/ChatGPT\ Image\ Mar\ 3\,\ 2026\,\ 12_39_14\ PM.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 20px;
+  color: white;
+}
+
+.about-content h1 {
+  color: #fdab13;
+  font-size: 40px;
+  margin-bottom: 25px;
+  font-family: oswald;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: inter;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+
+/* ================= STATS ================= */
+
+.stats-container {
+  position: relative;
+  margin-top: -55px;
+  z-index: 5;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 10px; */
+  margin-left: 150px;
+  margin-right: 150px;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+.stat-card {
+  background: white;
+  height: 140px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: inter;
+  border-radius: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+  border-bottom: 5px solid orange;
+}
+
+.stat-card h2 {
+  color: #f5a000;
+  font-size: 35px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.stat-card p {
+  font-size: 16px;
+  color: #555;
+  font-weight: 400;
+}
+
+
+/* ================= COMMON SECTION ================= */
+
+.section {
+  /* max-width: 1100px; */
+  margin: auto;
+  padding: 45px 30px;
+}
+
+.section-title {
+  font-family: oswald;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+
+/* ================= OUR STORY ================= */
+
+.story {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.story-text{
+  width: 600px;
+}
+
+.story-text h2 {
+  font-family: oswald;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.story-text p {
+  font-family: inter;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1a1919;
+  margin-bottom: 12px;
+}
+
+.story-images {
+  display: flex;
+  gap: 20px;
+ 
+}
+
+.story-large {
+  width: 370px;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 15px;
+  
+}
+
+.story-small {
+  width: 260px;
+  height: 250px;
+  border: 2px solid gray;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-top: 80px;
+
+}
+
+
+/* ================= MISSION ================= */
+
+.mission-section {
+  max-width: 900px;
+  margin: 10px 130px 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.mission-card,
+.vision-card {
+  height: 300px;
+  border-radius: 25px;
+  width: 530px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  color: white;
+}
+
+.mission-card {
+  background: #34363b;
+}
+
+.vision-card {
+  background: #f5a000;
+}
+
+.mission-icon,
+.vision-icon {
+  min-width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background: white; */
+  color: #f5a000;
+
+  font-size: 22px;
+}
+.mission-icon img,
+.vision-icon img{
+  height: 60px;
+
+}
+.vision-icon img{
+  border-radius: 50%;
+}
+
+.mission-card h3,
+.vision-card h3 {
+  font-family: inter;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.mission-card p,
+.vision-card p {
+  font-family: inter;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* ================= VALUES ================= */
+
+.values {
+  padding-top: 10px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.value-card {
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  height: 220px;
+  padding: 18px;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.value-card:hover {
+  border-bottom: 5px solid orange;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.value-icon {
+  height: 60px;
+  margin-bottom: 3px;
+}
+.value-icon img{
+  height: 50px;
+
+}
+
+.value-card h3 {
+  font-family: inter;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  font-family: inter;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: #0f0f0f;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* ================= TEAM ================= */
+
+.team {
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+
+.team-subtitle {
+  text-align: center;
+  color: #080808;
+  font-family: inter;
+  word-spacing: 0.5px;
+  font-size: 17px;
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 45px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-image {
+  width: 210px;
+  height: 210px;
+
+  margin: auto;
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+
+/* ================= FACE HOVER ================= */
+
+/*
+   When hovering the face:
+   1. Image zooms
+   2. Image gets a light yellow shade
+*/
+
+.team-image:hover img {
+  transform: scale(1.2);
+
+  filter:
+    sepia(0.03)
+    saturate(1)
+    brightness(1);
+}
+
+
+/* yellow transparent layer */
+
+.team-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(255, 218, 90, 0);
+
+  transition: 0.5s;
+
+  pointer-events: none;
+}
+
+.team-image:hover .team-overlay {
+  background: rgba(250, 231, 161, 0.32);
+}
+
+
+/* team text */
+
+.team-member h3 {
+  font-family: inter;
+  font-size: 22px;
+  margin-top: 12px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.team-member p {
+  font-family: inter;
+  color: #0a0a0a;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+
+/* ================= CTA ================= */
+
+.cta {
+  height: 490px;
+
+  position: relative;
+
+  background-image: url("./assets/ChatGPT\ Image\ Mar\ 3\,\ 2026\,\ 12_39_14\ PM.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  clip-path: ellipse(100% 100% at 50% 0%);
+  /* border-radius: 0 0 50% 50% / 0 0 8% 8%; */
+}
+
+.cta::after {
+  content: "";
+  position: absolute;
+  bottom: -75px;
+  left: -10%;
+
+  width: 120%px;
+  height: 130px;
+
+  background: transparent;
+  border-radius: 50%;
+
+  z-index: 5;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(5, 15, 30, 0.75);
+}
+
+.cta-content {
+  position: relative;
+  z-index: 10;
+}
+
+.cta-content h2 {
+  color: #f5a000;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.cta-content p {
+  font-size: 10px;
+  margin-bottom: 18px;
+}
+
+/* .cta-button {
+  border: none;
+
+  background: white;
+  color: #333;
+
+  padding: 9px 18px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.cta-button span {
+  margin-left: 10px;
+  background: #f5a000;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+} */
+
+.verify-info {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-family: inter;
+  margin-top: 18px;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.verify-info ul{
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.verify-info ul li{
+  position: relative;
+  padding-left: 20px;
+}
+.verify-info ul li::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.join-align{
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .navbar nav {
+    gap: 12px;
+  }
+
+  .navbar nav a {
+    font-size: 10px;
+  }
+
+  .consult-btn {
+    display: none;
+  }
+
+  .hero {
+    height: 240px;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: -25px 20px 0;
+  }
+
+  .story {
+    grid-template-columns: 1fr;
+  }
+
+  .story-images {
+    height: 250px;
+  }
+
+  .mission-section {
+    grid-template-columns: 1fr;
+    margin: 10px 20px 30px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .navbar nav {
+    display: none;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .story {
+    padding: 30px 20px;
+  }
+}
