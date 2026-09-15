@@ -2,6 +2,17 @@ import WhyChooseUs from "./WhyChooseUs";
 import HowItWorks from "./HowItWorks";
 import Testimonials from "./Testimonials";
 
+import chatbot from "./assets/pngtree-chatbot-symbol-3d-icon-isolated-on-a-transparent-background-symbolizing-ai-png-image_15359544.png";
+import c1 from "./assets/c1.png";
+import c2 from "./assets/c2.png";
+import c3 from "./assets/c3.png";
+import c4 from "./assets/c4.png";
+import c5 from "./assets/c5.png";
+import c6 from "./assets/c6.png";
+import hand from "./assets/11320141.png";
+import building from "./assets/ChatGPT Image Mar 2, 2026, 02_01_01 PM.png";
+
+
 
 function Home() {
     
@@ -47,7 +58,7 @@ function Home() {
             </section>
 
             <div className="floating-button">
-              <img src="src/assets/Construction Website/pngtree-chatbot-symbol-3d-icon-isolated-on-a-transparent-background-symbolizing-ai-png-image_15359544.png" alt="" />
+              <img src={chatbot} alt="" />
             </div>
 
             <section className="services">
@@ -56,7 +67,7 @@ function Home() {
 
             <div className="service-card">
               <div className="service-image">
-                <img src="src/assets/Construction Website/c1.png" alt="" />
+                <img src={c1} alt="" />
                 <div className="top-left"></div>
                 <div className="bottom-right"></div>
 
@@ -76,7 +87,7 @@ function Home() {
 
             <div className="service-card">
               <div className="service-image">
-                <img src="src/assets/Construction Website/c2.png" alt="" />
+                <img src={c2} alt="" />
                 <div className="top-left"></div>
                 <div className="bottom-right"></div>
 
@@ -95,7 +106,7 @@ function Home() {
             </div>
             <div className="service-card">
               <div className="service-image">
-                <img src="src/assets/Construction Website/c3.png" alt="" />
+                <img src={c3} alt="" />
                 <div className="top-left"></div>
                 <div className="bottom-right"></div>
                 <div className="overlay">
@@ -112,7 +123,7 @@ function Home() {
             </div>
             <div className="service-card">
               <div className="service-image">
-                <img src="src/assets/Construction Website/c4.png" alt="" />
+                <img src={c4} alt="" />
                 <div className="top-left"></div>
                   <div className="bottom-right"></div>
                 <div className="overlay">
@@ -129,7 +140,7 @@ function Home() {
             </div>
             <div className="service-card">
               <div className="service-image">
-                <img src="src/assets/Construction Website/c5.png" alt="" />
+                <img src={c5} alt="" />
                 <div className="top-left"></div>
                   <div className="bottom-right"></div>
                 <div className="overlay">
@@ -146,7 +157,7 @@ function Home() {
             </div>
             <div className="service-card">
               <div className="service-image">
-                <img src="src/assets/Construction Website/c6.png" alt="" />
+                <img src={c6} alt="" />
                 <div className="top-left"></div>
                   <div className="bottom-right"></div>
                 <div className="overlay">
@@ -166,7 +177,7 @@ function Home() {
 
         <section className="trusted">
             <div className="trusted-img">
-              <img src="src/assets/Construction Website/11320141.png" alt="" />
+              <img src={hand} alt="" />
             </div>
             <div className="trusted-content">
               <h3>Trusted by 500+ Happy Clients Across India</h3>
@@ -207,7 +218,7 @@ function Home() {
           <div className="vr-image-container">
 
             <img
-              src="src/assets/Construction Website/ChatGPT Image Mar 2, 2026, 02_01_01 PM.png"
+              src={building}
               alt="Virtual Reality Construction"
               className="vr-image"
             />

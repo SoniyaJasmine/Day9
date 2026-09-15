@@ -2,6 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Services.css"
 
+import c2 from "./assets/c2.png";
+import c3 from "./assets/c3.png";
+import c4 from "./assets/c4.png";
+import c5 from "./assets/c5.png";
+import c6 from "./assets/c6.png";
+
 function ServiceImage({ image, title }) {
   return (
     <div className="service-image-box">
@@ -26,7 +32,7 @@ function Services(){
       title: "Commercial Construction",
       subtitle: "Smart Infrastructure for Growing Businesses",
       text: "From office buildings to retail spaces and warehouses, we construct durable and secure commercial structures.",
-      image: "src/assets/Construction Website/c2.png",
+      image: c2,
       list: [
         "Office complexes",
         "Retail & showroom spaces",
@@ -43,7 +49,7 @@ function Services(){
       title: "Maintenance Services",
       subtitle: "Protecting Your Investment",
       text: "We provide ongoing maintenance solutions to keep your property safe, functional, and efficient.",
-      image: "src/assets/Construction Website/c3.png",
+      image: c3,
       list: [
         "Electrical & plumbing repairs",
         "Structural inspections",
@@ -59,7 +65,7 @@ function Services(){
       title: "Interior Planning & Designing",
       subtitle: "Designed for Comfort & Functionality",
       text: "Our interior experts transform empty spaces into beautiful, functional environments tailored to your lifestyle or business needs.",
-      image: "src/assets/Construction Website/c4.png",
+      image: c4,
       list: [
         "3D interior visualization",
         "Modular kitchen & wardrobe design",
@@ -75,7 +81,7 @@ function Services(){
       title: "Renovation & Remodeling",
       subtitle: "Revive, Redesign, Reimagine",
       text: "Upgrade your existing property with modern layouts, structural enhancements, and fresh aesthetics.",
-      image: "src/assets/Construction Website/c5.png",
+      image: c5,
       list: [
         "Structural strengthening",
         "Layout modifications",
@@ -90,7 +96,7 @@ function Services(){
       title: "Architectural Plans & Approvals",
       subtitle: "Precision Planning for Perfect Execution",
       text: "Our architects create detailed technical drawings and handle required approvals to ensure smooth project execution.",
-      image: "src/assets/Construction Website/c6.png",
+      image: c6,
       list: [
         "Architectural blueprints",
         "Structural drawings",

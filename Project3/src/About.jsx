@@ -1,4 +1,17 @@
 import "./About.css"
+import c1 from "./assets/c1.png";
+import c4 from "./assets/c4.png";
+import mission from "./assets/Mission-PNG-Clipart-Background.png";
+import vision from "./assets/ec470275507757cef73993b78b1027c4.jpg";
+import integrity from "./assets/images.png";
+import quality from "./assets/premium-certified-quality-stamp_78370-1800.avif";
+import comitment from "./assets/11320141.png";
+import customer from "./assets/1083501.png";
+import p1 from "./assets/Construction Website/P1.png";
+import p2 from "./assets/Construction Website/p2.png";
+import p3 from "./assets/Construction Website/p3.png";
+import p4 from "./assets/Construction Website/p4.png";
+
 
 function About() {
 
@@ -11,22 +24,22 @@ function About() {
 
     const values = [
         {
-        image: "src/assets/Construction Website/images.png",
+        image: integrity,
         title: "Integrity",
         text: "We maintain complete transparency in pricing, communication, and project execution to build lasting trust.",
         },
         {
-        image: "src/assets/Construction Website/premium-certified-quality-stamp_78370-1800.avif",
+        image: quality,
         title: "Quality",
         text: "Strict quality checks and premium materials ensure every structure is strong, safe and durable.",
         },
         {
-        image: "src/assets/Construction Website/11320141.png",
+        image: comitment,
         title: "Commitment",
         text: "We are dedicated to delivering projects on time while maintaining the highest construction standards.",
         },
         {
-        image: "src/assets/Construction Website/1083501.png",
+        image: customer,
         title: "Customer Focus",
         text: "We design and build every project around our client's vision, needs, and long-term satisfaction.",
         },
@@ -34,22 +47,22 @@ function About() {
 
     const team = [
         {
-        image: "src/assets/Construction Website/P1.png",
+        image: p1,
         name: "Robert Anderson",
         role: "Chief Executive Officer",
         },
         {
-        image: "src/assets/Construction Website/p2.png",
+        image: p2,
         name: "Jennifer Martinez",
         role: "Head of Design",
         },
         {
-        image: "src/assets/Construction Website/p3.png",
+        image: p3,
         name: "Michael Thompson",
         role: "Project Manager",
         },
         {
-        image: "src/assets/Construction Website/p4.png",
+        image: p4,
         name: "Sarah Williams",
         role: "Head of Design",
         },
@@ -99,7 +112,7 @@ function About() {
                     <div>
                         <img
                         className="story-large"
-                        src="src/assets/Construction Website/c2.png"
+                        src={c1}
                         alt="Construction team"
                     />
                     </div>
@@ -107,7 +120,7 @@ function About() {
                     <div>
                         <img
                         className="story-small"
-                        src="src/assets/Construction Website/ChatGPT Image Mar 2, 2026, 02_21_10 PM.png"
+                        src={c4}
                         alt="Construction project"
                     />
                     </div>
@@ -122,7 +135,7 @@ function About() {
                 <div className="mission-card">
 
                     <div className="mission-icon">
-                        <img src="src/assets/Construction Website/Mission-PNG-Clipart-Background.png" alt="" />
+                        <img src={mission} alt="" />
                     </div>
 
                     <div>
@@ -142,7 +155,7 @@ function About() {
                 <div className="vision-card">
 
                     <div className="vision-icon">
-                        <img src="src/assets/Construction Website/ec470275507757cef73993b78b1027c4.jpg" alt="" />
+                        <img src={vision} alt="" />
                     </div>
 
                     <div>

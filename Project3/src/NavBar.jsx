@@ -1,11 +1,12 @@
 import {NavLink } from "react-router-dom";
+import logo from "./assets/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
 
 function NavBar() {
 
 return (
     <header className="navbar">
         <div className="logo">
-            <img src="src/assets/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png" alt="Logo" />
+            <img src={logo} alt="Logo" />
         </div>
         <nav className="nav-links">
             <NavLink to="/" end>Home</NavLink>
