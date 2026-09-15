@@ -5,7 +5,7 @@ function NavBar() {
 return (
     <header className="navbar">
         <div className="logo">
-            <img src="src/assets/Construction Website/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png" alt="Logo" />
+            <img src="src/assets/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png" alt="Logo" />
         </div>
         <nav className="nav-links">
             <NavLink to="/" end>Home</NavLink>
