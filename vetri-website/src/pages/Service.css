@@ -1,0 +1,323 @@
+.service-grid-section {
+  width: 100%;
+  padding: 0px 48px 55px;
+  box-sizing: border-box;
+ background-color: #f2f1f8;
+ font-family: space grotesk;
+}
+
+.service-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* CARD */
+
+.service-grid-card {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 30px;
+
+  min-height: 320px;
+  box-sizing: border-box;
+
+  box-shadow: 0 5px 18px rgba(55, 40, 120, 0.08);
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.service-grid-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 28px rgba(55, 40, 120, 0.14);
+}
+
+/* IMAGE */
+
+.service-grid-image {
+  width: 100%;
+  height: 230px;
+
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.service-grid-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+}
+
+/* TITLE */
+
+.service-grid-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.service-grid-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 15px;
+
+  background: #f6f2fa;
+  color: #a000ff;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.service-grid-title h3 {
+  margin: 0;
+
+  color: #17134f;
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* DESCRIPTION */
+
+.service-grid-description {
+  margin: 25px 0 25px;
+
+  color: #575757;
+
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* POINTS */
+
+.service-grid-points {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.service-grid-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  font-weight: bold;
+  color: #181841;
+
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.service-grid-points li span {
+  color: #c000ff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .service-grid-section {
+    padding: 30px 20px 50px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.technologies-section {
+  width: 100%;
+  padding: 55px 35px 65px;
+  box-sizing: border-box;
+  background-color: #f2f1f8;
+ font-family: space grotesk;
+ margin-bottom: 50px;
+}
+
+/* ================= HEADER ================= */
+
+.technologies-header {
+  text-align: center;
+  max-width: 550px;
+  margin: 0 auto 35px;
+}
+
+.technologies-header h2 {
+  margin: 0;
+
+  color: #17134f;
+
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.technologies-header p {
+  margin: 25px auto 70px;
+
+  max-width: 550px;
+
+  color: #757575;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ================= GROUP ================= */
+
+.technology-groups {
+  max-width: 1150px;
+  margin: 0 auto;
+  /* margin-bottom: 20px; */
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+}
+
+.technology-group {
+  width: 100%;
+}
+
+.technology-group h3 {
+  margin: 0 0 35px;
+
+  text-align: center;
+
+  color: #17134f;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ================= TECHNOLOGY GRID ================= */
+
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 30px;
+}
+
+/* ================= CARD ================= */
+
+.technology-card {
+  height: 140px;
+  margin-bottom: 40px;
+  background: #ffffff;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  box-shadow: 0 4px 12px rgba(50, 40, 100, 0.2);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.technology-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 10px 20px rgba(50, 40, 100, 0.12);
+}
+
+/* ================= ICON ================= */
+
+.technology-icon {
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #9b18ff;
+
+  font-size: 35px;
+
+  font-weight: 900;
+
+  transition: transform 0.3s ease;
+}
+
+.technology-card:hover .technology-icon {
+  transform: scale(1.15);
+}
+
+/* ================= NAME ================= */
+
+.technology-card span {
+  color: #444;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  text-align: center;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 850px) {
+  .technology-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .technologies-section {
+    padding: 40px 20px 50px;
+  }
+
+  .technology-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .technologies-header h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 350px) {
+  .technology-grid {
+    grid-template-columns: 1fr;
+  }
+}

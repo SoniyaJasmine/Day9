@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about-hero{
+    height: 350px;
+    background-color: #f2f1f8;
+    text-align: center;
+    /* margin-bottom: 40px; */
+    padding: 80px 50px 15px;
+}
+.about-hero h1{
+    font-size: 50px;
+    word-spacing: 5px;
+    font-family: inter;
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, #8b32ed,
+    #ec00c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.about-hero p{
+    font-family: space grotesk;
+    max-width: 650px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 12px auto 35px;
+    color: rgb(139, 146, 146);
+}
+
+.tech-background{
+    background-color: white;
+    padding: 45px 38px;
+}
+.tech-about{
+    height: 650px;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.tech-image{
+    width: 600px;
+}
+.tech-outline{
+    background-color: #f2f1f8;
+    padding: 18px;
+    border-radius: 15px;
+}
+
+.about-section {
+  width: 100%;
+  background: #f2f1f8;
+  padding: 70px 35px 65px;
+  box-sizing: border-box;
+  font-family: space grotesk;
+  margin-bottom: 40px;
+}
+
+
+/* =========================================
+   MISSION & VISION
+========================================= */
+
+.mission-vision {
+  max-width: 1120px;
+  margin: 0 auto 55px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.mission-card {
+  position: relative;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  padding: 40px 22px;
+
+  min-height: 400px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  border-top: 6px solid #a000ff;
+
+  box-shadow: 0 5px 18px rgba(55, 40, 120, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 12px 25px rgba(55, 40, 120, 0.12);
+}
+
+
+/* ICON */
+
+.mission-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f3e8ff;
+
+  color: #9b18ff;
+
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.mission-card h2 {
+  margin: 0 0 30px;
+
+  color: #17134f;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.mission-card p {
+  max-width: 430px;
+
+  margin: 0 auto;
+
+  color: #777;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   COMMON SECTION HEADING
+========================================= */
+
+.industries-heading {
+  text-align: center;
+
+  max-width: 1000px;
+
+  margin: 0 auto 60px;
+}
+
+.industries-heading h2 {
+  padding-top: 60px;
+
+  color: #17134f;
+
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.industries-heading p {
+  max-width: 600px;
+
+  margin: 35px auto 0;
+
+  color: #777;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   INDUSTRIES
+========================================= */
+
+.industries-section {
+  max-width: 1150px;
+
+  margin: 0 auto 55px;
+}
+
+.industries-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.industry-card {
+  background: #ffffff;
+
+  height: 330px;
+
+  padding: 40px 35px;
+
+  box-sizing: border-box;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 14px rgba(139, 47, 127, 0.4);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 10px 22px rgba(55, 40, 120, 0.12);
+}
+
+
+/* INDUSTRY ICON */
+
+.industry-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f3e8ff;
+
+  color: #3113dd;
+
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.industry-card h3 {
+  margin: 0 0 25px;
+
+  color: #17134f;
+
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.industry-card p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 16px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   LEADERSHIP
+========================================= */
+
+.leadership-section {
+  max-width: 1150px;
+  padding-top: 80px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.leadership-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 40px;
+}
+
+.leader-card {
+  text-align: center;
+}
+
+.leader-image {
+  width: 100%;
+  height: 260px;
+
+  overflow: hidden;
+
+  border-radius: 25px;
+
+  background: #eee;
+}
+
+.leader-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.leader-card:hover .leader-image img {
+  transform: scale(1.05);
+}
+
+.leader-card h3 {
+  margin: 28px 0 10px;
+
+  color: #17134f;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.leader-card p {
+  margin: 0;
+
+  color: #a000ff;
+
+  font-size: 16px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .mission-vision {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .about-sections {
+    padding: 35px 20px 50px;
+  }
+
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-heading h2 {
+    font-size: 18px;
+  }
+
+}
+
+
