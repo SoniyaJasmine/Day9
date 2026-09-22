@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./component/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -11,6 +12,8 @@ import Footer from "./component/Footer";
 function App() {
   return (
     <BrowserRouter>
+
+    <ScrollToTop />
 
         <Navbar />
         
