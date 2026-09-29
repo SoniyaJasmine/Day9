@@ -1,0 +1,598 @@
+.checkout-page {
+  min-height: 650px;
+
+  background: #e6e6fa;
+
+  padding: 70px 24px 110px;
+
+  font-family: "Poppins", sans-serif;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+.checkout-container {
+  max-width: 1290px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1.1fr
+    0.9fr;
+
+  gap: 80px;
+}
+
+
+/* =====================================
+   PAYMENT SECTION
+===================================== */
+
+.payment-section,
+.order-summary {
+  border: 1px solid #aaa;
+
+  border-radius: 25px;
+
+  background: rgba(248, 247, 247, 0.767);
+
+  padding: 40px 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================
+   PAYMENT LOGOS
+===================================== */
+
+.payment-logos {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-around;
+
+  margin-bottom: 35px;
+}
+
+.payment-logo {
+  position: relative;
+
+  font-weight: 700;
+}
+
+
+/* Mastercard */
+
+.mastercard {
+  width: 70px;
+  height: 55px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.mastercard .circle {
+  position: absolute;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+}
+
+.mastercard .red {
+  background: #ed1c24;
+
+  left: 7px;
+}
+
+.mastercard .orange {
+  background: #f79e1b;
+
+  right: 7px;
+}
+
+.mastercard small {
+  position: absolute;
+
+  bottom: -4px;
+
+  font-size: 8px;
+}
+
+
+/* VISA */
+
+.visa {
+  color: #15549a;
+
+  font-size: 32px;
+
+  font-style: italic;
+}
+
+
+/* Paypal */
+
+.paypal {
+  color: #0755a0;
+
+  font-size: 22px;
+
+  font-style: italic;
+}
+
+
+/* UPI */
+
+.upi-logo {
+  padding: 7px 10px;
+
+  border: 4px solid #8b0000;
+
+  border-radius: 7px;
+
+  color: #111;
+
+  font-size: 18px;
+}
+
+
+/* =====================================
+   UPI BOX
+===================================== */
+
+.upi-box {
+  border: 1px solid #c8c8d0;
+
+  padding: 0 25px;
+}
+
+
+.upi-box h3 {
+  margin: 10px 0;
+
+  font-size: 17px;
+
+  font-weight: 500;
+}
+
+
+.upi-option {
+  min-height: 60px;
+
+  border-top: 1px solid #c8c8d0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  position: relative;
+}
+
+
+.radio {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  border: 1px solid #555;
+
+  background: #ccc;
+
+  flex-shrink: 0;
+}
+
+
+.radio.active {
+  background: #000;
+}
+
+
+.upi-option strong {
+  font-size: 20px;
+
+  font-weight: 500;
+}
+
+
+.upi-name,
+.gpay-small,
+.phonepe-small,
+.cred-small {
+  margin-left: auto;
+
+  font-size: 13px;
+}
+
+
+.upi-name {
+  color: #555;
+}
+
+
+.gpay-small {
+  color: #4285f4;
+
+  font-weight: 600;
+}
+
+
+.phonepe-small {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #673ab7;
+
+  color: white;
+}
+
+
+.cred-small {
+  background: #111;
+
+  color: white;
+
+  padding: 8px 12px;
+
+  font-size: 9px;
+}
+
+
+/* =====================================
+   COD
+===================================== */
+
+.cod-button {
+  width: 100%;
+
+  height: 52px;
+
+  margin-top: 0;
+
+  border: none;
+
+  background: #999;
+
+  color: white;
+
+  border-radius: 4px;
+
+  font-family: inherit;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 0 25px;
+
+  cursor: pointer;
+}
+
+
+.cod-arrow {
+  margin-left: auto;
+}
+
+
+/* =====================================
+   NOTES
+===================================== */
+
+.payment-note {
+  margin-top: 35px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+
+.payment-note span {
+  color: #008cff;
+
+  margin-right: 6px;
+}
+
+
+.save-payment {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+
+.save-payment input {
+  accent-color: #087cff;
+}
+
+
+/* =====================================
+   ORDER SUMMARY
+===================================== */
+
+.order-summary {
+  padding: 30px 25px;
+}
+
+
+.order-summary h1 {
+  text-align: center;
+
+  text-decoration: underline;
+
+  font-size: 28px;
+
+  margin: 0 0 65px;
+}
+
+
+.order-date {
+  border-bottom: 1px solid #bbb;
+
+  padding: 0 25px 30px;
+}
+
+
+.order-date div {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 12px 0;
+
+  font-size: 20px;
+}
+
+
+.order-date strong {
+  font-weight: 400;
+}
+
+
+/* =====================================
+   PRODUCTS
+===================================== */
+
+.products-section {
+  padding: 20px 25px;
+
+  border-bottom: 1px solid #bbb;
+}
+
+
+.products-section h2 {
+  font-size: 20px;
+
+  margin: 0 0 25px;
+}
+
+
+.product-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 17px;
+
+  margin: 20px 0;
+}
+
+
+/* =====================================
+   COUPON
+===================================== */
+
+.coupon {
+  margin-top: 18px;
+
+  padding: 8px 25px;
+
+  border-radius: 8px;
+
+  background: #d7d7d7;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+
+.coupon span {
+  color: #00bd26;
+
+  font-weight: 600;
+}
+
+
+/* =====================================
+   PRICE
+===================================== */
+
+.price-summary {
+  padding: 20px 25px;
+}
+
+
+.price-summary div {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 8px 0;
+
+  color: #e99a00;
+
+  font-size: 17px;
+}
+
+
+.price-summary strong {
+  font-weight: 500;
+}
+
+
+.price-summary small {
+  color: #444;
+
+  background: #ddd;
+
+  margin-left: 10px;
+
+  padding: 2px 8px;
+
+  border-radius: 5px;
+
+  font-size: 10px;
+}
+
+
+/* =====================================
+   PAY BUTTON
+===================================== */
+
+.pay-button {
+  display: block;
+
+  width: 200px;
+
+  height: 40px;
+
+  margin: 15px auto 0;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #eea000;
+
+  font-family: inherit;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+
+.pay-button:hover {
+  background: #ffab0d;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 1000px) {
+
+  .checkout-container {
+    grid-template-columns: 1fr;
+
+    max-width: 700px;
+
+    gap: 30px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .checkout-page {
+    padding: 35px 15px 70px;
+  }
+
+  .payment-section,
+  .order-summary {
+    padding: 25px 15px;
+
+    border-radius: 10px;
+  }
+
+  .payment-logos {
+    gap: 10px;
+  }
+
+  .visa {
+    font-size: 24px;
+  }
+
+  .paypal {
+    font-size: 17px;
+  }
+
+  .upi-logo {
+    font-size: 13px;
+  }
+
+  .upi-box {
+    padding: 0 12px;
+  }
+
+  .upi-option strong {
+    font-size: 16px;
+  }
+
+  .cod-button {
+    font-size: 16px;
+  }
+
+  .order-summary h1 {
+    font-size: 24px;
+
+    margin-bottom: 40px;
+  }
+
+  .order-date,
+  .products-section,
+  .price-summary {
+    padding-left: 10px;
+
+    padding-right: 10px;
+  }
+
+  .order-date div,
+  .product-row,
+  .price-summary div {
+    font-size: 14px;
+  }
+
+}

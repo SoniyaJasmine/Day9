@@ -1,0 +1,296 @@
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #e8e8ff;
+
+  color: #111;
+
+  font-family: poppins;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.contact-header {
+  width: 94%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding-top: 65px;
+}
+
+.contact-header h1 {
+  text-align: center;
+
+  margin: 0 0 60px;
+
+  font-size: 32px;
+
+  font-weight: 700;
+}
+
+.contact-header p {
+  margin: 0;
+
+  font-size: 20px;
+
+  line-height: 1.5;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   COMMON SECTION
+========================================= */
+
+.contact-section {
+  width: 94%;
+  max-width: 1250px;
+
+  margin: 45px auto 0;
+}
+
+
+/* =========================================
+   TITLES
+========================================= */
+
+.contact-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin: 0 0 35px;
+
+  font-size: 21px;
+
+  font-weight: 700;
+}
+
+.contact-icon {
+  font-size: 18px;
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.contact-details {
+  font-size: 19px;
+
+  line-height: 1.5;
+}
+
+.contact-details p {
+  margin: 0 0 15px;
+}
+
+.contact-details a {
+  color: #111;
+
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   PROOFING
+========================================= */
+
+.proofing-section {
+  margin-top: 45px;
+}
+
+
+/* =========================================
+   FINAL CONTACT
+========================================= */
+
+.final-contact {
+  margin-top: 45px;
+}
+
+.final-contact h2 {
+  font-size: 23px;
+
+  margin-bottom: 25px;
+}
+
+.final-contact p {
+  font-size: 19px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   ONLINE STORE
+========================================= */
+
+.online-store {
+  width: 94%;
+  max-width: 1250px;
+
+  margin: 55px auto 0;
+
+  padding-bottom: 150px;
+}
+
+.online-store h2 {
+  text-align: center;
+
+  font-size: 22px;
+
+  margin-bottom: 45px;
+}
+
+.store-content p {
+  font-size: 19px;
+
+  line-height: 1.55;
+
+  margin-bottom: 20px;
+}
+
+.store-content a {
+  color: #4285f4;
+
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   LAST MESSAGE
+========================================= */
+
+.contact-last-line {
+  margin-top: 75px;
+
+  text-align: center;
+
+  font-size: 19px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .contact-header,
+  .contact-section,
+  .online-store {
+    width: 90%;
+  }
+
+  .contact-header {
+    padding-top: 45px;
+  }
+
+  .contact-header h1 {
+    margin-bottom: 40px;
+  }
+
+  .contact-header p,
+  .contact-details,
+  .final-contact p,
+  .store-content p {
+    font-size: 17px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .contact-header,
+  .contact-section,
+  .online-store {
+    width: 90%;
+  }
+
+  .contact-header {
+    padding-top: 35px;
+  }
+
+  .contact-header h1 {
+    font-size: 27px;
+
+    margin-bottom: 30px;
+  }
+
+  .contact-header p {
+    font-size: 16px;
+
+    line-height: 1.6;
+  }
+
+  .contact-section {
+    margin-top: 35px;
+  }
+
+  .contact-title {
+    font-size: 19px;
+
+    margin-bottom: 25px;
+  }
+
+  .contact-details {
+    font-size: 16px;
+
+    line-height: 1.6;
+  }
+
+  .final-contact h2 {
+    font-size: 21px;
+  }
+
+  .final-contact p {
+    font-size: 16px;
+  }
+
+  .online-store {
+    margin-top: 45px;
+
+    padding-bottom: 80px;
+  }
+
+  .online-store h2 {
+    font-size: 19px;
+
+    line-height: 1.4;
+
+    margin-bottom: 30px;
+  }
+
+  .store-content p {
+    font-size: 16px;
+
+    line-height: 1.6;
+  }
+
+  .contact-last-line {
+    margin-top: 45px;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+  }
+}

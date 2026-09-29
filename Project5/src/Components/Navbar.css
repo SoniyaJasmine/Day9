@@ -1,0 +1,960 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Parisienne&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  height: 230px;
+
+  background: #e6e6fa;
+
+  display: grid;
+  grid-template-columns: 150px 1fr auto;
+  grid-template-rows: 65px 40px;
+  align-items: center;
+
+  padding: 30px 50px;
+  z-index: 1000;
+
+  /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); */
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  /* margin-top: 50px; */
+}
+
+.navbar-logo img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ============================= */
+/* LOGO DESIGN */
+/* ============================= */
+
+.navbar-logo {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.logo-design {
+  position: relative;
+  width: 145px;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Main logo image */
+
+.logo-image-wrapper {
+  width: 170px;
+  height: 170px;
+  /* margin-top: 3px; */
+}
+
+.logo-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* ============================= */
+/* WED KNOT CRAFT */
+/* ============================= */
+
+.brand-name {
+  position: absolute;
+  left: 168px;
+  top: 37px;
+
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-family: "Great Vibes", cursive;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 2.8px;
+  color: #555;
+  white-space: nowrap;
+}
+
+.inside-name{
+  font-family: "Great Vibes", cursive;
+  position: absolute;
+  top: 58px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+
+/* ============================= */
+/* WEDDING */
+/* ============================= */
+
+.wedding-name {
+  position: absolute;
+  left: 48px;
+  top: 119px;
+
+  font-family: poppins;
+  font-size: 11px;
+
+  color: #555;
+  white-space: nowrap;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.navbar-search {
+  justify-self: end;
+
+  width: 300px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+
+  border: 2px solid #242323;
+  border-radius: 5px;
+
+  margin-right: 25px;
+}
+
+.navbar-search input {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px; */
+  border: none;
+  /* outline: none; */
+  background: #e6e6fa;
+  padding: 5px 8px;
+  transition: 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.navbar-search input:hover{
+  background: rgb(245, 238, 225);
+  
+}
+
+.navbar-search button {
+  width: 30px;
+  height: 100%;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+.wishlist-nav-icon {
+  border: none;
+
+  background: transparent;
+
+  padding: 0;
+
+  font-size: 27px;
+
+  color: #111;
+
+  cursor: pointer;
+
+  line-height: 1;
+
+  transition:
+    background 0.9s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.wishlist-nav-icon:hover {
+  color: white;
+  background: #7b1fa2;
+  border-radius: 5px;
+  transform: scale(1.08);
+}
+
+/* =========================
+   NAVBAR ACTIONS
+========================= */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.login-link {
+  color: #222;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+   transition:
+    background 0.9s ease,
+    color 0.25s ease;
+}
+.login-link:hover{
+  background: #7b1fa2;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+.nav-icon {
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 28px;
+   transition:
+    background 0.9s ease,
+    color 0.25s ease;
+}
+.nav-icon:hover{
+  background: #7b1fa2;
+  border-radius: 5px;
+  padding: 5px;
+}
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+
+  top: -10px;
+  right: -10px;
+
+  min-width: 20px;
+  height: 20px;
+
+  padding: 2px 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #ffab0d;
+  color: white;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================
+   NAVIGATION LINKS
+========================= */
+
+.nav-links {
+  grid-column: 1 / 4;
+  grid-row: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  gap: clamp(20px, 3vw, 50px);
+}
+
+.nav-links a {
+  position: relative;
+
+  color: #222;
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: 0.3s ease;
+}
+
+.dropdown button{
+  position: relative;
+
+  color: #222;
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  background: #ffab0d;
+
+  transform: translateX(-50%);
+
+  transition: width 0.3s ease;
+}
+
+.dropdown button::after{
+   content: "";
+
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  background: #ffab0d;
+
+  transform: translateX(-50%);
+
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffab0d;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.menu-button {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* =====================================
+   DROPDOWN
+===================================== */
+
+.dropdown {
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =====================================
+   DROPDOWN BUTTON
+===================================== */
+
+.dropdown-toggle {
+  position: relative;
+
+  border: none;
+  background: transparent;
+
+  color: #222;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  padding: 10px 0;
+
+  white-space: nowrap;
+
+  transition: color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  color: #ffab0d;
+}
+
+
+/* Arrow */
+
+/* .arrow {
+  display: inline-block;
+
+  margin-left: 5px;
+
+  font-size: 12px;
+
+  transition: transform 0.3s ease;
+} */
+
+
+
+/* =====================================
+   DROPDOWN MENU
+===================================== */
+
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+
+  position: absolute;
+
+  top: calc(100% - 1px);
+  left: 50%;
+
+  transform:
+    translateX(-50%)
+    translateY(10px);
+
+  width: 250px;
+
+  background: #fff5df;
+
+  border-radius: 6px;
+
+  padding: 7px;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.15);
+
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+
+  z-index: 2000;
+}
+
+.dropdown.active .dropdown-menu {
+
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+}
+
+.dropdown-menu a {
+
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+
+  /* CHANGE ITEM HEIGHT HERE */
+  min-height: 40px;
+
+  /* CHANGE ITEM PADDING HERE */
+  padding: 10px 15px;
+
+  border-radius: 4px;
+
+  color: #333;
+
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+
+  /* CHANGE TEXT SIZE HERE */
+  font-size: 15px;
+
+  font-weight: 500;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    padding-left 0.25s ease;
+}
+
+
+/* =====================================
+   HOVER EFFECT
+===================================== */
+
+.dropdown-menu a:hover {
+
+  padding-left: 20px;
+}
+
+
+/* =====================================
+   ACTIVE DROPDOWN
+===================================== */
+
+.dropdown.active .dropdown-menu {
+
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+}
+
+
+/* =====================================
+   SPECIAL OCCASION HOVER COLORS
+===================================== */
+
+.birthday-option:hover {
+  background: #ffd6e7;
+  color: #c2185b;
+}
+
+.anniversary-option:hover {
+  background: #ffe0b2;
+  color: #e65100;
+}
+
+.engagement-option:hover {
+  background: #e1bee7;
+  color: #7b1fa2;
+}
+
+.baby-option:hover {
+  background: #c8e6ff;
+  color: #1565c0;
+}
+
+
+/* =====================================
+   THEME HOVER COLORS
+===================================== */
+
+.floral-option:hover {
+  background: #dcedc8;
+  color: #558b2f;
+}
+
+.royal-option:hover {
+  background: #d1c4e9;
+  color: #4527a0;
+}
+
+.beach-option:hover {
+  background: #b2ebf2;
+  color: #00838f;
+}
+
+.minimal-option:hover {
+  background: #eeeeee;
+  color: #333;
+}
+
+
+/* =====================================
+   SCROLL HOVER COLORS
+===================================== */
+
+.traditional-option:hover {
+  background: #ffe0b2;
+  color: #8d4e00;
+}
+
+.royal-scroll-option:hover {
+  background: #d1c4e9;
+  color: #4527a0;
+}
+
+.floral-scroll-option:hover {
+  background: #f8bbd0;
+  color: #ad1457;
+}
+
+.modern-scroll-option:hover {
+  background: #cfd8dc;
+  color: #37474f;
+}
+
+
+/* =====================================
+   DIGITAL HOVER COLORS
+===================================== */
+
+.video-option:hover {
+  background: #ffcdd2;
+  color: #c62828;
+}
+
+.whatsapp-option:hover {
+  background: #c8e6c9;
+  color: #2e7d32;
+}
+
+.animated-option:hover {
+  background: #bbdefb;
+  color: #1565c0;
+}
+
+.einvite-option:hover {
+  background: #ffe0b2;
+  color: #ef6c00;
+}
+
+
+/* =====================================
+   HOVER SLIDE EFFECT
+===================================== */
+
+.dropdown-menu a:hover {
+  padding-left: 18px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    grid-template-columns: 100px 1fr auto;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+  }
+
+  .navbar-search {
+    width: 150px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .navbar {
+    min-height: 65px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 16px;
+
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar-logo img {
+    width: 65px;
+  }
+
+
+  /* Hide desktop search */
+  .navbar-search {
+    display: none;
+  }
+
+
+  /* Hide desktop actions */
+  .navbar-actions {
+    margin-left: auto;
+    margin-right: 10px;
+    gap: 5px;
+  }
+
+  .login-link {
+    font-size: 9px;
+  }
+
+  .nav-icon {
+    font-size: 15px;
+    width: 25px;
+  }
+
+
+  /* Show hamburger */
+  .menu-button {
+    display: block;
+  }
+
+
+  /* Mobile navigation */
+
+  .nav-links {
+    position: absolute;
+
+    top: 65px;
+    left: 0;
+
+    width: 100%;
+
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 0;
+
+    padding: 10px 20px;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-links a {
+    width: 100%;
+
+    padding: 12px 0;
+
+    font-size: 11px;
+
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .dropdown {
+    width: 100%;
+    height: auto;
+
+    display: block;
+  }
+
+
+  .dropdown-toggle {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 0;
+
+    font-size: 11px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    text-align: left;
+  }
+
+
+  .dropdown-menu {
+
+    position: static;
+
+    width: 100%;
+
+    transform: none;
+
+    margin: 0;
+
+    padding: 5px;
+
+    border-radius: 4px;
+
+    box-shadow: none;
+
+    background: #fff8e9;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+
+  .dropdown.active .dropdown-menu {
+
+    max-height: 300px;
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform: none;
+  }
+
+
+  .dropdown-menu a {
+
+    padding: 10px;
+
+    font-size: 10px;
+  }
+
+
+  .dropdown-menu a:hover {
+    padding-left: 15px;
+  }
+
+}
+
+/* =========================
+   NAVIGATION LINKS
+========================= */
+
+.nav-links {
+  grid-column: 1 / 4;
+  grid-row: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 150px;
+
+  gap: clamp(20px, 3vw, 50px);
+}
+
+.nav-links a {
+  position: relative;
+
+  color: #222;
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: color 0.3s ease;
+}
+
+/* Underline */
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  background: #ffab0d;
+
+  transform: translateX(-50%);
+
+  transition: width 0.3s ease;
+}
+
+/* Hover */
+
+.nav-links a:hover {
+  color: #ffab0d;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Current page */
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a.active {
+  color: #222;
+}

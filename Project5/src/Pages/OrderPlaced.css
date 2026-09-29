@@ -1,0 +1,508 @@
+.order-page {
+  min-height: 100vh;
+  background: #e6e6fa;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 0 70px;
+}
+
+
+/* =====================================
+   CONFIRMATION
+===================================== */
+
+.confirmation-section {
+  height: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.confirmation-circle {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background: #f0a000;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.confirmation-text {
+  position: absolute;
+
+  top: 78px;
+
+  width: 190px;
+
+  text-align: center;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 5px;
+
+  /* transform: rotate(-5deg); */
+  width: 300px;
+  margin: auto;
+}
+/* .semi-circle-text {
+  width: 500px;
+  margin: auto;
+} */
+
+.confirmation-text svg {
+  width: 100%;
+  height: auto;
+}
+
+.confirmation-text text {
+  font-size: 28px;
+  font-weight: 600;
+  fill: #000;
+  letter-spacing: 2px;
+}
+
+.confirmation-text textPath {
+  text-anchor: middle;
+}
+
+
+.confirm-check {
+  width: 27px;
+  height: 27px;
+
+  border-radius: 50%;
+
+  background: #111;
+
+  color: #00b8a9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 15px;
+
+  border: 2px solid #00b8a9;
+}
+
+
+.butterfly {
+  position: absolute;
+
+  font-size: 25px;
+}
+
+
+.butterfly-1 {
+  top: 25px;
+  right: 80px;
+}
+
+.butterfly-2 {
+  top: 80px;
+  left: 50px;
+}
+
+.butterfly-3 {
+  bottom: 55px;
+  left: 45px;
+}
+
+.butterfly-4 {
+  bottom: 40px;
+  right: 50px;
+}
+
+
+/* =====================================
+   ORDER CONTENT
+===================================== */
+
+.order-content {
+  max-width: 1150px;
+
+  margin: 50px auto;
+
+  display: grid;
+
+  grid-template-columns: 1.7fr 0.9fr;
+
+  gap: 30px;
+}
+
+
+.order-left h1 {
+  font-size: 28px;
+
+  margin: 0 0 25px;
+}
+
+
+.order-left h3 {
+  font-size: 18px;
+
+  margin: 0 0 25px;
+}
+
+
+/* =====================================
+   PRODUCT
+===================================== */
+
+.ordered-product {
+  min-height: 150px;
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  border-radius: 8px;
+
+  padding: 25px 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  box-sizing: border-box;
+}
+
+
+.product-image-box {
+  width: 145px;
+  height: 140px;
+
+  border-radius: 12px;
+
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+
+.product-image-box img {
+  width: 85%;
+  height: 85%;
+
+  object-fit: contain;
+}
+
+
+.sku-box {
+  width: 185px;
+  min-height: 100px;
+
+  border-radius: 8px;
+
+  background: #efa000;
+
+  padding: 15px 20px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  font-size: 17px;
+}
+
+
+.product-price {
+  margin-left: auto;
+
+  font-size: 20px;
+}
+
+
+.delete-button {
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 20px;
+}
+
+
+/* =====================================
+   ORDER SUMMARY
+===================================== */
+
+.placed-summary {
+  margin-top: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  border-radius: 8px;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
+
+.placed-summary h2 {
+  font-size: 26px;
+
+  margin: 0 0 15px;
+}
+
+
+.summary-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 20px;
+
+  margin: 20px 0;
+}
+
+
+.summary-total {
+  border-top: 1px solid #aaa;
+
+  margin-top: 10px;
+
+  padding-top: 15px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 20px;
+}
+
+
+/* =====================================
+   CUSTOMER DETAILS
+===================================== */
+
+.customer-details {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+.customer-box {
+  border: 1px solid rgba(255, 255, 255, 0.65);
+
+  border-radius: 8px;
+
+  padding: 18px 22px;
+
+  box-sizing: border-box;
+}
+
+
+.customer-box h2 {
+  font-size: 24px;
+
+  margin: 0 0 12px;
+}
+
+
+.customer-box p {
+  margin: 10px 0;
+
+  color: #777;
+
+  font-size: 20px;
+
+  line-height: 1.6;
+}
+
+
+.detail-icon {
+  display: inline-block;
+
+  width: 30px;
+
+  color: #777;
+
+  font-size: 20px;
+}
+
+
+.address {
+  padding-left: 30px;
+}
+
+
+.billing-box p {
+  margin-bottom: 0;
+}
+
+
+/* =====================================
+   CONTINUE SHOPPING
+===================================== */
+
+.continue-shopping {
+  display: block;
+
+  width: 235px;
+
+  height: 48px;
+
+  margin: 60px auto 0;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #eea000;
+
+  color: #111;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+
+.continue-shopping:hover {
+  background: #ffab0d;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+  .order-content {
+    grid-template-columns: 1fr;
+
+    max-width: 700px;
+
+    padding: 0 20px;
+  }
+
+  .customer-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+  .order-page {
+    padding-top: 10px;
+  }
+
+
+  .confirmation-section {
+    height: 280px;
+  }
+
+
+  .confirmation-circle {
+    width: 210px;
+    height: 210px;
+  }
+
+
+  .confirmation-text {
+    top: 60px;
+
+    width: 160px;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+  }
+
+
+  .order-content {
+    padding: 0 15px;
+  }
+
+
+  .order-left h1 {
+    font-size: 22px;
+  }
+
+
+  .order-left h3 {
+    font-size: 13px;
+  }
+
+
+  .ordered-product {
+    padding: 15px;
+
+    flex-wrap: wrap;
+  }
+
+
+  .product-image-box {
+    width: 80px;
+    height: 80px;
+  }
+
+
+  .sku-box {
+    width: 150px;
+
+    min-height: 70px;
+
+    font-size: 12px;
+  }
+
+
+  .product-price {
+    margin-left: 0;
+  }
+
+
+  .customer-details {
+    display: flex;
+  }
+
+
+  .continue-shopping {
+    width: 210px;
+
+    margin-top: 40px;
+  }
+
+}

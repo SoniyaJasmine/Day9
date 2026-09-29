@@ -1,0 +1,168 @@
+.christian-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.christian-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.christian-heading h2 {
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+.christian-heading p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* 4 CARDS IN ONE ROW */
+
+.christian-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.christian-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.christian-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.christian-image {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.christian-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.christian-card:hover .christian-image img {
+  transform: scale(1.08);
+}
+
+.christian-details h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 15px 0 8px;
+  transition: color 0.3s ease;
+}
+
+.christian-card:hover .christian-details h3 {
+  color: #ffab0d;
+}
+
+.christian-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffab0d;
+  margin: 0;
+}
+
+.christian-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.christian-wishlist {
+  border: none;
+  background: transparent;
+  color: #999;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.christian-wishlist:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+.christian-wishlist.active {
+  color: red;
+}
+
+.christian-cart {
+  border: none;
+  background: #ffab0d;
+  color: #111;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.christian-cart:hover {
+  background: #ffe5b4;
+  transform: translateY(-2px);
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .christian-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .christian-section {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  .christian-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .christian-heading h2 {
+    font-size: 24px;
+  }
+
+  .christian-image {
+    height: 220px;
+  }
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+  .christian-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .christian-image {
+    height: 280px;
+  }
+}

@@ -1,0 +1,325 @@
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+.login-page {
+  min-height: 550px;
+
+  background: #e6e6fa;
+
+  padding: 50px 24px 20px;
+
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   WHITE LOGIN BOX
+========================================= */
+
+.login-box {
+  width: 970px;
+
+  min-height: 370px;
+
+  background: #ffffff;
+
+  padding: 28px 65px 45px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   LOGIN / SIGNUP TABS
+========================================= */
+
+.auth-tabs {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 70px;
+
+  margin-bottom: 45px;
+}
+
+
+.auth-tab {
+  position: relative;
+
+  border: none;
+
+  background: transparent;
+
+  padding: 0 10px 8px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  color: #111;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.auth-tab:hover{
+    color: #999;
+}
+
+/* Active underline */
+
+.auth-tab.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  height: 2px;
+
+  background: #111;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.auth-form {
+  width: 245px;
+
+  margin-left: 0;
+}
+
+
+.auth-form h2 {
+  margin: 0 0 14px;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  color: #111;
+}
+
+
+/* =========================================
+   FORM FIELD
+========================================= */
+
+.auth-field {
+  margin-bottom: 8px;
+}
+
+
+.auth-field label {
+  display: block;
+
+  margin-bottom: 2px;
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+
+.auth-field input {
+  width: 100%;
+
+  height: 35px;
+
+  box-sizing: border-box;
+
+  padding: 0 12px;
+
+  border: 1px solid #bdbdbd;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #fff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  text-align: center;
+}
+
+
+.auth-field input::placeholder {
+  color: #c7c7c7;
+
+  opacity: 1;
+}
+
+
+.auth-field input:focus {
+  border-color: #999;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.auth-submit {
+  width: 100%;
+
+  height: 33px;
+
+  margin-top: 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #c83232;
+
+  color: #fff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+
+.auth-submit:hover {
+  background: #a92525;
+}
+
+
+/* =========================================
+   FORGOT PASSWORD
+========================================= */
+
+.forgot-password {
+  display: block;
+
+  margin: 8px auto 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #c83232;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .login-box {
+    width: 90%;
+
+    max-width: 870px;
+
+    padding-left: 50px;
+
+    padding-right: 50px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .login-page {
+    min-height: 500px;
+
+    padding: 45px 15px 60px;
+  }
+
+
+  .login-box {
+    width: 100%;
+
+    min-height: 400px;
+
+    padding: 25px 25px 40px;
+  }
+
+
+  .auth-tabs {
+    gap: 40px;
+
+    margin-bottom: 30px;
+  }
+
+
+  .auth-tab {
+    font-size: 21px;
+  }
+
+
+  .auth-form {
+    width: 100%;
+
+    max-width: 280px;
+
+    margin: 0 auto;
+  }
+
+
+  .auth-form h2 {
+    font-size: 17px;
+  }
+
+
+  .auth-field label {
+    font-size: 12px;
+  }
+
+
+  .auth-field input {
+    height: 36px;
+
+    font-size: 11px;
+  }
+
+
+  .auth-submit {
+    height: 36px;
+
+    font-size: 11px;
+  }
+
+}

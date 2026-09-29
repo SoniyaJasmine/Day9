@@ -1,0 +1,459 @@
+/* =================================
+   SEARCH PAGE
+================================= */
+
+.search-page {
+  min-height: 100vh;
+
+  background: #e6e6fa;
+
+  font-family: "Poppins", sans-serif;
+
+  color: #111;
+
+  padding-bottom: 70px;
+}
+
+
+/* =================================
+   SEARCH HERO
+================================= */
+
+.search-hero {
+  padding: 70px 10px 35px;
+
+  text-align: center;
+}
+
+.search-hero h1 {
+  margin: 0;
+
+  font-size: 28px;
+
+  font-weight: 700;
+}
+
+.search-hero > p {
+  margin: 10px 0 60px;
+
+  font-size: 20px;
+
+  font-weight: 500;
+}
+
+
+/* =================================
+   MAIN SEARCH BOX
+================================= */
+
+.search-main-box {
+  width: min(1250px, 100%);
+
+  height: 60px;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  border: 2px solid #222;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+  background: transparent;
+}
+
+
+/* All button */
+
+.all-button {
+  width: 95px;
+
+  height: 100%;
+
+  border: none;
+
+  border-right: 1px solid #222;
+
+  background: #ffbd66;
+  color: #4d4c4c;
+  font-family: inherit;
+
+  font-size: 22px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* Search input */
+
+.search-main-box input {
+  flex: 1;
+
+  height: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  text-align: center;
+
+  font-family: inherit;
+
+  font-size: 20px;
+  
+  font-weight: 600;
+}
+
+.search-main-box input::placeholder {
+  color: #4d4c4c;
+
+  opacity: 1;
+}
+
+
+
+/* =================================
+   TAGS
+================================= */
+
+.search-tags {
+
+  width: min(1250px, 100%);
+
+  margin: 50px auto 0;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  /* gap: 15px; */
+
+  flex-wrap: wrap;
+}
+
+.search-tag {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  /* gap: 15px; */
+
+  width: 220px;
+
+  padding: 5px 5px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #f7f7f7;
+
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.18);
+
+  font-family: inherit;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.search-tag:hover {
+  background: #ffe5b4;
+
+  transform: translateY(-2px);
+}
+
+.tag-close {
+
+  font-size: 22px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  color: #555;
+}
+
+
+/* =================================
+   SECTIONS
+================================= */
+
+.search-section {
+
+  /* padding: 15px 24px 25px; */
+
+  width: min(1250px, 100%);
+
+  margin: auto;
+}
+
+.search-section h2 {
+
+  font-size: 20px;
+
+  margin: 10px 0 40px;
+
+  font-weight: 600;
+}
+
+
+/* =================================
+   RESULT GRID
+================================= */
+
+.search-card-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 70px 50px;
+}
+
+
+/* =================================
+   RESULT CARD
+================================= */
+
+.search-result-card {
+
+  height: 155px;
+
+  display: grid;
+
+  grid-template-columns: 55% 45%;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+
+  background: white;
+
+  cursor: pointer;
+}
+
+
+/* =================================
+   CARD IMAGE
+================================= */
+
+.search-card-image {
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.search-card-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.search-result-card:hover
+.search-card-image img {
+
+  transform: scale(1.05);
+}
+
+
+/* =================================
+   CARD TITLE
+================================= */
+
+.search-card-title {
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 10px;
+}
+
+.search-card-title h3 {
+
+  margin: 0;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+
+  font-weight: 600;
+}
+
+
+/* =================================
+   POPULAR SECTION
+================================= */
+
+.popular-section {
+
+  margin-top: 100px;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+  .search-hero h1 {
+    font-size: 22px;
+  }
+
+  .search-hero > p {
+    font-size: 15px;
+  }
+
+  .search-card-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 25px;
+  }
+
+  .search-tags {
+    justify-content: center;
+  }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+  .search-hero {
+
+    padding: 40px 16px 25px;
+  }
+
+  .search-hero h1 {
+
+    font-size: 18px;
+
+    line-height: 1.4;
+  }
+
+  .search-hero > p {
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+  }
+
+
+  .search-main-box {
+
+    height: 43px;
+  }
+
+  .all-button {
+
+    width: 65px;
+
+    font-size: 12px;
+  }
+
+  .search-main-box input {
+
+    font-size: 12px;
+  }
+
+  .search-submit {
+
+    width: 40px;
+
+    font-size: 14px;
+  }
+
+
+  .search-tags {
+
+    justify-content: flex-start;
+
+    gap: 10px;
+
+    overflow-x: auto;
+
+    flex-wrap: nowrap;
+
+    padding-bottom: 8px;
+  }
+
+  .search-tag {
+
+    min-width: max-content;
+
+    font-size: 10px;
+
+    padding: 7px 10px;
+  }
+
+
+  .search-section {
+
+    padding: 15px 16px 20px;
+  }
+
+  .search-section h2 {
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .search-card-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+
+  .search-result-card {
+
+    height: 125px;
+
+    border-radius: 12px;
+  }
+
+
+  .search-card-title h3 {
+
+    font-size: 12px;
+  }
+
+}
