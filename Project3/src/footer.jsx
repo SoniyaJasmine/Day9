@@ -1,4 +1,4 @@
-
+import footer from "./assets/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png"
 
 function Footer() {
 
@@ -7,7 +7,7 @@ function Footer() {
         <footer className="contact-footer">
 
         <div className="footer-logo">
-          <img src="src/assets/Construction Website/ChatGPT Image Mar 2, 2026, 12_14_05 PM.png" alt="Peak Construction" />
+          <img src={footer} alt="Peak Construction" />
 
           <p>
             Premium construction materials with guaranteed quality, price protection, and 24/7 support for your projects.

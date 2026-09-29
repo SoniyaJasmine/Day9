@@ -24,7 +24,7 @@ import ChristianWeddingCards from "./Pages/ChristianWeddingCards";
 import MuslimWeddingCards from "./Pages/MuslimWeddingCards";
 import AboutUs from "./Pages/About";
 import ContactUs from "./Pages/contactUs";
-import FAQ from "./Pages/FAQ";
+import FAQ from "./Pages/FAQ.JSX";
 import HowToOrder from "./Pages/HowToOrder";
 
 function App() {
